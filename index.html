@@ -882,6 +882,44 @@ body{
 
 </section>
 
+<!-- ============================================ -->
+<!-- VISTA: CONFIRMACIÓN -->
+<!-- ============================================ -->
+<section class="view-section" id="vista-confirmacion">
+
+  <div class="flex flex-col items-center text-center py-8">
+    <div class="w-20 h-20 rounded-full flex items-center justify-center mb-5" style="background:linear-gradient(135deg,#D1FAE5,#A7F3D0)">
+      <span class="material-symbols-outlined icon-filled" style="font-size:40px;color:#059669">check_circle</span>
+    </div>
+    <h2 class="text-[1.75rem] md:text-[2rem] font-bold tracking-tight text-[#1E293B] mb-2">¡Pedido recibido!</h2>
+    <p class="text-[#64748B] text-[.9375rem] mb-4 max-w-[40ch]">
+      Gracias por tu compra. Pronto se contactará contigo nuestro distribuidor para acordar la dirección y coordinar la entrega de tus productos.
+    </p>
+    <div class="bg-white rounded-2xl p-5 border border-[rgba(0,0,0,.04)] shadow-sm inline-flex items-center gap-3 mb-6">
+      <span class="material-symbols-outlined" style="font-size:24px;color:#00B2E3">call</span>
+      <div class="text-left">
+        <p class="text-[.6875rem] font-bold uppercase tracking-[.1em] text-[#94A3B8]">Teléfono distribuidor</p>
+        <p class="text-[1.25rem] font-bold text-[#1E293B] tracking-wide">477 223 3286</p>
+      </div>
+    </div>
+
+    <!-- Resumen del pedido -->
+    <div class="bg-white rounded-2xl p-5 border border-[rgba(0,0,0,.04)] shadow-sm w-full max-w-md text-left mb-6" id="confirmacion-resumen"></div>
+
+    <div class="flex gap-3 flex-wrap justify-center">
+      <button class="btn-brand h-11 px-6 text-[.875rem]" data-view="vista-catalogo">
+        <span class="material-symbols-outlined" style="font-size:18px">explore</span>
+        Seguir comprando
+      </button>
+      <button class="btn-outline h-11 px-6 text-[.875rem]" data-view="vista-inicio">
+        <span class="material-symbols-outlined" style="font-size:18px">home</span>
+        Inicio
+      </button>
+    </div>
+  </div>
+
+</section>
+
 </main>
 
 <!-- ============================================ -->

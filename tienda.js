@@ -555,6 +555,31 @@ async function togglePedidoDetalle(pedidoId) {
   detalle.classList.toggle('hidden');
 }
 
+function renderConfirmacion(items, total) {
+  var container = document.getElementById('confirmacion-resumen');
+  if (!container) return;
+
+  container.innerHTML =
+    '<h4 class="text-[.75rem] font-bold uppercase tracking-[.1em] text-[#94A3B8] mb-3">Resumen del pedido</h4>' +
+    '<div class="divide-y divide-[#E2E8F0]">' +
+    items.map(function (item) {
+      var prod = item.producto || productosData.find(function (p) { return String(p.id) === String(item.producto_id); });
+      var nombre = prod ? prod.nombre : ('Producto #' + item.producto_id);
+      var precio = prod ? (prod.precio_oferta || prod.precio_regular || 0) : 0;
+      return (
+        '<div class="flex justify-between py-2 text-[.875rem]">' +
+        '<span class="text-[#64748B] truncate max-w-[28ch]">' + escapeHtml(nombre) + ' <span class="text-[#94A3B8]">x' + item.cantidad + '</span></span>' +
+        '<span class="font-semibold text-[#1E293B] ml-3 shrink-0">' + formatMoney(precio * item.cantidad) + '</span>' +
+        '</div>'
+      );
+    }).join('') +
+    '<div class="flex justify-between py-3 border-t-2 border-[#1E293B] mt-1">' +
+    '<span class="font-bold text-[#1E293B]">Total</span>' +
+    '<span class="font-bold text-[1.125rem] text-[#1E293B]">' + formatMoney(total) + '</span>' +
+    '</div>' +
+    '</div>';
+}
+
 // ============================================
 // CARRITO
 // ============================================
@@ -705,8 +730,8 @@ async function clearCart() {
 
 function getCartTotal() {
   return carritoItems.reduce(function (total, item) {
-    if (!item.producto) return total;
-    var precio = item.producto.precio_oferta || item.producto.precio_regular || 0;
+    var prod = item.producto || productosData.find(function (p) { return String(p.id) === String(item.producto_id); });
+    var precio = prod ? (prod.precio_oferta || prod.precio_regular || 0) : 0;
     return total + precio * item.cantidad;
   }, 0);
 }
@@ -802,10 +827,11 @@ async function processCheckout() {
     await clearCart();
 
     showToast('Pago exitoso. Gracias por tu compra.', 'success', 4000);
+    renderConfirmacion(carritoItems, total);
     carritoItems = [];
     updateCartBadge();
     renderCarrito();
-    switchView('vista-inicio');
+    switchView('vista-confirmacion');
   } catch (err) {
     console.error('Checkout error:', err);
     var msg = 'Error al procesar el pago. Intenta de nuevo.';
@@ -1036,9 +1062,12 @@ function initStripe() {
   stripeInstance = window.Stripe(STRIPE_PUBLISHABLE_KEY, { locale: 'es' });
 }
 
-function openPagoModal() {
+async function openPagoModal() {
   var overlay = document.getElementById('pago-overlay');
   if (!overlay) return;
+
+  await loadCarrito();
+
   var total = getCartTotal();
   var totalDisplay = document.getElementById('pago-total-display');
   if (totalDisplay) totalDisplay.textContent = formatMoney(total);
@@ -1172,7 +1201,14 @@ async function stripeCheckout() {
     setButtonLoading(submitBtn, true, 'Procesando...');
     if (errorEl) errorEl.classList.remove('show');
 
-    var totalCentavos = Math.round(getCartTotal() * 100);
+    var total = getCartTotal();
+    console.table(carritoItems.map(function (i) {
+      var prod = i.producto || productosData.find(function (p) { return String(p.id) === String(i.producto_id); });
+      return { producto: prod ? prod.nombre : 'No encontrado', cantidad: i.cantidad, precio: prod ? (prod.precio_oferta || prod.precio_regular) : 0, subtotal: (prod ? (prod.precio_oferta || prod.precio_regular) : 0) * i.cantidad };
+    }));
+    console.log('Total calculado:', formatMoney(total));
+
+    var totalCentavos = Math.round(total * 100);
 
     // 1. Crear PaymentIntent via Edge Function
     var intentRes = await fetch(STRIPE_EDGE_FUNCTION, {
