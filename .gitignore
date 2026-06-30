@@ -1,0 +1,5 @@
+.agents/
+.env
+.env.*
+.DS_Store
+catalogo/*.pdf

@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="es" class="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>BetterMancera — Soluciones inteligentes para el hogar</title>
+<meta name="theme-color" content="#00B2E3">
+<meta name="description" content="Tienda en línea BetterMancera. Productos Betterware para el hogar: cocina, organizaci&oacute;n, limpieza y muebles.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2300B2E3'/%3E%3Ctext x='16' y='22' text-anchor='middle' fill='white' font-family='system-ui' font-weight='700' font-size='18'%3EB%3C/text%3E%3C/svg%3E">
+
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        brand:       "#00B2E3",
+        "brand-dim": "#0099C7",
+        "brand-dark":"#002855",
+        "brand-bg":  "#E0F7FB",
+        "brand-bg2": "#B3E5FC",
+        "surface":   "#FFFFFF",
+        "bg-main":   "#F8FAFC",
+        "text-main": "#1E293B",
+        "text-muted":"#64748B",
+        "border-subtle": "rgba(0,0,0,0.06)",
+        success:     "#059669",
+        "success-bg":"#D1FAE5",
+        danger:      "#DC2626",
+        "danger-bg": "#FEE2E2",
+      },
+      fontFamily: {
+        sans: ["Hanken Grotesk","system-ui","sans-serif"],
+      },
+      borderRadius: {
+        "2xl": "1rem",
+        "3xl": "1.25rem",
+        "4xl": "1.5rem",
+        full: "9999px",
+      },
+    }
+  }
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL@20..48,100..700,0..1&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================ */
+/* GLOBAL RESETS */
+/* ============================================ */
+*,*::before,*::after{box-sizing:border-box}
+body{
+  -webkit-tap-highlight-color:transparent;
+  background:#F8FAFC;
+  font-family:'Hanken Grotesk',system-ui,sans-serif;
+  color:#1E293B;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  margin:0;
+  padding:0;
+}
+.material-symbols-outlined{
+  font-variation-settings:'opsz' 24,'wght' 400,'GRAD' 0,'FILL' 0;
+  user-select:none;
+  vertical-align:middle;
+  line-height:1;
+}
+.icon-filled{
+  font-variation-settings:'opsz' 24,'wght' 400,'GRAD' 0,'FILL' 1 !important;
+}
+
+/* ============================================ */
+/* VIEW SECTIONS */
+/* ============================================ */
+.view-section{display:none}
+.view-section.active{display:block}
+.view-section.active>*{
+  animation: fadeUp .5s cubic-bezier(0.16,1,0.3,1) backwards;
+}
+.view-section.active>*:nth-child(1){animation-delay:0s}
+.view-section.active>*:nth-child(2){animation-delay:.06s}
+.view-section.active>*:nth-child(3){animation-delay:.12s}
+.view-section.active>*:nth-child(4){animation-delay:.18s}
+.view-section.active>*:nth-child(5){animation-delay:.24s}
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(16px)}
+  to{opacity:1;transform:translateY(0)}
+}
+
+/* ============================================ */
+/* BUTTONS */
+/* ============================================ */
+.btn-brand{
+  background:linear-gradient(135deg,#00B2E3,#002855);
+  color:#fff;border:none;border-radius:9999px;
+  font-weight:600;font-family:inherit;cursor:pointer;
+  transition:all .3s cubic-bezier(0.16,1,0.3,1);
+  box-shadow:0 4px 16px rgba(0,178,227,.28);
+  display:inline-flex;align-items:center;justify-content:center;
+  gap:.5rem;white-space:nowrap;
+}
+.btn-brand:hover{transform:translateY(-1px);box-shadow:0 6px 22px rgba(0,178,227,.38)}
+.btn-brand:active{transform:scale(.98)}
+.btn-brand:disabled{opacity:.55;pointer-events:none;transform:none}
+
+.btn-outline{
+  background:transparent;color:#00B2E3;
+  border:1.5px solid rgba(0,178,227,.3);border-radius:9999px;
+  font-weight:600;font-family:inherit;cursor:pointer;
+  transition:all .3s cubic-bezier(0.16,1,0.3,1);
+  display:inline-flex;align-items:center;justify-content:center;
+  gap:.5rem;white-space:nowrap;
+}
+.btn-outline:hover{background:rgba(0,178,227,.06);border-color:#00B2E3}
+.btn-outline:active{transform:scale(.98);background:rgba(0,178,227,.1)}
+
+.btn-ghost{
+  background:transparent;color:#64748B;border:none;border-radius:9999px;
+  font-weight:500;font-family:inherit;cursor:pointer;
+  transition:all .25s ease;
+  display:inline-flex;align-items:center;gap:.375rem;
+}
+.btn-ghost:hover{background:#F1F5F9;color:#1E293B}
+.btn-ghost:active{transform:scale(.97)}
+
+.btn-icon{
+  width:40px;height:40px;border-radius:9999px;
+  background:transparent;color:#64748B;border:none;
+  cursor:pointer;display:flex;align-items:center;justify-content:center;
+  transition:all .25s ease;position:relative;
+}
+.btn-icon:hover{background:#F1F5F9;color:#1E293B}
+.btn-icon:active{transform:scale(.93)}
+.btn-icon .material-symbols-outlined{font-size:22px}
+
+/* ============================================ */
+/* NAVBAR */
+/* ============================================ */
+.navbar-glass{
+  background:rgba(255,255,255,.88);
+  backdrop-filter:blur(16px) saturate(180%);
+  -webkit-backdrop-filter:blur(16px) saturate(180%);
+  border-bottom:1px solid rgba(0,0,0,.06);
+}
+.nav-link{
+  font-weight:500;font-size:.875rem;color:#64748B;
+  text-decoration:none;padding:.375rem .75rem;border-radius:9999px;
+  transition:all .25s ease;
+}
+.nav-link:hover{color:#1E293B;background:#F1F5F9}
+.nav-link.active{color:#00667A;background:#E0F7FB;font-weight:600}
+
+.cart-badge{
+  position:absolute;top:-5px;right:-8px;
+  min-width:20px;height:20px;padding:0 5px;
+  border-radius:9999px;background:#DC2626;color:#fff;
+  font-size:11px;font-weight:700;
+  display:flex;align-items:center;justify-content:center;
+  transition:transform .3s cubic-bezier(0.16,1,0.3,1);
+  pointer-events:none;
+}
+.cart-badge.pulse{animation:badgePulse .4s cubic-bezier(0.16,1,0.3,1)}
+@keyframes badgePulse{
+  0%{transform:scale(1)}50%{transform:scale(1.35)}100%{transform:scale(1)}
+}
+
+/* ============================================ */
+/* HERO FULLSCREEN BACKGROUND CAROUSEL */
+/* ============================================ */
+.hero-fullscreen{
+  position:relative;min-height:calc(100dvh - 4rem);
+  display:flex;align-items:center;justify-content:center;
+  overflow:hidden;
+  margin:-5rem -1rem 0 -1rem;
+  padding:5rem 1rem 0 1rem;
+}
+@media(min-width:768px){
+  .hero-fullscreen{margin:-5rem -1.5rem 0 -1.5rem;padding:5rem 1.5rem 0 1.5rem}
+}
+.hero-bg-layer{
+  position:absolute;inset:0;
+  background-size:cover;background-position:center;
+  opacity:0;transition:opacity 1s cubic-bezier(0.16,1,0.3,1);
+  z-index:0;
+}
+.hero-bg-layer.active{opacity:1}
+.hero-overlay{
+  position:absolute;inset:0;z-index:1;
+  background:linear-gradient(180deg,rgba(15,23,42,.55) 0%,rgba(15,23,42,.35) 50%,rgba(15,23,42,.65) 100%);
+}
+.hero-glass-card{
+  position:relative;z-index:2;max-width:36rem;width:100%;
+  background:rgba(255,255,255,.82);
+  backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
+  border-radius:2rem;padding:2rem 1.75rem;
+  box-shadow:0 24px 64px rgba(0,0,0,.12),inset 0 1px 0 rgba(255,255,255,.5);
+  border:1px solid rgba(255,255,255,.3);
+  text-align:center;
+}
+@media(min-width:640px){
+  .hero-glass-card{padding:2.5rem;text-align:left}
+}
+.hero-glass-card h1{
+  font-size:1.875rem;font-weight:800;line-height:1.08;letter-spacing:-.025em;
+  color:#1E293B;margin-bottom:.75rem;
+}
+@media(min-width:640px){
+  .hero-glass-card h1{font-size:2.5rem}
+}
+@media(min-width:1024px){
+  .hero-glass-card h1{font-size:3rem}
+}
+.hero-glass-card p{
+  font-size:.9375rem;color:#64748B;line-height:1.55;
+  margin-bottom:1.5rem;max-width:44ch;
+}
+.hero-glass-card .hero-actions{
+  display:flex;align-items:center;gap:.75rem;flex-wrap:wrap;
+  justify-content:center;
+}
+@media(min-width:640px){
+  .hero-glass-card .hero-actions{justify-content:flex-start}
+}
+.hero-dots{
+  position:absolute;bottom:1.5rem;left:50%;transform:translateX(-50%);
+  display:flex;gap:.625rem;z-index:3;
+}
+.hero-dot{
+  width:10px;height:10px;border-radius:50%;
+  background:rgba(255,255,255,.45);border:none;cursor:pointer;
+  padding:0;transition:all .35s ease;
+}
+.hero-dot.active{background:#fff;transform:scale(1.25);box-shadow:0 0 8px rgba(255,255,255,.3)}
+
+/* ============================================ */
+/* PRODUCT CARD */
+/* ============================================ */
+.producto-card{
+  background:#fff;border-radius:1.25rem;overflow:hidden;
+  box-shadow:0 1px 3px rgba(2,24,54,.06);
+  border:1px solid rgba(0,0,0,.04);
+  cursor:pointer;
+}
+.producto-card:hover{transform:translateY(-4px);box-shadow:0 14px 36px rgba(2,24,54,.1)}
+.producto-card:active{transform:scale(.99)}
+/* Image zoom via group */
+.producto-card .img-zoom{
+  width:100%;height:100%;object-fit:cover;
+  transition:transform .5s cubic-bezier(0.16,1,0.3,1);
+}
+.group:hover .img-zoom{transform:scale(1.05)}
+
+.producto-card .precio-tachado{
+  text-decoration:line-through;color:#94A3B8;font-size:.875rem;font-weight:400;
+}
+.producto-card .precio-oferta{
+  color:#00B2E3;font-size:1.5rem;font-weight:700;line-height:1.1;
+}
+.producto-card .condicion-chip{
+  display:inline-block;background:#E0F7FB;color:#00667A;
+  font-size:.75rem;font-weight:600;padding:.25rem .75rem;border-radius:9999px;
+}
+.producto-card .categoria-label{
+  font-size:.6875rem;font-weight:700;text-transform:uppercase;
+  letter-spacing:.1em;color:#94A3B8;
+}
+.producto-card .add-btn{
+  width:44px;height:44px;border-radius:9999px;border:none;
+  background:linear-gradient(135deg,#00B2E3,#002855);
+  color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;
+  transition:all .25s ease;box-shadow:0 4px 12px rgba(0,178,227,.25);
+  flex-shrink:0;
+}
+.producto-card .add-btn:hover{transform:scale(1.08);box-shadow:0 6px 18px rgba(0,178,227,.35)}
+.producto-card .add-btn:active{transform:scale(.94)}
+.producto-card .add-btn .material-symbols-outlined{font-size:20px}
+
+/* ============================================ */
+/* CATALOG BENTO GRID */
+/* ============================================ */
+.catalogo-grid{
+  display:grid;grid-template-columns:1fr;gap:1.25rem;
+}
+@media(min-width:640px){
+  .catalogo-grid{grid-template-columns:1fr 1fr}
+}
+@media(min-width:1024px){
+  .catalogo-grid{grid-template-columns:1.4fr 1fr 1fr;gap:1.5rem}
+  .catalogo-grid>*:nth-child(5n+1){grid-row:span 2}
+}
+
+/* ============================================ */
+/* BENEFICIOS BENTO */
+/* ============================================ */
+.beneficios-grid{
+  display:grid;grid-template-columns:1fr;gap:1.25rem;
+}
+@media(min-width:768px){
+  .beneficios-grid{grid-template-columns:1.5fr 1fr;gap:1.5rem}
+}
+.beneficio-card{
+  background:#fff;border-radius:1.5rem;padding:2rem;
+  transition:all .35s cubic-bezier(0.16,1,0.3,1);
+  box-shadow:0 1px 3px rgba(2,24,54,.05);
+  border:1px solid rgba(0,0,0,.04);
+  position:relative;overflow:hidden;
+}
+.beneficio-card:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(2,24,54,.08)}
+.beneficio-card .beneficio-icon{
+  width:52px;height:52px;border-radius:1rem;
+  background:linear-gradient(135deg,#E0F7FB,#B3E5FC);
+  display:flex;align-items:center;justify-content:center;
+  color:#00B2E3;margin-bottom:1.25rem;
+}
+.beneficio-card .beneficio-icon .material-symbols-outlined{font-size:26px}
+
+/* ============================================ */
+/* AUTH MODAL */
+/* ============================================ */
+.auth-overlay{
+  position:fixed;inset:0;z-index:100;
+  background:rgba(15,23,42,.45);
+  backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+  display:flex;align-items:center;justify-content:center;
+  padding:1rem;opacity:0;pointer-events:none;
+  transition:opacity .3s ease;
+}
+.auth-overlay.show{opacity:1;pointer-events:auto}
+.auth-overlay.hidden{display:none}
+.auth-card{
+  background:#fff;border-radius:1.75rem;padding:2rem 1.75rem;
+  width:100%;max-width:26rem;max-height:90dvh;overflow-y:auto;
+  box-shadow:0 28px 72px rgba(0,0,0,.18);
+  transform:translateY(20px) scale(.96);
+  transition:transform .4s cubic-bezier(0.16,1,0.3,1);
+}
+.auth-overlay.show .auth-card{transform:translateY(0) scale(1)}
+.auth-tabs{display:flex;gap:.375rem;padding:.25rem;border-radius:9999px;background:#F1F5F9;margin-bottom:1.5rem}
+.auth-tab{
+  flex:1;padding:.625rem 1rem;border-radius:9999px;border:none;
+  background:transparent;color:#64748B;font-weight:600;font-size:.875rem;
+  cursor:pointer;transition:all .25s ease;font-family:inherit;
+}
+.auth-tab.active{background:#fff;color:#1E293B;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.auth-tab:hover:not(.active){color:#1E293B}
+.auth-input{
+  width:100%;padding:.75rem 1rem;border-radius:.875rem;
+  border:1.5px solid #E2E8F0;font-size:.9375rem;font-family:inherit;
+  transition:all .2s ease;background:#F8FAFC;color:#1E293B;
+}
+.auth-input:focus{outline:none;border-color:#00B2E3;box-shadow:0 0 0 3px rgba(0,178,227,.15);background:#fff}
+.auth-input::placeholder{color:#94A3B8}
+.auth-error{color:#DC2626;font-size:.8125rem;font-weight:500;margin-top:.375rem;display:none}
+.auth-error.show{display:block}
+
+/* ============================================ */
+/* CARRITO ITEMS */
+/* ============================================ */
+.cart-item{
+  display:flex;gap:1rem;align-items:center;padding:1rem;
+  background:#fff;border-radius:1.25rem;
+  border:1px solid rgba(0,0,0,.04);
+  transition:all .25s ease;
+}
+.cart-item:hover{box-shadow:0 4px 12px rgba(2,24,54,.06)}
+.cart-item-img{
+  width:72px;height:72px;border-radius:.875rem;object-fit:cover;
+  background:#F1F5F9;flex-shrink:0;
+}
+.cart-qty-btn{
+  width:32px;height:32px;border-radius:9999px;border:1.5px solid #E2E8F0;
+  background:#fff;color:#1E293B;cursor:pointer;display:flex;align-items:center;
+  justify-content:center;font-size:16px;font-weight:600;
+  transition:all .2s ease;font-family:inherit;line-height:1;
+}
+.cart-qty-btn:hover{border-color:#00B2E3;color:#00B2E3}
+.cart-qty-btn:active{transform:scale(.92);background:#E0F7FB}
+.cart-remove-btn{
+  background:transparent;border:none;color:#94A3B8;cursor:pointer;
+  padding:.25rem;border-radius:9999px;transition:all .2s ease;
+}
+.cart-remove-btn:hover{color:#DC2626;background:#FEE2E2}
+
+/* ============================================ */
+/* CHIP FILTRO */
+/* ============================================ */
+.chip-categoria{
+  display:inline-flex;align-items:center;padding:.5rem 1.125rem;
+  border-radius:9999px;font-size:.8125rem;font-weight:600;
+  border:1.5px solid #E2E8F0;background:#fff;color:#64748B;
+  cursor:pointer;transition:all .25s ease;white-space:nowrap;
+  user-select:none;font-family:inherit;
+}
+.chip-categoria:hover{border-color:#00B2E3;color:#00B2E3}
+.chip-categoria.active{background:#E0F7FB;color:#00667A;border-color:#00B2E3}
+.chip-categoria:active{transform:scale(.96)}
+
+/* ============================================ */
+/* TOAST */
+/* ============================================ */
+#toast-container{
+  position:fixed;top:5rem;left:50%;transform:translateX(-50%);
+  z-index:200;display:flex;flex-direction:column;align-items:center;
+  gap:.5rem;pointer-events:none;
+}
+.toast{
+  display:flex;align-items:center;gap:.5rem;
+  padding:.75rem 1.25rem;border-radius:9999px;
+  font-weight:600;font-size:.875rem;
+  box-shadow:0 10px 30px rgba(0,0,0,.1);
+  pointer-events:auto;opacity:0;
+  transform:translateY(-12px) scale(.95);
+  transition:all .35s cubic-bezier(0.16,1,0.3,1);
+  white-space:nowrap;
+}
+.toast.show{opacity:1;transform:translateY(0) scale(1)}
+.toast.hide{opacity:0;transform:translateY(-8px) scale(.95)}
+.toast-success{background:#D1FAE5;color:#065F46;border:1px solid #A7F3D0}
+.toast-error{background:#FEE2E2;color:#991B1B;border:1px solid #FECACA}
+.toast-info{background:#E0F7FB;color:#00667A;border:1px solid #B3E5FC}
+.toast .material-symbols-outlined{font-size:18px;flex-shrink:0}
+
+/* ============================================ */
+/* SCROLL REVEAL */
+/* ============================================ */
+.scroll-reveal{
+  opacity:0;transform:translateY(28px);
+  transition:opacity .7s cubic-bezier(0.16,1,0.3,1),transform .7s cubic-bezier(0.16,1,0.3,1);
+}
+.scroll-reveal.revealed{opacity:1;transform:translateY(0)}
+
+/* ============================================ */
+/* SKELETON */
+/* ============================================ */
+.skeleton{
+  background:linear-gradient(90deg,#E2E8F0 25%,#F1F5F9 50%,#E2E8F0 75%);
+  background-size:200% 100%;animation:shimmer 1.6s ease-in-out infinite;
+  border-radius:.5rem;
+}
+@keyframes shimmer{0%{background-position:200% 0}100%{background-position:-200% 0}}
+
+/* ============================================ */
+/* EMPTY STATE */
+/* ============================================ */
+.empty-state{
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;padding:3rem 1.5rem;
+}
+.empty-state .material-symbols-outlined{font-size:56px;color:#CBD5E1;margin-bottom:1rem}
+
+/* ============================================ */
+/* REDUCED MOTION */
+/* ============================================ */
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{
+    animation-duration:.01ms !important;animation-iteration-count:1 !important;
+    transition-duration:.01ms !important;
+  }
+  .scroll-reveal{opacity:1;transform:none}
+  .view-section.active>*{animation:none}
+}
+
+/* ============================================ */
+/* SAFE AREA */
+/* ============================================ */
+.pb-safe{padding-bottom:max(1rem,env(safe-area-inset-bottom))}
+.pt-safe{padding-top:max(.5rem,env(safe-area-inset-top))}
+
+/* ============================================ */
+/* PERFIL */
+/* ============================================ */
+.perfil-avatar{
+  width:60px;height:60px;border-radius:50%;
+  background:linear-gradient(135deg,#00B2E3,#002855);
+  display:flex;align-items:center;justify-content:center;
+  color:#fff;font-size:22px;font-weight:700;flex-shrink:0;
+  box-shadow:0 6px 18px rgba(0,178,227,.25);
+}
+.perfil-dato{display:flex;align-items:center;gap:.5rem;color:#64748B;font-size:.875rem}
+.perfil-dato .material-symbols-outlined{font-size:18px;color:#00B2E3}
+.pedido-card{
+  background:#fff;border-radius:1.25rem;padding:1.125rem;
+  border:1px solid rgba(0,0,0,.04);
+  transition:all .25s ease;cursor:pointer;
+}
+.pedido-card:hover{box-shadow:0 4px 16px rgba(2,24,54,.06)}
+.pedido-card .pedido-estado-pagado{
+  display:inline-flex;align-items:center;gap:4px;
+  padding:2px 10px;border-radius:9999px;
+  font-size:.6875rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;
+  background:#D1FAE5;color:#065F46;
+}
+.pedido-detalle.hidden{display:none}
+.pedido-detalle{background:#F8FAFC;border-radius:1rem;padding:1rem;margin-top:.75rem}
+
+/* ============================================ */
+/* MOBILE DRAWER */
+/* ============================================ */
+.mobile-drawer-overlay{
+  position:fixed;inset:0;z-index:90;
+  background:rgba(15,23,42,.35);
+  backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);
+  opacity:0;pointer-events:none;
+  transition:opacity .3s ease;
+}
+.mobile-drawer-overlay.show{opacity:1;pointer-events:auto}
+.mobile-drawer-overlay.hidden{display:none}
+.mobile-drawer{
+  position:fixed;top:0;right:0;height:100%;width:280px;max-width:85vw;
+  z-index:100;background:#fff;padding:1.25rem;
+  display:flex;flex-direction:column;
+  transform:translateX(100%);
+  transition:transform .35s cubic-bezier(0.16,1,0.3,1);
+  box-shadow:-8px 0 32px rgba(0,0,0,.1);
+}
+.mobile-drawer.open{transform:translateX(0)}
+.mobile-nav-item{
+  display:flex;align-items:center;gap:.75rem;
+  padding:.7rem .875rem;border-radius:.875rem;
+  font-weight:600;font-size:.875rem;color:#64748B;
+  background:transparent;border:none;cursor:pointer;
+  transition:all .2s ease;font-family:inherit;width:100%;text-align:left;
+  position:relative;
+}
+.mobile-nav-item:hover{background:#F1F5F9;color:#1E293B}
+.mobile-nav-item.active{background:#E0F7FB;color:#00667A}
+.mobile-nav-item .material-symbols-outlined{font-size:20px}
+.mobile-nav-badge{
+  position:absolute;right:.75rem;top:50%;transform:translateY(-50%);
+  background:#DC2626;color:#fff;font-size:10px;font-weight:700;
+  min-width:18px;height:18px;padding:0 5px;border-radius:9999px;
+  display:flex;align-items:center;justify-content:center;
+}
+
+/* ============================================ */
+/* PAYMENT MODAL */
+/* ============================================ */
+.pago-overlay{
+  position:fixed;inset:0;z-index:100;
+  background:rgba(15,23,42,.45);
+  backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+  display:flex;align-items:center;justify-content:center;
+  padding:1rem;opacity:0;pointer-events:none;
+  transition:opacity .3s ease;
+}
+.pago-overlay.show{opacity:1;pointer-events:auto}
+.pago-overlay.hidden{display:none}
+.pago-card{
+  background:#fff;border-radius:1.75rem;padding:1.75rem;
+  width:100%;max-width:28rem;max-height:90dvh;overflow-y:auto;
+  box-shadow:0 28px 72px rgba(0,0,0,.18);
+  transform:translateY(20px) scale(.96);
+  transition:transform .4s cubic-bezier(0.16,1,0.3,1);
+}
+.pago-overlay.show .pago-card{transform:translateY(0) scale(1)}
+.pago-card-preview{
+  background:linear-gradient(135deg,#002855,#00B2E3);
+  border-radius:1.25rem;padding:1.25rem 1.5rem;
+  transition:background .4s ease;
+}
+.pago-card-preview.is-visa{background:linear-gradient(135deg,#1A1F71,#2563EB)}
+.pago-card-preview.is-mc{background:linear-gradient(135deg,#1E1E1E,#EB001B)}
+
+/* Stripe Elements */
+.stripe-card-container{
+  padding:.875rem 1rem;border-radius:.875rem;
+  border:1.5px solid #E2E8F0;background:#fff;
+  transition:all .2s ease;min-height:44px;
+}
+.StripeElement{width:100%}
+.StripeElement--focus{border-color:#00B2E3!important;box-shadow:0 0 0 3px rgba(0,178,227,.15)!important}
+.StripeElement--invalid{border-color:#DC2626!important}
+.StripeElement--complete{border-color:#059669!important}
+.adblock-warning{
+  display:none;background:#FEF3C7;color:#92400E;font-size:.75rem;
+  padding:.5rem .75rem;border-radius:.5rem;text-align:center;margin-bottom:.75rem;
+}
+.adblock-warning.show{display:block}
+</style>
+</head>
+<body class="bg-[#F8FAFC] text-[#1E293B] font-sans min-h-[100dvh] overflow-x-hidden">
+
+<!-- ============================================ -->
+<!-- NAVBAR -->
+<!-- ============================================ -->
+<header class="navbar-glass fixed top-0 w-full z-50 h-16 px-4 flex items-center justify-between">
+  <div class="flex items-center gap-2">
+    <div class="w-9 h-9 rounded-xl flex items-center justify-center" style="background:linear-gradient(135deg,#00B2E3,#002855);box-shadow:0 2px 8px rgba(0,178,227,.3)">
+      <span class="material-symbols-outlined text-white icon-filled" style="font-size:19px">home</span>
+    </div>
+    <span class="font-bold text-[17px] tracking-tight text-[#1E293B]">Better<span class="text-[#00B2E3]">Mancera</span></span>
+  </div>
+
+  <nav class="hidden md:flex items-center gap-1" id="nav-links">
+    <button class="nav-link active" data-view="vista-inicio">Inicio</button>
+    <button class="nav-link" data-view="vista-catalogo">Catálogo</button>
+    <button class="nav-link hidden" data-view="vista-perfil" id="nav-mi-cuenta">Mi Cuenta</button>
+  </nav>
+
+  <div class="flex items-center gap-1">
+    <button class="btn-icon md:hidden" id="btn-hamburger" aria-label="Menú">
+      <span class="material-symbols-outlined">menu</span>
+    </button>
+    <button class="btn-icon relative" id="btn-cart" aria-label="Carrito" data-view="vista-carrito">
+      <span class="material-symbols-outlined">shopping_cart</span>
+      <span class="cart-badge hidden" id="cart-badge">0</span>
+    </button>
+
+    <button class="btn-outline h-9 px-4 text-[.8125rem] hidden md:inline-flex" id="btn-auth-desktop">
+      <span class="material-symbols-outlined" style="font-size:18px">person</span>
+      <span id="btn-auth-label">Iniciar Sesión</span>
+    </button>
+
+    <button class="btn-icon md:hidden" id="btn-auth-mobile" aria-label="Cuenta">
+      <span class="material-symbols-outlined">person</span>
+    </button>
+  </div>
+</header>
+
+<!-- ============================================ -->
+<!-- MOBILE DRAWER -->
+<!-- ============================================ -->
+<div class="mobile-drawer-overlay hidden" id="mobile-drawer-overlay"></div>
+<nav class="mobile-drawer" id="mobile-drawer">
+  <div class="flex items-center justify-between mb-6">
+    <span class="font-bold text-[17px] tracking-tight text-[#1E293B]">Better<span class="text-[#00B2E3]">Mancera</span></span>
+    <button class="btn-icon" id="btn-drawer-close" style="width:36px;height:36px" aria-label="Cerrar menú">
+      <span class="material-symbols-outlined" style="font-size:20px">close</span>
+    </button>
+  </div>
+  <div class="flex flex-col gap-1">
+    <button class="mobile-nav-item active" data-view="vista-inicio">
+      <span class="material-symbols-outlined">home</span> Inicio
+    </button>
+    <button class="mobile-nav-item" data-view="vista-catalogo">
+      <span class="material-symbols-outlined">grid_view</span> Catálogo
+    </button>
+    <button class="mobile-nav-item" data-view="vista-carrito">
+      <span class="material-symbols-outlined">shopping_cart</span> Carrito
+      <span class="mobile-nav-badge hidden" id="mobile-cart-badge">0</span>
+    </button>
+    <button class="mobile-nav-item hidden" data-view="vista-perfil" id="mobile-nav-perfil">
+      <span class="material-symbols-outlined">person</span> Mi Cuenta
+    </button>
+  </div>
+  <div class="mt-auto pt-4 border-t border-[#E2E8F0]">
+    <button class="mobile-nav-item text-[#DC2626]" id="btn-mobile-logout" style="display:none">
+      <span class="material-symbols-outlined">logout</span> Cerrar sesión
+    </button>
+    <button class="mobile-nav-item text-[#00B2E3]" id="btn-mobile-login">
+      <span class="material-symbols-outlined">login</span> Iniciar Sesión
+    </button>
+  </div>
+</nav>
+
+<!-- ============================================ -->
+<!-- MAIN CONTENT -->
+<!-- ============================================ -->
+<main class="pt-20 px-4 md:px-6 max-w-[1400px] mx-auto w-full">
+
+<!-- ============================================ -->
+<!-- VISTA: INICIO -->
+<!-- ============================================ -->
+<section class="view-section active" id="vista-inicio">
+
+  <!-- Hero Fullscreen Background Carousel -->
+  <div class="hero-fullscreen mb-16 md:mb-24" id="hero-fullscreen">
+    <div class="hero-bg-layer active" style="background-image:url('image/image1.jpeg')"></div>
+    <div class="hero-bg-layer" style="background-image:url('image/image2.jpeg')"></div>
+    <div class="hero-bg-layer" style="background-image:url('image/image3.jpeg')"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-glass-card scroll-reveal">
+      <h1>Soluciones inteligentes para tu hogar</h1>
+      <p>Descubre productos prácticos que transforman cada rincón de tu casa en un espacio funcional, ordenado y acogedor.</p>
+      <div class="hero-actions">
+        <button class="btn-brand h-12 px-8 text-[.9375rem]" data-view="vista-catalogo">
+          Ver catálogo
+          <span class="material-symbols-outlined" style="font-size:20px">arrow_forward</span>
+        </button>
+        <button class="btn-outline h-12 px-6 text-[.9375rem]" data-view="vista-catalogo">
+          <span class="material-symbols-outlined" style="font-size:20px">grid_view</span>
+          Productos
+        </button>
+      </div>
+    </div>
+
+    <div class="hero-dots" id="hero-dots">
+      <button class="hero-dot active" data-index="0" aria-label="Imagen 1"></button>
+      <button class="hero-dot" data-index="1" aria-label="Imagen 2"></button>
+      <button class="hero-dot" data-index="2" aria-label="Imagen 3"></button>
+    </div>
+  </div>
+
+  <!-- Beneficios Bento -->
+  <div class="mb-16 md:mb-24">
+    <div class="beneficios-grid scroll-reveal">
+      <!-- Beneficio grande (izquierda) -->
+      <div class="beneficio-card" style="grid-row:span 2">
+        <div class="beneficio-icon">
+          <span class="material-symbols-outlined icon-filled">verified</span>
+        </div>
+        <h3 class="text-[1.375rem] font-bold tracking-tight text-[#1E293B] mb-2">Calidad que se siente en cada detalle</h3>
+        <p class="text-[#64748B] text-[.9375rem] leading-relaxed mb-5">
+          Cada producto Betterware está diseñado para durar. Materiales resistentes, acabados impecables y funcionalidad pensada para el día a día de las familias mexicanas.
+        </p>
+        <div class="rounded-2xl overflow-hidden aspect-[16/9] bg-[#F1F5F9]">
+          <img src="image/image1.jpeg" alt="Calidad Betterware" class="w-full h-full object-cover" loading="lazy">
+        </div>
+      </div>
+
+      <!-- Beneficio pequeño 1 (arriba derecha) -->
+      <div class="beneficio-card">
+        <div class="beneficio-icon">
+          <span class="material-symbols-outlined icon-filled">local_shipping</span>
+        </div>
+        <h3 class="text-[1.125rem] font-bold tracking-tight text-[#1E293B] mb-1.5">Entrega ágil y segura</h3>
+        <p class="text-[#64748B] text-[.875rem] leading-relaxed">
+          Recibe tus productos directamente en casa. Proceso de compra rápido, sin complicaciones y con seguimiento personalizado.
+        </p>
+      </div>
+
+      <!-- Beneficio pequeño 2 (abajo derecha) -->
+      <div class="beneficio-card">
+        <div class="beneficio-icon">
+          <span class="material-symbols-outlined icon-filled">savings</span>
+        </div>
+        <h3 class="text-[1.125rem] font-bold tracking-tight text-[#1E293B] mb-1.5">Precios que rinden</h3>
+        <p class="text-[#64748B] text-[.875rem] leading-relaxed">
+          Ofertas exclusivas por cantidad. Entre más compras, más ahorras. La mejor relación calidad-precio en artículos para el hogar.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA Section -->
+  <div class="text-center scroll-reveal mb-20">
+    <h2 class="text-[1.75rem] md:text-[2.25rem] font-bold tracking-tight text-[#1E293B] mb-3">¿Listo para transformar tu hogar?</h2>
+    <p class="text-[#64748B] text-[1rem] mb-6 max-w-[40ch] mx-auto">Explora nuestro catálogo y descubre todo lo que BetterMancera tiene para ti.</p>
+    <button class="btn-brand h-12 px-8 text-[.9375rem]" data-view="vista-catalogo">
+      Explorar catálogo
+      <span class="material-symbols-outlined" style="font-size:20px">explore</span>
+    </button>
+  </div>
+
+  <!-- Sección QR Catálogo + Asociado -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16 scroll-reveal items-stretch">
+    <div class="bg-white rounded-2xl p-6 border border-[rgba(0,0,0,.04)] shadow-sm flex flex-col items-center text-center">
+      <div class="w-16 h-16 rounded-2xl flex items-center justify-center mb-4" style="background:linear-gradient(135deg,#E0F7FB,#B3E5FC)">
+        <span class="material-symbols-outlined icon-filled" style="font-size:28px;color:#00B2E3">qr_code_2</span>
+      </div>
+      <h3 class="font-bold text-[1.125rem] text-[#1E293B] mb-2">Catálogo digital</h3>
+      <p class="text-[#64748B] text-[.875rem] mb-4 max-w-[32ch]">Escanea el código QR y accede al catálogo completo Betterware desde tu celular.</p>
+      <img src="image/catalogoqr.jpeg" alt="QR Catálogo Betterware" class="w-40 h-40 object-contain rounded-xl" loading="lazy">
+    </div>
+
+    <div class="bg-white rounded-2xl p-6 border border-[rgba(0,0,0,.04)] shadow-sm flex flex-col items-center text-center">
+      <div class="w-16 h-16 rounded-2xl flex items-center justify-center mb-4" style="background:linear-gradient(135deg,#D1FAE5,#A7F3D0)">
+        <span class="material-symbols-outlined icon-filled" style="font-size:28px;color:#059669">diversity_3</span>
+      </div>
+      <h3 class="font-bold text-[1.125rem] text-[#1E293B] mb-2">Únete como asociado</h3>
+      <p class="text-[#64748B] text-[.875rem] mb-4 max-w-[32ch]">Gana dinero compartiendo productos Betterware. Sin inversión inicial, con capacitación y apoyo.</p>
+      <img src="image/unirsecomoasociado.jpeg" alt="Únete como asociado Betterware" class="w-40 h-40 object-contain rounded-xl" loading="lazy">
+    </div>
+  </div>
+
+</section>
+
+<!-- ============================================ -->
+<!-- VISTA: CATÁLOGO -->
+<!-- ============================================ -->
+<section class="view-section" id="vista-catalogo">
+
+  <div class="mb-8 scroll-reveal">
+    <h2 class="text-[1.75rem] md:text-[2.25rem] font-bold tracking-tight text-[#1E293B] mb-2">Nuestro Catálogo</h2>
+    <p class="text-[#64748B] text-[.9375rem]">Productos Betterware seleccionados para tu hogar.</p>
+  </div>
+
+  <!-- Filtros por categoría -->
+  <div class="flex gap-2 mb-8 overflow-x-auto pb-2 scroll-reveal" id="chips-categorias" style="scrollbar-width:none;-ms-overflow-style:none">
+    <button class="chip-categoria active" data-cat="todas">Todas</button>
+  </div>
+
+  <!-- Grid de productos -->
+  <div class="catalogo-grid mb-16" id="catalogo-container">
+    <div class="rounded-[1.25rem] overflow-hidden bg-white border border-[rgba(0,0,0,.04)]">
+      <div class="skeleton aspect-[4/3]" style="border-radius:0"></div>
+      <div class="p-4 space-y-3"><div class="skeleton h-3 w-16 rounded-full"></div><div class="skeleton h-4 w-full rounded-md"></div><div class="flex items-baseline gap-2"><div class="skeleton h-6 w-20 rounded-md"></div><div class="skeleton h-4 w-14 rounded-md"></div></div><div class="flex items-center justify-between"><div class="skeleton h-5 w-24 rounded-full"></div><div class="skeleton h-11 w-11 rounded-full"></div></div></div>
+    </div>
+    <div class="rounded-[1.25rem] overflow-hidden bg-white border border-[rgba(0,0,0,.04)]">
+      <div class="skeleton aspect-[4/3]" style="border-radius:0"></div>
+      <div class="p-4 space-y-3"><div class="skeleton h-3 w-16 rounded-full"></div><div class="skeleton h-4 w-full rounded-md"></div><div class="flex items-baseline gap-2"><div class="skeleton h-6 w-20 rounded-md"></div><div class="skeleton h-4 w-14 rounded-md"></div></div><div class="flex items-center justify-between"><div class="skeleton h-5 w-24 rounded-full"></div><div class="skeleton h-11 w-11 rounded-full"></div></div></div>
+    </div>
+    <div class="rounded-[1.25rem] overflow-hidden bg-white border border-[rgba(0,0,0,.04)]">
+      <div class="skeleton aspect-[4/3]" style="border-radius:0"></div>
+      <div class="p-4 space-y-3"><div class="skeleton h-3 w-16 rounded-full"></div><div class="skeleton h-4 w-full rounded-md"></div><div class="flex items-baseline gap-2"><div class="skeleton h-6 w-20 rounded-md"></div><div class="skeleton h-4 w-14 rounded-md"></div></div><div class="flex items-center justify-between"><div class="skeleton h-5 w-24 rounded-full"></div><div class="skeleton h-11 w-11 rounded-full"></div></div></div>
+    </div>
+    <div class="rounded-[1.25rem] overflow-hidden bg-white border border-[rgba(0,0,0,.04)]">
+      <div class="skeleton aspect-[4/3]" style="border-radius:0"></div>
+      <div class="p-4 space-y-3"><div class="skeleton h-3 w-16 rounded-full"></div><div class="skeleton h-4 w-full rounded-md"></div><div class="flex items-baseline gap-2"><div class="skeleton h-6 w-20 rounded-md"></div><div class="skeleton h-4 w-14 rounded-md"></div></div><div class="flex items-center justify-between"><div class="skeleton h-5 w-24 rounded-full"></div><div class="skeleton h-11 w-11 rounded-full"></div></div></div>
+    </div>
+    <div class="rounded-[1.25rem] overflow-hidden bg-white border border-[rgba(0,0,0,.04)]">
+      <div class="skeleton aspect-[4/3]" style="border-radius:0"></div>
+      <div class="p-4 space-y-3"><div class="skeleton h-3 w-16 rounded-full"></div><div class="skeleton h-4 w-full rounded-md"></div><div class="flex items-baseline gap-2"><div class="skeleton h-6 w-20 rounded-md"></div><div class="skeleton h-4 w-14 rounded-md"></div></div><div class="flex items-center justify-between"><div class="skeleton h-5 w-24 rounded-full"></div><div class="skeleton h-11 w-11 rounded-full"></div></div></div>
+    </div>
+    <div class="rounded-[1.25rem] overflow-hidden bg-white border border-[rgba(0,0,0,.04)]">
+      <div class="skeleton aspect-[4/3]" style="border-radius:0"></div>
+      <div class="p-4 space-y-3"><div class="skeleton h-3 w-16 rounded-full"></div><div class="skeleton h-4 w-full rounded-md"></div><div class="flex items-baseline gap-2"><div class="skeleton h-6 w-20 rounded-md"></div><div class="skeleton h-4 w-14 rounded-md"></div></div><div class="flex items-center justify-between"><div class="skeleton h-5 w-24 rounded-full"></div><div class="skeleton h-11 w-11 rounded-full"></div></div></div>
+    </div>
+  </div>
+
+</section>
+
+<!-- ============================================ -->
+<!-- VISTA: CARRITO -->
+<!-- ============================================ -->
+<section class="view-section" id="vista-carrito">
+
+  <div class="mb-8">
+    <h2 class="text-[1.75rem] md:text-[2.25rem] font-bold tracking-tight text-[#1E293B] mb-2">Tu Carrito</h2>
+    <p class="text-[#64748B] text-[.9375rem]" id="cart-subtitle">Revisa tus productos antes de pagar.</p>
+  </div>
+
+  <!-- Lista de items -->
+  <div class="space-y-4 mb-8" id="cart-items-container"></div>
+
+  <!-- Resumen y pago -->
+  <div class="sticky bottom-0 z-10 pb-safe" id="cart-summary" style="display:none">
+    <div class="bg-white rounded-2xl p-5 shadow-[0_-4px_20px_rgba(2,24,54,.06)] border border-[rgba(0,0,0,.04)]">
+      <div class="flex items-center justify-between mb-4">
+        <span class="text-[#64748B] font-medium">Total</span>
+        <span class="text-[1.75rem] font-bold text-[#1E293B]" id="cart-total">$0.00</span>
+      </div>
+      <button class="btn-brand w-full h-13 text-[1rem] py-3.5" id="btn-checkout">
+        <span class="material-symbols-outlined" style="font-size:22px">payments</span>
+        Pagar ahora
+      </button>
+      <p class="text-center text-[.75rem] text-[#94A3B8] mt-3">Pago simulado &mdash; Recibirás confirmación inmediata.</p>
+    </div>
+  </div>
+
+</section>
+
+<!-- ============================================ -->
+<!-- VISTA: PERFIL (Mi Cuenta) -->
+<!-- ============================================ -->
+<section class="view-section" id="vista-perfil">
+
+  <div class="mb-8">
+    <h2 class="text-[1.75rem] md:text-[2.25rem] font-bold tracking-tight text-[#1E293B] mb-2">Mi Cuenta</h2>
+    <p class="text-[#64748B] text-[.9375rem]" id="perfil-email-display">Tus datos y pedidos en un solo lugar.</p>
+  </div>
+
+  <!-- Tarjeta de perfil -->
+  <div class="bg-white rounded-2xl p-5 mb-6 border border-[rgba(0,0,0,.04)] shadow-sm" id="perfil-card">
+    <div class="skeleton h-16 w-full rounded-xl"></div>
+  </div>
+
+  <!-- Historial de pedidos -->
+  <div class="mb-6">
+    <h3 class="text-[.75rem] font-bold uppercase tracking-[.12em] text-[#64748B] mb-4 flex items-center gap-2">
+      <span class="w-1 h-4 rounded-full bg-[#00B2E3]"></span>
+      Historial de Compras
+    </h3>
+    <div class="space-y-3" id="historial-pedidos-container">
+      <div class="skeleton h-20 w-full rounded-xl"></div>
+      <div class="skeleton h-20 w-full rounded-xl"></div>
+      <div class="skeleton h-20 w-full rounded-xl"></div>
+    </div>
+  </div>
+
+  <!-- Cerrar sesión -->
+  <button class="btn-outline w-full h-12 text-[.9375rem] text-[#DC2626] border-[#FECACA] hover:bg-[#FEF2F2] mb-12" id="btn-logout-profile">
+    <span class="material-symbols-outlined" style="font-size:20px">logout</span>
+    Cerrar sesión
+  </button>
+
+</section>
+
+</main>
+
+<!-- ============================================ -->
+<!-- FOOTER -->
+<!-- ============================================ -->
+<footer class="border-t border-[rgba(0,0,0,.06)] mt-16 py-8 px-4 text-center">
+  <p class="text-[#64748B] text-[.8125rem] font-medium">
+    <span class="font-bold text-[#1E293B]">Better<span class="text-[#00B2E3]">Mancera</span></span>
+    &copy; 2026 &mdash; Soluciones para el hogar mexicano.
+  </p>
+</footer>
+
+<!-- ============================================ -->
+<!-- AUTH MODAL -->
+<!-- ============================================ -->
+<div class="auth-overlay hidden" id="auth-overlay">
+  <div class="auth-card">
+    <div class="flex items-center justify-between mb-6">
+      <div class="flex items-center gap-2.5">
+        <div class="w-9 h-9 rounded-xl flex items-center justify-center" style="background:linear-gradient(135deg,#00B2E3,#002855);box-shadow:0 2px 8px rgba(0,178,227,.3)">
+          <span class="material-symbols-outlined text-white icon-filled" style="font-size:18px">home</span>
+        </div>
+        <span class="font-bold text-[16px] tracking-tight text-[#1E293B]">Better<span class="text-[#00B2E3]">Mancera</span></span>
+      </div>
+      <button class="btn-icon" id="btn-auth-close" style="width:36px;height:36px" aria-label="Cerrar">
+        <span class="material-symbols-outlined" style="font-size:20px">close</span>
+      </button>
+    </div>
+
+    <!-- Tabs -->
+    <div class="auth-tabs" id="auth-tabs">
+      <button class="auth-tab active" data-tab="login">Iniciar Sesión</button>
+      <button class="auth-tab" data-tab="register">Registrarse</button>
+    </div>
+
+    <!-- Login Form -->
+    <form class="space-y-4" id="form-login" autocomplete="on">
+      <div>
+        <label class="block text-xs font-semibold text-[#64748B] mb-1.5">Correo electrónico</label>
+        <input class="auth-input" id="login-email" type="email" placeholder="tu@correo.com" required autocomplete="email">
+      </div>
+      <div>
+        <label class="block text-xs font-semibold text-[#64748B] mb-1.5">Contraseña</label>
+        <input class="auth-input" id="login-password" type="password" placeholder="••••••••" required autocomplete="current-password">
+      </div>
+      <p class="auth-error" id="login-error"></p>
+      <button class="btn-brand w-full h-12 text-[.9375rem]" type="submit" id="btn-login-submit">
+        <span class="material-symbols-outlined" style="font-size:19px">login</span>
+        Ingresar
+      </button>
+    </form>
+
+    <!-- Register Form -->
+    <form class="space-y-3 hidden" id="form-register" autocomplete="on">
+      <div>
+        <label class="block text-xs font-semibold text-[#64748B] mb-1.5">Nombre</label>
+        <input class="auth-input" id="reg-nombre" type="text" placeholder="Tu nombre" required autocomplete="given-name">
+      </div>
+      <div>
+        <label class="block text-xs font-semibold text-[#64748B] mb-1.5">Apellidos</label>
+        <input class="auth-input" id="reg-apellidos" type="text" placeholder="Tus apellidos" required autocomplete="family-name">
+      </div>
+      <div>
+        <label class="block text-xs font-semibold text-[#64748B] mb-1.5">Teléfono</label>
+        <input class="auth-input" id="reg-telefono" type="tel" placeholder="55 1234 5678" required autocomplete="tel">
+      </div>
+      <div>
+        <label class="block text-xs font-semibold text-[#64748B] mb-1.5">Ciudad</label>
+        <select class="auth-input" id="reg-ciudad" required style="background-image:url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22%3E%3Cpath fill=%22%2394A3B8%22 d=%22M7 10l5 5 5-5z%22/%3E%3C/svg%3E');background-repeat:no-repeat;background-position:right .75rem center;background-size:20px;padding-right:2.5rem;-webkit-appearance:none;appearance:none">
+          <option value="" disabled selected>Selecciona tu ciudad</option>
+          <option value="León, GTO">León, Guanajuato</option>
+        </select>
+        <p class="text-[#94A3B8] text-[.6875rem] mt-1">Por ahora solo damos servicio en León, GTO. Estamos trabajando para expandirnos.</p>
+      </div>
+      <div>
+        <label class="block text-xs font-semibold text-[#64748B] mb-1.5">Correo electrónico</label>
+        <input class="auth-input" id="reg-email" type="email" placeholder="tu@correo.com" required autocomplete="email">
+      </div>
+      <div>
+        <label class="block text-xs font-semibold text-[#64748B] mb-1.5">Contraseña</label>
+        <input class="auth-input" id="reg-password" type="password" placeholder="Mínimo 8 caracteres" required minlength="8" autocomplete="new-password">
+      </div>
+      <p class="auth-error" id="register-error"></p>
+      <button class="btn-brand w-full h-12 text-[.9375rem]" type="submit" id="btn-register-submit">
+        <span class="material-symbols-outlined" style="font-size:19px">person_add</span>
+        Crear cuenta
+      </button>
+    </form>
+  </div>
+</div>
+
+<!-- ============================================ -->
+<!-- PAYMENT MODAL (Simulación) -->
+<!-- ============================================ -->
+<div class="pago-overlay hidden" id="pago-overlay">
+  <div class="pago-card">
+    <div class="flex items-center justify-between mb-5">
+      <div class="flex items-center gap-2">
+        <span class="material-symbols-outlined" style="font-size:22px;color:#00B2E3">credit_card</span>
+        <h3 class="font-bold text-[1.0625rem] text-[#1E293B]">Pago seguro</h3>
+      </div>
+      <button class="btn-icon" id="btn-pago-close" style="width:36px;height:36px" aria-label="Cerrar">
+        <span class="material-symbols-outlined" style="font-size:20px">close</span>
+      </button>
+    </div>
+
+    <p class="text-[#64748B] text-[.8125rem] mb-4">Pago seguro con Stripe &mdash; Tus datos están encriptados.</p>
+
+    <!-- Tarjeta visual preview -->
+    <div class="pago-card-preview mb-5" id="pago-card-preview">
+      <div class="flex justify-between items-start mb-5">
+        <span class="material-symbols-outlined text-white" style="font-size:28px">credit_card</span>
+        <span class="text-white/80 text-[.6875rem] font-bold uppercase tracking-[.1em]" id="pago-card-brand">●●●●</span>
+      </div>
+      <p class="text-white text-[1.1875rem] font-mono tracking-[.12em] mb-3" id="pago-card-number">•••• •••• •••• ••••</p>
+      <div class="flex gap-6">
+        <div>
+          <p class="text-white/60 text-[.625rem] uppercase tracking-wider mb-0.5">Nombre en la tarjeta</p>
+          <p class="text-white text-[.8125rem] truncate max-w-[18ch]" id="pago-card-holder">—</p>
+        </div>
+      </div>
+    </div>
+
+    <form id="form-pago" autocomplete="off">
+      <div class="adblock-warning" id="adblock-warning">
+        Si el formulario de tarjeta no aparece, desactiva el bloqueador de anuncios para esta página.
+      </div>
+      <div class="mb-3">
+        <label class="block text-xs font-semibold text-[#64748B] mb-1.5">Nombre del titular</label>
+        <input class="auth-input" id="pago-holder" type="text" placeholder="Como aparece en la tarjeta" required autocomplete="off">
+      </div>
+      <div class="mb-4">
+        <label class="block text-xs font-semibold text-[#64748B] mb-1.5">Datos de la tarjeta</label>
+        <div id="stripe-card-element" class="stripe-card-container"></div>
+        <div id="stripe-card-errors" class="auth-error" role="alert"></div>
+      </div>
+      <p class="auth-error" id="pago-error"></p>
+      <button class="btn-brand w-full h-12 text-[.9375rem]" type="submit" id="btn-pago-submit" disabled>
+        <span class="material-symbols-outlined" style="font-size:19px">lock</span>
+        Pagar <span id="pago-total-display"></span>
+      </button>
+      <div class="flex items-center justify-center gap-3 mt-3 py-2 border-t border-[#E2E8F0]">
+        <svg class="h-6 w-auto" viewBox="0 0 48 16" fill="none"><rect width="48" height="16" rx="2" fill="#1A1F71"/><path d="M18.5 4.2L16.1 11.8h-1.5l-1.2-6c-.07-.4-.2-.55-.5-.7-.6-.3-1.5-.55-2.3-.7l.05-.2h3.7c.5 0 .9.3 1 .85l.9 4.85L18.5 4.2zm2.7 5.1c0-2 2.7-2.1 2.7-2.1 0-.02-.5-1.7-2-1.7-1.2 0-2.1.7-2.4 1.35l-.7-.3c.4-1 1.6-2.05 3.3-2.05 1.95 0 3 1.05 3 2.65 0 2-2.7 2.15-2.7 2.15 0 .02.35 1.7 1.95 1.7 1 0 1.7-.55 2.05-1.15l.65.3c-.4 1.15-1.6 2.1-3 2.1-2.1 0-3.15-1.3-3.15-2.9zm9.4-5.1h-1.3l-1.9 7.6h1.4l.3-1.3h1.85l.15.65c.15.65.35 1.3.55 1.95h1.5l-2.55-7.6zm.5 4.55l.8-2.3.45 2.3h-1.25zm4.5-4.55v7.6h3.4v-1.1h-2v-6.5h-1.4zm4.6 5.1c0-2 2.7-2.1 2.7-2.1 0-.02-.5-1.7-2-1.7-1.2 0-2.1.7-2.4 1.35l-.7-.3c.4-1 1.6-2.05 3.3-2.05 1.95 0 3 1.05 3 2.65 0 2-2.7 2.15-2.7 2.15 0 .02.35 1.7 1.95 1.7 1 0 1.7-.55 2.05-1.15l.65.3c-.4 1.15-1.6 2.1-3 2.1-2.1 0-3.15-1.3-3.15-2.9z" fill="#fff"/></svg>
+        <svg class="h-6 w-auto" viewBox="0 0 48 16" fill="none"><rect width="48" height="16" rx="2" fill="#1E1E1E"/><circle cx="18" cy="8" r="6" fill="#EB001B"/><circle cx="30" cy="8" r="6" fill="#F79E1B" fill-opacity=".8"/><circle cx="24" cy="8" r="3.5" fill="#FF5F00"/></svg>
+        <span class="text-[#94A3B8] text-[.6875rem] flex items-center gap-1">
+          <span class="material-symbols-outlined" style="font-size:14px">lock</span>
+          Pagos seguros con Stripe
+        </span>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- ============================================ -->
+<!-- TOAST CONTAINER -->
+<!-- ============================================ -->
+<div id="toast-container" aria-live="polite"></div>
+
+<!-- ============================================ -->
+<!-- SCRIPTS -->
+<!-- ============================================ -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+<script src="https://js.stripe.com/v3/"></script>
+<script src="tienda.js"></script>
+</body>
+</html>
