@@ -7,7 +7,7 @@ const SUPABASE_KEY = 'sb_publishable_Y1v63ZdMakSGbx449TKpiA_cKNykbk2';
 // ============================================
 // CONFIGURACIÓN STRIPE
 // ============================================
-const STRIPE_PUBLISHABLE_KEY = 'pk_test_51TnmgfFdVhr9yKQz8kf7NbBhWPUcP9wHyW99jZMTRVtxbsEZqOdu7hYulPgaMbM76o8F59uHPdSSFtlx3b6BouFr00BmQ5mKah';
+const STRIPE_PUBLISHABLE_KEY = 'pk_live_51TnsNqK7koypVDWwjnz3cAnAMcleG4F5KsZPN6tdyXBBWPZaj11mqvWkudRSORqn7wTACmwG6tedFW8Qo1XFrPEy006NRUA4ly';
 // Edge Function URL (se genera al hacer deploy)
 const STRIPE_EDGE_FUNCTION = SUPABASE_URL + '/functions/v1/swift-endpoint';
 
@@ -1029,9 +1029,10 @@ function updateMobileDrawerActive(viewId) {
 
 function initStripe() {
   if (!window.Stripe) {
-    console.warn('Stripe.js no se cargó. El pago funcionará sin tarjeta real.');
+    console.warn('Stripe.js no se cargó.');
     return;
   }
+  console.log('Stripe init con:', STRIPE_PUBLISHABLE_KEY.substring(0, 15) + '...');
   stripeInstance = window.Stripe(STRIPE_PUBLISHABLE_KEY, { locale: 'es' });
 }
 
