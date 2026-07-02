@@ -898,11 +898,14 @@ function renderCatalogo() {
     var precioOferta = formatMoney(producto.precio_oferta);
     var condicion = escapeHtml(producto.condicion || '');
     var codigo = escapeHtml(producto.codigo || '');
+    // Delay corto y acotado por "fila" (no por indice absoluto), para que
+    // con catalogos grandes las tarjetas no tarden segundos en aparecer.
+    var revealDelay = (index % 8) * 35;
 
     return (
-      '<div class="producto-card group scroll-reveal" data-delay="' + (index * 40) + '">' +
+      '<div class="producto-card group scroll-reveal" data-delay="' + revealDelay + '">' +
         '<div class="img-wrap">' +
-          '<img src="' + imgUrl + '" width="800" height="800" alt="' + nombre + '" loading="lazy" decoding="async" data-retry="webp" data-codigo="' + codigo + '">' +
+          '<img src="' + imgUrl + '" alt="' + nombre + '" loading="lazy" decoding="async" data-retry="webp" data-codigo="' + codigo + '">' +
         '</div>' +
         '<div class="card-body">' +
           '<span class="categoria-label">' + cat + '</span>' +
