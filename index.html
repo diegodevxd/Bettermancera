@@ -8,44 +8,16 @@
 <meta name="description" content="Tienda en línea BetterMancera. Productos Betterware para el hogar: cocina, organizaci&oacute;n, limpieza y muebles.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2300B2E3'/%3E%3Ctext x='16' y='22' text-anchor='middle' fill='white' font-family='system-ui' font-weight='700' font-size='18'%3EB%3C/text%3E%3C/svg%3E">
 
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net https://js.stripe.com https://fonts.googleapis.com https://cdn.tailwindcss.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://lijzftjgevwnjorpycxa.supabase.co https://api.stripe.com; img-src 'self' data: https://lijzftjgevwnjorpycxa.supabase.co; frame-src https://js.stripe.com https://hooks.stripe.com; base-uri 'self'; form-action 'self';">
+
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script>
-tailwind.config = {
-  darkMode: "class",
-  theme: {
-    extend: {
-      colors: {
-        brand:       "#00B2E3",
-        "brand-dim": "#0099C7",
-        "brand-dark":"#002855",
-        "brand-bg":  "#E0F7FB",
-        "brand-bg2": "#B3E5FC",
-        "surface":   "#FFFFFF",
-        "bg-main":   "#F8FAFC",
-        "text-main": "#1E293B",
-        "text-muted":"#64748B",
-        "border-subtle": "rgba(0,0,0,0.06)",
-        success:     "#059669",
-        "success-bg":"#D1FAE5",
-        danger:      "#DC2626",
-        "danger-bg": "#FEE2E2",
-      },
-      fontFamily: {
-        sans: ["Hanken Grotesk","system-ui","sans-serif"],
-      },
-      borderRadius: {
-        "2xl": "1rem",
-        "3xl": "1.25rem",
-        "4xl": "1.5rem",
-        full: "9999px",
-      },
-    }
-  }
-}
-</script>
+<script src="tailwind.config.js"></script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="dns-prefetch" href="https://lijzftjgevwnjorpycxa.supabase.co">
+<link rel="dns-prefetch" href="https://api.stripe.com">
+<link rel="preload" as="image" href="image/image1.jpeg" type="image/jpeg">
 <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL@20..48,100..700,0..1&display=swap" rel="stylesheet">
 
@@ -245,21 +217,45 @@ body{
   box-shadow:0 1px 3px rgba(2,24,54,.06);
   border:1px solid rgba(0,0,0,.04);
   cursor:pointer;
+  display:flex;flex-direction:column;
+  break-inside:avoid;
+  margin-bottom:1.5rem;
+  transition:transform .3s cubic-bezier(0.16,1,0.3,1), box-shadow .3s cubic-bezier(0.16,1,0.3,1);
 }
 .producto-card:hover{transform:translateY(-4px);box-shadow:0 14px 36px rgba(2,24,54,.1)}
 .producto-card:active{transform:scale(.99)}
-/* Image zoom via group */
-.producto-card .img-zoom{
-  width:100%;height:100%;object-fit:cover;
-  transition:transform .5s cubic-bezier(0.16,1,0.3,1);
+/* Image container: alto dinamico segun la proporcion real de cada foto */
+.producto-card .img-wrap{
+  position:relative;
+  overflow:hidden;
+  min-height:120px;
+  background:#F1F5F9;
 }
-.group:hover .img-zoom{transform:scale(1.05)}
+.producto-card .img-wrap img{
+  width:100%;height:auto;display:block;
+  transition:opacity .3s ease, transform .5s cubic-bezier(0.16,1,0.3,1);
+}
+.producto-card .img-wrap img[loading="lazy"]{
+  opacity:0;
+}
+.producto-card .img-wrap img.loaded,
+.producto-card .img-wrap img:not([loading="lazy"]){
+  opacity:1;
+}
+.group:hover .img-wrap img{transform:scale(1.05)}
 
+.producto-card .card-body{
+  padding:1rem;
+  display:flex;flex-direction:column;flex:1;
+}
 .producto-card .precio-tachado{
   text-decoration:line-through;color:#94A3B8;font-size:.875rem;font-weight:400;
 }
 .producto-card .precio-oferta{
-  color:#00B2E3;font-size:1.5rem;font-weight:700;line-height:1.1;
+  color:#00B2E3;font-size:1.375rem;font-weight:700;line-height:1.1;
+}
+@media(min-width:768px){
+  .producto-card .precio-oferta{font-size:1.5rem}
 }
 .producto-card .condicion-chip{
   display:inline-block;background:#E0F7FB;color:#00667A;
@@ -269,29 +265,39 @@ body{
   font-size:.6875rem;font-weight:700;text-transform:uppercase;
   letter-spacing:.1em;color:#94A3B8;
 }
+.producto-card .card-footer{
+  display:flex;align-items:center;justify-content:space-between;
+  margin-top:auto; padding-top:.75rem;
+}
 .producto-card .add-btn{
-  width:44px;height:44px;border-radius:9999px;border:none;
+  width:40px;height:40px;border-radius:9999px;border:none;
   background:linear-gradient(135deg,#00B2E3,#002855);
   color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;
   transition:all .25s ease;box-shadow:0 4px 12px rgba(0,178,227,.25);
   flex-shrink:0;
+}
+@media(min-width:768px){
+  .producto-card .add-btn{width:44px;height:44px}
 }
 .producto-card .add-btn:hover{transform:scale(1.08);box-shadow:0 6px 18px rgba(0,178,227,.35)}
 .producto-card .add-btn:active{transform:scale(.94)}
 .producto-card .add-btn .material-symbols-outlined{font-size:20px}
 
 /* ============================================ */
-/* CATALOG BENTO GRID */
+/* CATALOG MASONRY GRID (alturas dinamicas por foto) */
 /* ============================================ */
 .catalogo-grid{
-  display:grid;grid-template-columns:1fr;gap:1.25rem;
+  column-count:2;
+  column-gap:.75rem;
 }
 @media(min-width:640px){
-  .catalogo-grid{grid-template-columns:1fr 1fr}
+  .catalogo-grid{column-gap:1rem}
+}
+@media(min-width:768px){
+  .catalogo-grid{column-count:3;column-gap:1.25rem}
 }
 @media(min-width:1024px){
-  .catalogo-grid{grid-template-columns:1.4fr 1fr 1fr;gap:1.5rem}
-  .catalogo-grid>*:nth-child(5n+1){grid-row:span 2}
+  .catalogo-grid{column-count:4;column-gap:1.5rem}
 }
 
 /* ============================================ */
@@ -318,6 +324,45 @@ body{
   color:#00B2E3;margin-bottom:1.25rem;
 }
 .beneficio-card .beneficio-icon .material-symbols-outlined{font-size:26px}
+
+/* ============================================ */
+/* CTA BANNER (marca) */
+/* ============================================ */
+.cta-banner{
+  position:relative;overflow:hidden;isolation:isolate;
+  border-radius:2rem;
+  background:#002855;
+  padding:3rem 1.75rem;
+  text-align:center;
+}
+@media(min-width:768px){
+  .cta-banner{padding:4rem 3rem}
+}
+.cta-banner::before{
+  content:'';position:absolute;inset:0;z-index:-1;
+  background:
+    radial-gradient(60% 90% at 88% 0%, rgba(0,178,227,.55), transparent 60%),
+    radial-gradient(50% 70% at 8% 100%, rgba(0,178,227,.28), transparent 65%);
+}
+.cta-banner::after{
+  content:'';position:absolute;inset:0;z-index:-1;opacity:.5;
+  background-image:radial-gradient(rgba(255,255,255,.14) 1px, transparent 1px);
+  background-size:22px 22px;
+  -webkit-mask-image:radial-gradient(70% 70% at 50% 30%, #000 0%, transparent 75%);
+  mask-image:radial-gradient(70% 70% at 50% 30%, #000 0%, transparent 75%);
+}
+.cta-banner h2{color:#fff}
+.cta-banner p{color:rgba(255,255,255,.72)}
+.btn-invert{
+  background:#fff;color:#00667A;border:none;border-radius:9999px;
+  font-weight:600;font-family:inherit;cursor:pointer;
+  transition:all .3s cubic-bezier(0.16,1,0.3,1);
+  box-shadow:0 4px 16px rgba(0,0,0,.18);
+  display:inline-flex;align-items:center;justify-content:center;
+  gap:.5rem;white-space:nowrap;
+}
+.btn-invert:hover{transform:translateY(-1px);box-shadow:0 6px 22px rgba(0,0,0,.24);background:#F0FBFF}
+.btn-invert:active{transform:scale(.98)}
 
 /* ============================================ */
 /* AUTH MODAL */
@@ -739,10 +784,10 @@ body{
   </div>
 
   <!-- CTA Section -->
-  <div class="text-center scroll-reveal mb-20">
-    <h2 class="text-[1.75rem] md:text-[2.25rem] font-bold tracking-tight text-[#1E293B] mb-3">¿Listo para transformar tu hogar?</h2>
-    <p class="text-[#64748B] text-[1rem] mb-6 max-w-[40ch] mx-auto">Explora nuestro catálogo y descubre todo lo que BetterMancera tiene para ti.</p>
-    <button class="btn-brand h-12 px-8 text-[.9375rem]" data-view="vista-catalogo">
+  <div class="cta-banner scroll-reveal mb-20">
+    <h2 class="text-[1.75rem] md:text-[2.25rem] font-bold tracking-tight mb-3">¿Listo para transformar tu hogar?</h2>
+    <p class="text-[1rem] mb-6 max-w-[40ch] mx-auto">Explora nuestro catálogo y descubre todo lo que BetterMancera tiene para ti.</p>
+    <button class="btn-invert h-12 px-8 text-[.9375rem]" data-view="vista-catalogo">
       Explorar catálogo
       <span class="material-symbols-outlined" style="font-size:20px">explore</span>
     </button>
@@ -788,29 +833,71 @@ body{
 
   <!-- Grid de productos -->
   <div class="catalogo-grid mb-16" id="catalogo-container">
-    <div class="rounded-[1.25rem] overflow-hidden bg-white border border-[rgba(0,0,0,.04)]">
-      <div class="skeleton aspect-[4/3]" style="border-radius:0"></div>
-      <div class="p-4 space-y-3"><div class="skeleton h-3 w-16 rounded-full"></div><div class="skeleton h-4 w-full rounded-md"></div><div class="flex items-baseline gap-2"><div class="skeleton h-6 w-20 rounded-md"></div><div class="skeleton h-4 w-14 rounded-md"></div></div><div class="flex items-center justify-between"><div class="skeleton h-5 w-24 rounded-full"></div><div class="skeleton h-11 w-11 rounded-full"></div></div></div>
+    <div class="producto-card">
+      <div class="img-wrap"><div class="skeleton w-full h-full"></div></div>
+      <div class="card-body">
+        <div class="skeleton h-3 w-16 rounded-full mb-2"></div>
+        <div class="skeleton h-4 w-full rounded-md mb-3"></div>
+        <div class="card-footer">
+          <div class="skeleton h-5 w-20 rounded-md"></div>
+          <div class="skeleton h-10 w-10 rounded-full"></div>
+        </div>
+      </div>
     </div>
-    <div class="rounded-[1.25rem] overflow-hidden bg-white border border-[rgba(0,0,0,.04)]">
-      <div class="skeleton aspect-[4/3]" style="border-radius:0"></div>
-      <div class="p-4 space-y-3"><div class="skeleton h-3 w-16 rounded-full"></div><div class="skeleton h-4 w-full rounded-md"></div><div class="flex items-baseline gap-2"><div class="skeleton h-6 w-20 rounded-md"></div><div class="skeleton h-4 w-14 rounded-md"></div></div><div class="flex items-center justify-between"><div class="skeleton h-5 w-24 rounded-full"></div><div class="skeleton h-11 w-11 rounded-full"></div></div></div>
+    <div class="producto-card">
+      <div class="img-wrap"><div class="skeleton w-full h-full"></div></div>
+      <div class="card-body">
+        <div class="skeleton h-3 w-16 rounded-full mb-2"></div>
+        <div class="skeleton h-4 w-full rounded-md mb-3"></div>
+        <div class="card-footer">
+          <div class="skeleton h-5 w-20 rounded-md"></div>
+          <div class="skeleton h-10 w-10 rounded-full"></div>
+        </div>
+      </div>
     </div>
-    <div class="rounded-[1.25rem] overflow-hidden bg-white border border-[rgba(0,0,0,.04)]">
-      <div class="skeleton aspect-[4/3]" style="border-radius:0"></div>
-      <div class="p-4 space-y-3"><div class="skeleton h-3 w-16 rounded-full"></div><div class="skeleton h-4 w-full rounded-md"></div><div class="flex items-baseline gap-2"><div class="skeleton h-6 w-20 rounded-md"></div><div class="skeleton h-4 w-14 rounded-md"></div></div><div class="flex items-center justify-between"><div class="skeleton h-5 w-24 rounded-full"></div><div class="skeleton h-11 w-11 rounded-full"></div></div></div>
+    <div class="producto-card">
+      <div class="img-wrap"><div class="skeleton w-full h-full"></div></div>
+      <div class="card-body">
+        <div class="skeleton h-3 w-16 rounded-full mb-2"></div>
+        <div class="skeleton h-4 w-full rounded-md mb-3"></div>
+        <div class="card-footer">
+          <div class="skeleton h-5 w-20 rounded-md"></div>
+          <div class="skeleton h-10 w-10 rounded-full"></div>
+        </div>
+      </div>
     </div>
-    <div class="rounded-[1.25rem] overflow-hidden bg-white border border-[rgba(0,0,0,.04)]">
-      <div class="skeleton aspect-[4/3]" style="border-radius:0"></div>
-      <div class="p-4 space-y-3"><div class="skeleton h-3 w-16 rounded-full"></div><div class="skeleton h-4 w-full rounded-md"></div><div class="flex items-baseline gap-2"><div class="skeleton h-6 w-20 rounded-md"></div><div class="skeleton h-4 w-14 rounded-md"></div></div><div class="flex items-center justify-between"><div class="skeleton h-5 w-24 rounded-full"></div><div class="skeleton h-11 w-11 rounded-full"></div></div></div>
+    <div class="producto-card">
+      <div class="img-wrap"><div class="skeleton w-full h-full"></div></div>
+      <div class="card-body">
+        <div class="skeleton h-3 w-16 rounded-full mb-2"></div>
+        <div class="skeleton h-4 w-full rounded-md mb-3"></div>
+        <div class="card-footer">
+          <div class="skeleton h-5 w-20 rounded-md"></div>
+          <div class="skeleton h-10 w-10 rounded-full"></div>
+        </div>
+      </div>
     </div>
-    <div class="rounded-[1.25rem] overflow-hidden bg-white border border-[rgba(0,0,0,.04)]">
-      <div class="skeleton aspect-[4/3]" style="border-radius:0"></div>
-      <div class="p-4 space-y-3"><div class="skeleton h-3 w-16 rounded-full"></div><div class="skeleton h-4 w-full rounded-md"></div><div class="flex items-baseline gap-2"><div class="skeleton h-6 w-20 rounded-md"></div><div class="skeleton h-4 w-14 rounded-md"></div></div><div class="flex items-center justify-between"><div class="skeleton h-5 w-24 rounded-full"></div><div class="skeleton h-11 w-11 rounded-full"></div></div></div>
+    <div class="producto-card">
+      <div class="img-wrap"><div class="skeleton w-full h-full"></div></div>
+      <div class="card-body">
+        <div class="skeleton h-3 w-16 rounded-full mb-2"></div>
+        <div class="skeleton h-4 w-full rounded-md mb-3"></div>
+        <div class="card-footer">
+          <div class="skeleton h-5 w-20 rounded-md"></div>
+          <div class="skeleton h-10 w-10 rounded-full"></div>
+        </div>
+      </div>
     </div>
-    <div class="rounded-[1.25rem] overflow-hidden bg-white border border-[rgba(0,0,0,.04)]">
-      <div class="skeleton aspect-[4/3]" style="border-radius:0"></div>
-      <div class="p-4 space-y-3"><div class="skeleton h-3 w-16 rounded-full"></div><div class="skeleton h-4 w-full rounded-md"></div><div class="flex items-baseline gap-2"><div class="skeleton h-6 w-20 rounded-md"></div><div class="skeleton h-4 w-14 rounded-md"></div></div><div class="flex items-center justify-between"><div class="skeleton h-5 w-24 rounded-full"></div><div class="skeleton h-11 w-11 rounded-full"></div></div></div>
+    <div class="producto-card">
+      <div class="img-wrap"><div class="skeleton w-full h-full"></div></div>
+      <div class="card-body">
+        <div class="skeleton h-3 w-16 rounded-full mb-2"></div>
+        <div class="skeleton h-4 w-full rounded-md mb-3"></div>
+        <div class="card-footer">
+          <div class="skeleton h-5 w-20 rounded-md"></div>
+          <div class="skeleton h-10 w-10 rounded-full"></div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -840,7 +927,7 @@ body{
         <span class="material-symbols-outlined" style="font-size:22px">payments</span>
         Pagar ahora
       </button>
-      <p class="text-center text-[.75rem] text-[#94A3B8] mt-3">Pago simulado &mdash; Recibirás confirmación inmediata.</p>
+      <p class="text-center text-[.75rem] text-[#94A3B8] mt-3">Pago seguro con Stripe &mdash; Recibirás confirmación inmediata.</p>
     </div>
   </div>
 
@@ -1061,9 +1148,21 @@ body{
         <span class="material-symbols-outlined" style="font-size:19px">lock</span>
         Pagar <span id="pago-total-display"></span>
       </button>
-      <div class="flex items-center justify-center gap-3 mt-3 py-2 border-t border-[#E2E8F0]">
-        <svg class="h-6 w-auto" viewBox="0 0 48 16" fill="none"><rect width="48" height="16" rx="2" fill="#1A1F71"/><path d="M18.5 4.2L16.1 11.8h-1.5l-1.2-6c-.07-.4-.2-.55-.5-.7-.6-.3-1.5-.55-2.3-.7l.05-.2h3.7c.5 0 .9.3 1 .85l.9 4.85L18.5 4.2zm2.7 5.1c0-2 2.7-2.1 2.7-2.1 0-.02-.5-1.7-2-1.7-1.2 0-2.1.7-2.4 1.35l-.7-.3c.4-1 1.6-2.05 3.3-2.05 1.95 0 3 1.05 3 2.65 0 2-2.7 2.15-2.7 2.15 0 .02.35 1.7 1.95 1.7 1 0 1.7-.55 2.05-1.15l.65.3c-.4 1.15-1.6 2.1-3 2.1-2.1 0-3.15-1.3-3.15-2.9zm9.4-5.1h-1.3l-1.9 7.6h1.4l.3-1.3h1.85l.15.65c.15.65.35 1.3.55 1.95h1.5l-2.55-7.6zm.5 4.55l.8-2.3.45 2.3h-1.25zm4.5-4.55v7.6h3.4v-1.1h-2v-6.5h-1.4zm4.6 5.1c0-2 2.7-2.1 2.7-2.1 0-.02-.5-1.7-2-1.7-1.2 0-2.1.7-2.4 1.35l-.7-.3c.4-1 1.6-2.05 3.3-2.05 1.95 0 3 1.05 3 2.65 0 2-2.7 2.15-2.7 2.15 0 .02.35 1.7 1.95 1.7 1 0 1.7-.55 2.05-1.15l.65.3c-.4 1.15-1.6 2.1-3 2.1-2.1 0-3.15-1.3-3.15-2.9z" fill="#fff"/></svg>
-        <svg class="h-6 w-auto" viewBox="0 0 48 16" fill="none"><rect width="48" height="16" rx="2" fill="#1E1E1E"/><circle cx="18" cy="8" r="6" fill="#EB001B"/><circle cx="30" cy="8" r="6" fill="#F79E1B" fill-opacity=".8"/><circle cx="24" cy="8" r="3.5" fill="#FF5F00"/></svg>
+      <div class="flex items-center justify-center gap-2 mt-3 py-2 border-t border-[#E2E8F0]">
+        <svg class="h-6 w-auto" viewBox="0 0 38 24" role="img" aria-label="Visa">
+          <rect x=".5" y=".5" width="37" height="23" rx="3.5" fill="#fff" stroke="#E2E8F0"/>
+          <text x="19" y="16" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-style="italic" font-weight="700" font-size="9.5" letter-spacing=".2" fill="#1A1F71">VISA</text>
+        </svg>
+        <svg class="h-6 w-auto" viewBox="0 0 38 24" role="img" aria-label="Mastercard">
+          <rect x=".5" y=".5" width="37" height="23" rx="3.5" fill="#fff" stroke="#E2E8F0"/>
+          <circle cx="15.5" cy="12" r="6.5" fill="#EB001B"/>
+          <circle cx="22.5" cy="12" r="6.5" fill="#F79E1B"/>
+          <path d="M19 6.6a6.5 6.5 0 0 1 0 10.8 6.5 6.5 0 0 1 0-10.8Z" fill="#FF5F00"/>
+        </svg>
+        <svg class="h-6 w-auto" viewBox="0 0 38 24" role="img" aria-label="American Express">
+          <rect x=".5" y=".5" width="37" height="23" rx="3.5" fill="#2E77BC" stroke="#2E77BC"/>
+          <text x="19" y="15.5" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="7.5" letter-spacing=".2" fill="#fff">AMEX</text>
+        </svg>
         <span class="text-[#94A3B8] text-[.6875rem] flex items-center gap-1">
           <span class="material-symbols-outlined" style="font-size:14px">lock</span>
           Pagos seguros con Stripe
@@ -1083,6 +1182,7 @@ body{
 <!-- ============================================ -->
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
 <script src="https://js.stripe.com/v3/"></script>
-<script src="tienda.js?v=2"></script>
+<script src="config.js"></script>
+<script src="tienda.js?v=3"></script>
 </body>
 </html>

@@ -1,15 +1,18 @@
 // ============================================
-// CONFIGURACIÓN SUPABASE — EDITAR AQUÍ
+// CONFIGURACIÓN
+// Lee credenciales desde config.js (no versionado).
+// Ver config.example.js para el formato.
 // ============================================
-const SUPABASE_URL = 'https://lijzftjgevwnjorpycxa.supabase.co';
-const SUPABASE_KEY = 'sb_publishable_Y1v63ZdMakSGbx449TKpiA_cKNykbk2';
+const CONFIG = (typeof window !== 'undefined' && window.BM_CONFIG) || {};
 
-// ============================================
-// CONFIGURACIÓN STRIPE
-// ============================================
-const STRIPE_PUBLISHABLE_KEY = 'pk_live_51TnsNqK7koypVDWwjnz3cAnAMcleG4F5KsZPN6tdyXBBWPZaj11mqvWkudRSORqn7wTACmwG6tedFW8Qo1XFrPEy006NRUA4ly';
-// Edge Function URL (se genera al hacer deploy)
-const STRIPE_EDGE_FUNCTION = SUPABASE_URL + '/functions/v1/swift-endpoint';
+const SUPABASE_URL = CONFIG.SUPABASE_URL || '';
+const SUPABASE_KEY = CONFIG.SUPABASE_KEY || '';
+const STRIPE_PUBLISHABLE_KEY = CONFIG.STRIPE_PUBLISHABLE_KEY || '';
+const STRIPE_EDGE_FUNCTION = CONFIG.STRIPE_EDGE_FUNCTION || (SUPABASE_URL ? SUPABASE_URL + '/functions/v1/swift-endpoint' : '');
+
+if (!SUPABASE_URL || !SUPABASE_KEY || !STRIPE_PUBLISHABLE_KEY) {
+  console.warn('BetterMancera: faltan variables de configuración. Revisa usuarios/config.js.');
+}
 
 // ============================================
 // ESTADO GLOBAL
@@ -96,25 +99,46 @@ function showToast(message, type, duration) {
   }, duration);
 }
 
-function getFotoProducto(codigo) {
+function getFotoProducto(codigo, ext) {
   if (!codigo) return getFotoPlaceholder();
-  return SUPABASE_URL + '/storage/v1/object/public/productos_fotos/' + codigo + '.png';
+  ext = ext || 'webp';
+  return SUPABASE_URL + '/storage/v1/object/public/productos_fotos/' + codigo + '.' + ext;
 }
 
 function getFotoPlaceholder() {
   return 'data:image/svg+xml,' + encodeURIComponent(
-    '<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">' +
-    '<rect width="400" height="300" fill="#F1F5F9"/>' +
-    '<text x="200" y="140" text-anchor="middle" fill="#CBD5E1" font-family="system-ui" font-size="14" font-weight="500">Sin imagen</text>' +
-    '<text x="200" y="165" text-anchor="middle" fill="#CBD5E1" font-family="system-ui" font-size="36">🖼</text>' +
+    '<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">' +
+    '<rect width="400" height="400" fill="#F1F5F9"/>' +
+    '<text x="200" y="185" text-anchor="middle" fill="#CBD5E1" font-family="system-ui" font-size="14" font-weight="500">Sin imagen</text>' +
+    '<text x="200" y="225" text-anchor="middle" fill="#CBD5E1" font-family="system-ui" font-size="36">🖼</text>' +
     '</svg>'
   );
 }
 
-function buildImgOnError(codigo) {
-  var jpgUrl = SUPABASE_URL + '/storage/v1/object/public/productos_fotos/' + codigo + '.jpg';
+function attachImageFallback(img, codigo) {
+  if (!codigo) return;
+  var pngUrl = getFotoProducto(codigo, 'png');
+  var jpgUrl = getFotoProducto(codigo, 'jpg');
   var placeholder = getFotoPlaceholder();
-  return "if(!this.dataset.retried){this.dataset.retried='1';this.src='" + jpgUrl + "';}else{this.onerror=null;this.src='" + placeholder + "';}";
+
+  img.addEventListener('load', function () {
+    img.classList.add('loaded');
+  });
+
+  img.addEventListener('error', function () {
+    img.removeAttribute('srcset');
+    img.removeAttribute('sizes');
+    if (img.dataset.retry === 'webp') {
+      img.dataset.retry = 'png';
+      img.src = pngUrl;
+    } else if (img.dataset.retry === 'png') {
+      img.dataset.retry = 'jpg';
+      img.src = jpgUrl;
+    } else {
+      img.onerror = null;
+      img.src = placeholder;
+    }
+  });
 }
 
 // ============================================
@@ -304,7 +328,7 @@ async function cargarCatalogo() {
         '<span class="material-symbols-outlined">inventory_2</span>' +
         '<p class="text-[#64748B] font-medium mb-1">Catálogo sin productos</p>' +
         '<p class="text-[#94A3B8] text-[.875rem] mb-4 max-w-[36ch] text-balance">Si ya insertaste productos, revisa que la política RLS permita lecturas anónimas: <code class="bg-[#F1F5F9] px-1.5 py-0.5 rounded text-[#1E293B] text-[.75rem]">CREATE POLICY "anon lee productos" ON productos FOR SELECT TO anon USING (true);</code></p>' +
-        '<button class="btn-outline h-10 px-5 text-[.8125rem]" onclick="cargarCatalogo()">' +
+        '<button class="btn-outline h-10 px-5 text-[.8125rem]" data-action="retry-catalogo">' +
         '<span class="material-symbols-outlined" style="font-size:18px">refresh</span> Reintentar' +
         '</button>' +
         '</div>';
@@ -322,7 +346,7 @@ async function cargarCatalogo() {
       '<span class="material-symbols-outlined" style="color:#FCA5A5">error</span>' +
       '<p class="text-[#64748B] font-medium mb-1">Error al cargar el catálogo</p>' +
       '<p class="text-[#94A3B8] text-[.875rem] mb-4">Verifica tu conexión e intenta de nuevo.</p>' +
-      '<button class="btn-outline h-10 px-5 text-[.8125rem]" onclick="cargarCatalogo()">Reintentar</button>' +
+      '<button class="btn-outline h-10 px-5 text-[.8125rem]" data-action="retry-catalogo">Reintentar</button>' +
       '</div>';
     showToast('Error al cargar productos.', 'error');
   }
@@ -334,18 +358,14 @@ function showCatalogoSkeleton() {
   var skeletons = [];
   for (var i = 0; i < 8; i++) {
     skeletons.push(
-      '<div class="rounded-[1.25rem] overflow-hidden bg-white border border-[rgba(0,0,0,.04)]">' +
-      '<div class="skeleton aspect-[4/3]" style="border-radius:0"></div>' +
-      '<div class="p-4 space-y-3">' +
-      '<div class="skeleton h-3 w-16 rounded-full"></div>' +
-      '<div class="skeleton h-4 w-full rounded-md"></div>' +
-      '<div class="flex items-baseline gap-2">' +
-      '<div class="skeleton h-6 w-20 rounded-md"></div>' +
-      '<div class="skeleton h-4 w-14 rounded-md"></div>' +
-      '</div>' +
-      '<div class="flex items-center justify-between">' +
-      '<div class="skeleton h-5 w-24 rounded-full"></div>' +
-      '<div class="skeleton h-11 w-11 rounded-full"></div>' +
+      '<div class="producto-card">' +
+      '<div class="img-wrap"><div class="skeleton w-full h-full"></div></div>' +
+      '<div class="card-body">' +
+      '<div class="skeleton h-3 w-16 rounded-full mb-2"></div>' +
+      '<div class="skeleton h-4 w-full rounded-md mb-3"></div>' +
+      '<div class="card-footer">' +
+      '<div class="skeleton h-5 w-20 rounded-md"></div>' +
+      '<div class="skeleton h-10 w-10 rounded-full"></div>' +
       '</div>' +
       '</div>' +
       '</div>'
@@ -758,7 +778,7 @@ function updateCartBadge() {
 // ============================================
 // CHECKOUT
 // ============================================
-async function processCheckout() {
+async function processCheckout(paymentIntent) {
   if (!currentUser) {
     openAuthModal(null);
     showToast('Inicia sesión para pagar.', 'info');
@@ -791,6 +811,10 @@ async function processCheckout() {
       String(hoy.getMonth() + 1).padStart(2, '0') + '-' +
       String(hoy.getDate()).padStart(2, '0');
 
+    // Solo marcar como pagado si Stripe confirmó el pago.
+    var pagoConfirmado = paymentIntent && paymentIntent.status === 'succeeded';
+    var estadoOrden = pagoConfirmado ? 'pagado' : 'pendiente_pago';
+
     var movimientoResult = await getSupabase()
       .from('movimientos')
       .insert({
@@ -799,7 +823,7 @@ async function processCheckout() {
         usuario_id: currentUser.id,
         monto: total,
         origen: 'online',
-        estado: 'pagado',
+        estado: estadoOrden,
         descripcion: descripcionOnline,
         fecha: fechaLocal,
       })
@@ -867,29 +891,32 @@ function renderCatalogo() {
   }
 
   container.innerHTML = filtered.map(function (producto, index) {
-    var imgUrl = getFotoProducto(producto.codigo);
-    var onerrorFn = buildImgOnError(producto.codigo);
+    var imgUrl = getFotoProducto(producto.codigo, 'webp');
     var cat = escapeHtml(producto.categoria || 'General');
     var nombre = escapeHtml(producto.nombre);
     var precioReg = formatMoney(producto.precio_regular);
     var precioOferta = formatMoney(producto.precio_oferta);
     var condicion = escapeHtml(producto.condicion || '');
+    var codigo = escapeHtml(producto.codigo || '');
+    // Delay corto y acotado por "fila" (no por indice absoluto), para que
+    // con catalogos grandes las tarjetas no tarden segundos en aparecer.
+    var revealDelay = (index % 8) * 35;
 
     return (
-      '<div class="producto-card group scroll-reveal transition-all duration-300" data-delay="' + (index * 60) + '">' +
-        '<div class="aspect-[4/3] overflow-hidden bg-[#F1F5F9]">' +
-          '<img src="' + imgUrl + '" alt="' + nombre + '" class="img-zoom" loading="lazy" onerror="' + onerrorFn + '">' +
+      '<div class="producto-card group scroll-reveal" data-delay="' + revealDelay + '">' +
+        '<div class="img-wrap">' +
+          '<img src="' + imgUrl + '" alt="' + nombre + '" loading="lazy" decoding="async" data-retry="webp" data-codigo="' + codigo + '">' +
         '</div>' +
-        '<div class="p-4">' +
+        '<div class="card-body">' +
           '<span class="categoria-label">' + cat + '</span>' +
-          '<h3 class="font-semibold text-[.9375rem] text-[#1E293B] mt-1 leading-snug line-clamp-2">' + nombre + '</h3>' +
-          '<div class="flex items-baseline gap-2 mt-3">' +
+          '<h3 class="font-semibold text-[.9375rem] md:text-[1rem] text-[#1E293B] mt-1 leading-snug line-clamp-2">' + nombre + '</h3>' +
+          '<div class="flex items-baseline gap-2 mt-2">' +
             '<span class="precio-oferta">' + precioOferta + '</span>' +
             '<span class="precio-tachado">' + precioReg + '</span>' +
           '</div>' +
-          '<div class="flex items-center justify-between mt-2">' +
+          '<div class="card-footer">' +
             (condicion ? '<span class="condicion-chip">' + condicion + '</span>' : '<span></span>') +
-            '<button class="add-btn transition-transform duration-200 hover:scale-110 active:scale-95" data-producto-id="' + producto.id + '" title="Agregar al carrito" aria-label="Agregar ' + nombre + ' al carrito">' +
+            '<button class="add-btn" data-producto-id="' + producto.id + '" title="Agregar al carrito" aria-label="Agregar ' + nombre + ' al carrito">' +
               '<span class="material-symbols-outlined">add_shopping_cart</span>' +
             '</button>' +
           '</div>' +
@@ -897,6 +924,10 @@ function renderCatalogo() {
       '</div>'
     );
   }).join('');
+
+  container.querySelectorAll('.producto-card img[data-codigo]').forEach(function (img) {
+    attachImageFallback(img, img.dataset.codigo);
+  });
 
   initScrollReveal();
 }
@@ -943,14 +974,14 @@ function renderCarrito() {
   container.innerHTML = carritoItems.map(function (item) {
     var p = item.producto;
     var imgUrl = p ? getFotoProducto(p.codigo) : getFotoPlaceholder();
-    var onerrorFn = p ? buildImgOnError(p.codigo) : '';
+    var codigo = p ? escapeHtml(p.codigo || '') : '';
     var nombre = p ? escapeHtml(p.nombre) : 'Producto no disponible';
     var precio = p ? (p.precio_oferta || p.precio_regular || 0) : 0;
     var subtotal = precio * item.cantidad;
 
     return (
       '<div class="cart-item">' +
-        '<img src="' + imgUrl + '" alt="' + nombre + '" class="cart-item-img" loading="lazy" onerror="' + onerrorFn + '">' +
+        '<img src="' + imgUrl + '" alt="' + nombre + '" class="cart-item-img" loading="lazy" width="80" height="80" data-retry="webp" data-codigo="' + codigo + '">' +
         '<div class="flex-1 min-w-0">' +
           '<h4 class="font-semibold text-[.875rem] text-[#1E293B] truncate">' + nombre + '</h4>' +
           '<p class="text-[#64748B] text-[.8125rem]">' + formatMoney(precio) + ' c/u</p>' +
@@ -973,6 +1004,10 @@ function renderCarrito() {
   var total = getCartTotal();
   var totalEl = document.getElementById('cart-total');
   if (totalEl) totalEl.textContent = formatMoney(total);
+
+  container.querySelectorAll('.cart-item-img[data-codigo]').forEach(function (img) {
+    attachImageFallback(img, img.dataset.codigo);
+  });
 
   if (summary) summary.style.display = 'block';
 }
@@ -1190,10 +1225,7 @@ async function stripeCheckout() {
   }
 
   if (!stripeInstance || !cardElement) {
-    // Fallback sin Stripe: pago directo
-    if (errorEl) errorEl.classList.remove('show');
-    closePagoModal();
-    processCheckout();
+    if (errorEl) { errorEl.textContent = 'No se pudo cargar el formulario de pago. Recarga la página o verifica tu conexión.'; errorEl.classList.add('show'); }
     return;
   }
 
@@ -1202,11 +1234,10 @@ async function stripeCheckout() {
     if (errorEl) errorEl.classList.remove('show');
 
     var total = getCartTotal();
-    console.table(carritoItems.map(function (i) {
-      var prod = i.producto || productosData.find(function (p) { return String(p.id) === String(i.producto_id); });
-      return { producto: prod ? prod.nombre : 'No encontrado', cantidad: i.cantidad, precio: prod ? (prod.precio_oferta || prod.precio_regular) : 0, subtotal: (prod ? (prod.precio_oferta || prod.precio_regular) : 0) * i.cantidad };
-    }));
-    console.log('Total calculado:', formatMoney(total));
+    if (total < 10) {
+      if (errorEl) { errorEl.textContent = 'El monto mínimo de compra es de $10.00 MXN.'; errorEl.classList.add('show'); }
+      return;
+    }
 
     var totalCentavos = Math.round(total * 100);
 
@@ -1221,17 +1252,19 @@ async function stripeCheckout() {
     });
 
     if (!intentRes.ok) {
-      var intentErr = await intentRes.json().catch(function () { return {}; });
-      console.warn('Edge function falló, usando pago directo:', intentErr);
-      closePagoModal();
-      processCheckout();
+      var intentErr = await intentRes.json().catch(function () { return { error: 'No se pudo iniciar el pago. Intenta de nuevo.' }; });
+      console.error('Edge function error:', intentErr);
+      var errMsg = intentErr.error || 'No se pudo iniciar el pago. Intenta de nuevo.';
+      if (intentRes.status === 400 && /mínimo/i.test(errMsg)) {
+        errMsg = 'El monto mínimo de compra es de $10.00 MXN.';
+      }
+      if (errorEl) { errorEl.textContent = errMsg; errorEl.classList.add('show'); }
       return;
     }
 
     var intentData = await intentRes.json();
     if (!intentData.clientSecret) {
-      closePagoModal();
-      processCheckout();
+      if (errorEl) { errorEl.textContent = 'No se pudo iniciar el pago. Intenta de nuevo.'; errorEl.classList.add('show'); }
       return;
     }
 
@@ -1250,14 +1283,13 @@ async function stripeCheckout() {
 
     if (stripeResult.paymentIntent && stripeResult.paymentIntent.status === 'succeeded') {
       closePagoModal();
-      processCheckout();
+      processCheckout(stripeResult.paymentIntent);
     } else {
-      if (errorEl) { errorEl.textContent = 'El pago requiere verificación adicional. Intenta de nuevo.'; errorEl.classList.add('show'); }
+      if (errorEl) { errorEl.textContent = 'El pago no pudo completarse. Intenta con otra tarjeta.'; errorEl.classList.add('show'); }
     }
   } catch (err) {
     console.error('Stripe checkout error:', err);
-    closePagoModal();
-    processCheckout();
+    if (errorEl) { errorEl.textContent = 'Ocurrió un error al procesar el pago. Intenta de nuevo.'; errorEl.classList.add('show'); }
   } finally {
     setButtonLoading(submitBtn, false);
   }
@@ -1545,21 +1577,27 @@ function initEventListeners() {
     });
   }
 
-  // Catálogo: agregar al carrito
+  // Catálogo: agregar al carrito / reintentar carga
   var catalogoContainer = document.getElementById('catalogo-container');
   if (catalogoContainer) {
     catalogoContainer.addEventListener('click', function (e) {
       var addBtn = e.target.closest('.add-btn');
-      if (!addBtn) return;
+      if (addBtn) {
+        var rawId = addBtn.dataset.productoId;
+        if (!rawId) return;
+        var productoId = /^\d+$/.test(rawId) ? parseInt(rawId, 10) : rawId;
 
-      var rawId = addBtn.dataset.productoId;
-      if (!rawId) return;
-      var productoId = /^\d+$/.test(rawId) ? parseInt(rawId, 10) : rawId;
+        addBtn.style.transform = 'scale(1.15)';
+        setTimeout(function () { addBtn.style.transform = ''; }, 200);
 
-      addBtn.style.transform = 'scale(1.15)';
-      setTimeout(function () { addBtn.style.transform = ''; }, 200);
+        addToCart(productoId);
+        return;
+      }
 
-      addToCart(productoId);
+      var retryBtn = e.target.closest('[data-action="retry-catalogo"]');
+      if (retryBtn) {
+        cargarCatalogo();
+      }
     });
   }
 

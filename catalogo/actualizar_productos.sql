@@ -1,0 +1,25 @@
+-- Actualizar nombres corregidos en Supabase
+BEGIN;
+UPDATE public.productos SET nombre = 'Gurmy Toy Story' WHERE codigo = '26054';
+UPDATE public.productos SET nombre = 'Marcianitos Pop' WHERE codigo = '21525';
+UPDATE public.productos SET nombre = 'Set Otomesitas' WHERE codigo = '26812';
+UPDATE public.productos SET nombre = 'Organi Rack WC' WHERE codigo = '25610';
+UPDATE public.productos SET nombre = 'Tulipán Solar' WHERE codigo = '26878';
+UPDATE public.productos SET nombre = 'Guarda Clima' WHERE codigo = '21750';
+UPDATE public.productos SET nombre = 'Organi Gorras' WHERE codigo = '25979';
+UPDATE public.productos SET nombre = 'Absorbe Humedad' WHERE codigo = '25981';
+UPDATE public.productos SET nombre = 'Better Ganchos Combo' WHERE codigo = '26302';
+UPDATE public.productos SET nombre = 'Espátula Rinde Dúo' WHERE codigo = '26537';
+UPDATE public.productos SET nombre = 'Set Sujeti Ganchos' WHERE codigo = '26836';
+UPDATE public.productos SET nombre = 'Gira Squizi' WHERE codigo = '25639';
+UPDATE public.productos SET nombre = 'Organi Blanquillos' WHERE codigo = '24880';
+UPDATE public.productos SET nombre = 'Lonchera Box' WHERE codigo = '26703';
+UPDATE public.productos SET nombre = 'Tina Plegable Masaje' WHERE codigo = '26997';
+UPDATE public.productos SET nombre = 'Set Fibra Esponja' WHERE codigo = '26116';
+UPDATE public.productos SET nombre = 'Baggy Tech' WHERE codigo = '26134';
+UPDATE public.productos SET nombre = 'Piscina Pop' WHERE codigo = '23346';
+UPDATE public.productos SET nombre = 'Cambia Pañales Baby' WHERE codigo = '23345';
+UPDATE public.productos SET nombre = 'Multi Repisas Bambú' WHERE codigo = '25804';
+UPDATE public.productos SET nombre = 'Sticks Tuberías' WHERE codigo = '24111';
+UPDATE public.productos SET nombre = 'Talla Pomex Pro' WHERE codigo = '25581';
+COMMIT;

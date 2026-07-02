@@ -1,0 +1,3325 @@
+[
+  {
+    "id_sql": "26812",
+    "descripcion_sql": "Set Otomesitas 2 PIEZAS",
+    "pagina_origen": 11,
+    "bbox": [
+      10,
+      10,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26812.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26749",
+    "descripcion_sql": "H Deco Macetero",
+    "pagina_origen": 14,
+    "bbox": [
+      10,
+      10,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26749.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "25610",
+    "descripcion_sql": "Organi Rack WC",
+    "pagina_origen": 15,
+    "bbox": [
+      10,
+      10,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/25610.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26772",
+    "descripcion_sql": "Jarrones Classic 3 PIEZAS Set decorativo Yresistente 580 ml 2.9 L 1.3L",
+    "pagina_origen": 17,
+    "bbox": [
+      10,
+      10,
+      2018,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26772.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26808",
+    "descripcion_sql": "Repisas Esquineras",
+    "pagina_origen": 17,
+    "bbox": [
+      2038,
+      10,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26808.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "25342",
+    "descripcion_sql": "Repi Llavero",
+    "pagina_origen": 17,
+    "bbox": [
+      10,
+      10,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/25342.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26988",
+    "descripcion_sql": "Set Lumi Aqua 2 PIEZAS",
+    "pagina_origen": 18,
+    "bbox": [
+      10,
+      10,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26988.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "24771",
+    "descripcion_sql": "Luz Sensor Slim Ilumina cualquier espacio Electrónico. 5 V 2 Watts. Policarbonato. Batería recargable (Incluye un cable USB) . D. 21x 2 x 2 cm.",
+    "pagina_origen": 19,
+    "bbox": [
+      10,
+      10,
+      2017,
+      1779
+    ],
+    "archivo_recortado": "productos_recortados/24771.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "21734",
+    "descripcion_sql": "Lumi Rosas Rosas que decoran e iluminan Flexible Electrónico: utiliza 2 baterías AA (no incluidas) Polietileno y PVC. 1.2 mx 2x 7 cm_ Incluye 10 rosas blancas con luces LED.",
+    "pagina_origen": 19,
+    "bbox": [
+      2037,
+      10,
+      2990,
+      1381
+    ],
+    "archivo_recortado": "productos_recortados/21734.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "24791",
+    "descripcion_sql": "Lámpara Elegant Touch Enciende Y apaga con un toque Eléctrico. 127 V 1.5 Watts. Aluminio, Tela y Acero pintado D. 14x 35 cm: Cable: 95 cm de largo. No incluye foco.",
+    "pagina_origen": 19,
+    "bbox": [
+      10,
+      1401,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/24791.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "25466",
+    "descripcion_sql": "Luz Sensor 2 PIEZAS Montaje con imán Con sensor de oscuridad Y movimiento Colócala donde quieras Polipropileno; acero inoxidable e imán. D. 8x 2 cm. Recargable (Incluye cable USB) .",
+    "pagina_origen": 19,
+    "bbox": [
+      10,
+      1799,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/25466.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26996",
+    "descripcion_sql": "Mosquitero Ventana Black 2 PIEZAS",
+    "pagina_origen": 22,
+    "bbox": [
+      983,
+      10,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26996.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "25331",
+    "descripcion_sql": "Mosquitero Pop",
+    "pagina_origen": 22,
+    "bbox": [
+      10,
+      10,
+      963,
+      1518
+    ],
+    "archivo_recortado": "productos_recortados/25331.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "25774",
+    "descripcion_sql": "Citro Repel Mosquitos",
+    "pagina_origen": 22,
+    "bbox": [
+      10,
+      1538,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/25774.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26878",
+    "descripcion_sql": "Tulipán Solar 2 PIEZAS Panel solar Se carga de enciende de noche Electrónico. Batería solar recargable. Polipropileno y ABS. D. 10x 7 x 11 cm. día,",
+    "pagina_origen": 23,
+    "bbox": [
+      10,
+      10,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26878.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26732",
+    "descripcion_sql": "Cuadri Espejos PIEZAS",
+    "pagina_origen": 24,
+    "bbox": [
+      10,
+      10,
+      962,
+      980
+    ],
+    "archivo_recortado": "productos_recortados/26732.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26708",
+    "descripcion_sql": "Flor Multi Color 30 FLORES 3 tamaños diferentes PVC. Incluye 30 piezas: (14) D.7 cm. (10) D. 10 cm. (6) D. 12 cm. Instalación con adhesivo.",
+    "pagina_origen": 24,
+    "bbox": [
+      982,
+      10,
+      2990,
+      981
+    ],
+    "archivo_recortado": "productos_recortados/26708.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "24568",
+    "descripcion_sql": "Practi Ganchos GANCHOS",
+    "pagina_origen": 24,
+    "bbox": [
+      10,
+      1000,
+      962,
+      2550
+    ],
+    "archivo_recortado": "productos_recortados/24568.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "25854",
+    "descripcion_sql": "Set Cuelga Fácil PIEZAS Acrílico y Acero. Incluye 4 piezas: (4) Soporta. 2 kg. 7 x1cm clu. Instalación con adhesivo. x 7",
+    "pagina_origen": 24,
+    "bbox": [
+      982,
+      1001,
+      2990,
+      2550
+    ],
+    "archivo_recortado": "productos_recortados/25854.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "25748",
+    "descripcion_sql": "Maxi Tapete Habitat -20%",
+    "pagina_origen": 24,
+    "bbox": [
+      10,
+      2570,
+      963,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/25748.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "24859",
+    "descripcion_sql": "Tapete Champagne Gold",
+    "pagina_origen": 24,
+    "bbox": [
+      983,
+      2570,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/24859.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "25612",
+    "descripcion_sql": "Kit Restauración PIEZAS iÚLTIMAS PIEZAS! 6 diferentes colores de madera Betten Restaura Berter tus muebles Better en segundos Betrer Botter Bonter *Hasta agotar existencias. Polipropileno. Incluye 6 piezas: (6) D. 2x 13 cm cfu. 50 m de rendimiento. 1",
+    "pagina_origen": 25,
+    "bbox": [
+      10,
+      10,
+      2990,
+      980
+    ],
+    "archivo_recortado": "productos_recortados/25612.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26716",
+    "descripcion_sql": "Multi Organizador B",
+    "pagina_origen": 25,
+    "bbox": [
+      10,
+      1000,
+      2990,
+      2552
+    ],
+    "archivo_recortado": "productos_recortados/26716.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "24245",
+    "descripcion_sql": "Multi Contacto Roll Extensión retráctil 5 contactos eléctricos 3 puertos USB Gira Y retrae 1.7m Eléctrico. 127 V. Polipropileno y TPR. D. 14x 6 cm. Cable: 1.7 m de largo. Incluye gancho para instalación.",
+    "pagina_origen": 25,
+    "bbox": [
+      10,
+      10,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/24245.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26966",
+    "descripcion_sql": "Cinta Instala Fácil 2 ROLLOS Instala tu decoración 15% sin clavos Recortable EVA. Soporta. 500g. por 10 cm de cinta. 100x 3 cm.",
+    "pagina_origen": 25,
+    "bbox": [
+      10,
+      2572,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26966.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "21762",
+    "descripcion_sql": "20 MÁS A PRECIO ROJO IGUALES 0 COMBINADOS PÁGS. 26 A 29 Guardapolvo Guarda Clima Ajustable Ajustable PVCy Espuma de Polietileno Poliéster y Espuma de Polietileno. 95 x 22 x 5 cm. Incluye velcros ajustables de 70 a 95 cm. 95 x 16 x 5 cm. Incluye velcros ajustables de 70 a 95 cm.",
+    "pagina_origen": 26,
+    "bbox": [
+      10,
+      10,
+      963,
+      1608
+    ],
+    "archivo_recortado": "productos_recortados/21762.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "21750",
+    "descripcion_sql": "Guarda Clima",
+    "pagina_origen": 26,
+    "bbox": [
+      983,
+      10,
+      2990,
+      1608
+    ],
+    "archivo_recortado": "productos_recortados/21750.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26753",
+    "descripcion_sql": "Cuña Dúo 2 PIEZAS 8449 Para todo tipo de puertas Punta delgada Polipropileno. D. 13 x 9 x 11 cm.",
+    "pagina_origen": 26,
+    "bbox": [
+      10,
+      1628,
+      962,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26753.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "17725",
+    "descripcion_sql": "Guardapolvo Translucent Pega Y protege Wv W W PVC. 100 x 4 cm. Instalación con adhesivo. Recortable.",
+    "pagina_origen": 26,
+    "bbox": [
+      982,
+      1628,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/17725.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "25873",
+    "descripcion_sql": "20 MÁS A PRECIO ROJO IGUALES 0 COMBINADOS PÁGS. 26 A 29 No Me Mires Reflex No Me Mires Florecer 2 PIEZAS 2 PIEZAS 189 Efecto espejo) privacidad total PVC adhesivo protección UV. 45 cm x m. Recortable. Adherible Bloquea el 90% de luz Black Out Fácil de instalar Electrostático; 2 PIEZAS sin residuos en tu ventana 8249 PVC Adherible Electrostático. 200 x 45 cm Recortable",
+    "pagina_origen": 27,
+    "bbox": [
+      10,
+      10,
+      2990,
+      1239
+    ],
+    "archivo_recortado": "productos_recortados/25873.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "25872",
+    "descripcion_sql": "Adherible Bloquea el 90% Black Out de luz Electrostático; 2 PIEZAS sin residuos en tu ventana 8249 Con Sin Fácil de instalar PVC adherible electrostático. 200 x 45 cm. Recortable.",
+    "pagina_origen": 27,
+    "bbox": [
+      10,
+      1259,
+      2990,
+      2710
+    ],
+    "archivo_recortado": "productos_recortados/25872.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26967",
+    "descripcion_sql": "No Me Mires Electrostático 2 PIEZAS Fácil de instalar PVC Electroestático. D. 200 x 45 cm. Recortable.",
+    "pagina_origen": 27,
+    "bbox": [
+      10,
+      10,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26967.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "24621",
+    "descripcion_sql": "Magneti Broches Gold ABS y Poliéster. Incluye 2 piezas: (2) D. 3 x 60 cm clu.",
+    "pagina_origen": 27,
+    "bbox": [
+      10,
+      2730,
+      2990,
+      3681
+    ],
+    "archivo_recortado": "productos_recortados/24621.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "89990",
+    "descripcion_sql": "B-Better Colors Durazno",
+    "pagina_origen": 27,
+    "bbox": [
+      10,
+      3701,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/89990.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "25383",
+    "descripcion_sql": "20 MÁS A PRECIO ROJO IGUALES 0 COMBINADOS PÁGS. 26 A 29 Adherible Cantera Adherible 2 PIEZAS Textur Ladrillo 8209 2 PIEZAS 2D PVC adherible, interior de espuma PVC Adherible. 200 x 45 cm. Recortable. de polietileno. 50 cm x 1.5 m.",
+    "pagina_origen": 28,
+    "bbox": [
+      10,
+      10,
+      2990,
+      1608
+    ],
+    "archivo_recortado": "productos_recortados/25383.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26879",
+    "descripcion_sql": "Adherible 3D Laja 8279 2 PIEZAS 1 pieza = 76x70 cm 3D Espuma de Polietileno adherible 76 x 70 cm. Recortable",
+    "pagina_origen": 28,
+    "bbox": [
+      10,
+      1628,
+      962,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26879.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "25391",
+    "descripcion_sql": "Adherible Piedra Laja 2 PIEZAS 2D PVC adherible. 200 x 45 cm_ Recortable.",
+    "pagina_origen": 28,
+    "bbox": [
+      982,
+      10,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/25391.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26881",
+    "descripcion_sql": "20 MÁS A PRECIO ROJO IGUALES 0 COMBINADOS PÁGS. 26 A 29 Adherible Talavera Cobalto Adherible Panel Madera 8239 2 PIEZAS 2 PIEZAS Úsala horizontal Y vertical 2D PVC adherible: 150 x 45 cm. Recortable. PVC adherible. 200 x 45 cm. Recortable.",
+    "pagina_origen": 29,
+    "bbox": [
+      10,
+      10,
+      2990,
+      1608
+    ],
+    "archivo_recortado": "productos_recortados/26881.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26901",
+    "descripcion_sql": "Adherible Mármol Black 8239 2 PIEZAS PVC adherible. 45 cm x 1.5 m. Recortable.",
+    "pagina_origen": 29,
+    "bbox": [
+      10,
+      1628,
+      2017,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26901.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "25377",
+    "descripcion_sql": "Adherible Parota 2 PIEZAS",
+    "pagina_origen": 29,
+    "bbox": [
+      2037,
+      10,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/25377.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "24327",
+    "descripcion_sql": "Zapatera 4 Niveles",
+    "pagina_origen": 31,
+    "bbox": [
+      10,
+      10,
+      2016,
+      1441
+    ],
+    "archivo_recortado": "productos_recortados/24327.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26324",
+    "descripcion_sql": "Cubo Fundas Marino 2 PIEZAS",
+    "pagina_origen": 31,
+    "bbox": [
+      2036,
+      10,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26324.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "23367",
+    "descripcion_sql": "Modu Boxes 2 PIEZAS",
+    "pagina_origen": 31,
+    "bbox": [
+      10,
+      1461,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/23367.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "24222",
+    "descripcion_sql": "Fundas Almohada Protect 2 PIEZAS",
+    "pagina_origen": 32,
+    "bbox": [
+      10,
+      10,
+      962,
+      1379
+    ],
+    "archivo_recortado": "productos_recortados/24222.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "25300",
+    "descripcion_sql": "Set Bolsas Compress Antes PIEZAS 4 piezas, 3 tamaños Después Polietileno y Poliamida. (1) Soporta. 4 kg. 60 x 40 cm. (1) Soporta. 5 kg. 69 x 50 cm. (2) Soporta. 6 kg. 80 x 60 cm c/u.",
+    "pagina_origen": 32,
+    "bbox": [
+      982,
+      10,
+      2990,
+      979
+    ],
+    "archivo_recortado": "productos_recortados/25300.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "24350",
+    "descripcion_sql": "Cubre Colchón Protect",
+    "pagina_origen": 32,
+    "bbox": [
+      10,
+      999,
+      2990,
+      2550
+    ],
+    "archivo_recortado": "productos_recortados/24350.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26312",
+    "descripcion_sql": "Triangu Cesto",
+    "pagina_origen": 32,
+    "bbox": [
+      10,
+      1399,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26312.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26989",
+    "descripcion_sql": "Luz Estrella 2 PIEZAS -25% Eléctrico: 0.5 WJh. ABS. D. 8 x 8x 5 cm.",
+    "pagina_origen": 32,
+    "bbox": [
+      10,
+      2570,
+      2990,
+      3555
+    ],
+    "archivo_recortado": "productos_recortados/26989.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26323",
+    "descripcion_sql": "Gira Organi Cosmetics",
+    "pagina_origen": 33,
+    "bbox": [
+      10,
+      10,
+      2990,
+      1381
+    ],
+    "archivo_recortado": "productos_recortados/26323.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "22359",
+    "descripcion_sql": "1 Set Modular Polipropileno. Incluye 6 piezas: (3) 8x7x5 cm. (2) 24x 8 x 5 cm 24 x 16 x 5 cm.",
+    "pagina_origen": 33,
+    "bbox": [
+      10,
+      1401,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/22359.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "24384",
+    "descripcion_sql": "Perchero Resist 12",
+    "pagina_origen": 34,
+    "bbox": [
+      10,
+      10,
+      962,
+      1781
+    ],
+    "archivo_recortado": "productos_recortados/24384.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "25979",
+    "descripcion_sql": "Organi Gorras 2 PIEZAS Polipropileno. Cap. 5 gorras. D.31x 3 x 3 cm. Instalación con tornillos.",
+    "pagina_origen": 34,
+    "bbox": [
+      982,
+      10,
+      2990,
+      1381
+    ],
+    "archivo_recortado": "productos_recortados/25979.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "25981",
+    "descripcion_sql": "Absorbe Humedad 2 PIEZAS",
+    "pagina_origen": 34,
+    "bbox": [
+      10,
+      1401,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/25981.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26316",
+    "descripcion_sql": "Gancho Multiusos",
+    "pagina_origen": 34,
+    "bbox": [
+      10,
+      1801,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26316.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "25869",
+    "descripcion_sql": "Funda Prendas Protect 2 PIEZAS",
+    "pagina_origen": 35,
+    "bbox": [
+      10,
+      10,
+      2990,
+      1380
+    ],
+    "archivo_recortado": "productos_recortados/25869.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "24472",
+    "descripcion_sql": "Gancho Pantalones Max 2 PIEZAS",
+    "pagina_origen": 35,
+    "bbox": [
+      10,
+      1400,
+      2018,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/24472.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "25322",
+    "descripcion_sql": "Ganchos Antidesliz 12 PIEZAS",
+    "pagina_origen": 35,
+    "bbox": [
+      2038,
+      10,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/25322.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "24526",
+    "descripcion_sql": "Fryer Dúo Lux",
+    "pagina_origen": 38,
+    "bbox": [
+      10,
+      10,
+      2990,
+      1054
+    ],
+    "archivo_recortado": "productos_recortados/24526.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26563",
+    "descripcion_sql": "Aceitera Deluxe",
+    "pagina_origen": 38,
+    "bbox": [
+      10,
+      1074,
+      962,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26563.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "11515",
+    "descripcion_sql": "Comal Antiadherente con Asa",
+    "pagina_origen": 38,
+    "bbox": [
+      982,
+      10,
+      2990,
+      2554
+    ],
+    "archivo_recortado": "productos_recortados/11515.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26537",
+    "descripcion_sql": "Espátula Rinde Dúo Silicón Ideal para Gu2e792 Kwndos",
+    "pagina_origen": 38,
+    "bbox": [
+      10,
+      2574,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26537.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "23518",
+    "descripcion_sql": "Vaporera Pro Acero inoxidable, Nailon y Silicón. D. 26 x 11 cm.",
+    "pagina_origen": 39,
+    "bbox": [
+      10,
+      10,
+      2016,
+      1781
+    ],
+    "archivo_recortado": "productos_recortados/23518.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26554",
+    "descripcion_sql": "Pinza Inox Black",
+    "pagina_origen": 39,
+    "bbox": [
+      2036,
+      10,
+      2990,
+      1381
+    ],
+    "archivo_recortado": "productos_recortados/26554.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26553",
+    "descripcion_sql": "Escurre Bowl",
+    "pagina_origen": 39,
+    "bbox": [
+      10,
+      1401,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26553.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "25569",
+    "descripcion_sql": "Soporte Utensilios Flora",
+    "pagina_origen": 39,
+    "bbox": [
+      10,
+      1801,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/25569.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26542",
+    "descripcion_sql": "Gira Ajo",
+    "pagina_origen": 40,
+    "bbox": [
+      10,
+      10,
+      962,
+      1381
+    ],
+    "archivo_recortado": "productos_recortados/26542.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "24519",
+    "descripcion_sql": "Exprime Ajos Dúo",
+    "pagina_origen": 40,
+    "bbox": [
+      982,
+      10,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/24519.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26514",
+    "descripcion_sql": "Multi Rallador Pro",
+    "pagina_origen": 40,
+    "bbox": [
+      10,
+      1401,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26514.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "21540",
+    "descripcion_sql": "Multi Pelador Chef",
+    "pagina_origen": 41,
+    "bbox": [
+      10,
+      10,
+      2017,
+      1381
+    ],
+    "archivo_recortado": "productos_recortados/21540.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "12512",
+    "descripcion_sql": "Pelador Jumbo",
+    "pagina_origen": 41,
+    "bbox": [
+      2037,
+      10,
+      2990,
+      1381
+    ],
+    "archivo_recortado": "productos_recortados/12512.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "23531",
+    "descripcion_sql": "Corta Manzanas Pro",
+    "pagina_origen": 41,
+    "bbox": [
+      10,
+      1401,
+      2018,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/23531.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26540",
+    "descripcion_sql": "Gira Pelador",
+    "pagina_origen": 41,
+    "bbox": [
+      2038,
+      1401,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26540.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "25858",
+    "descripcion_sql": "Set Practi Moledor 2 PIEZAS Triturado ajustable Vidrio; Polipropileno y Acero inoxidable. Cap. 150 mI D. 5x 15 cm. ajeMJ?1138",
+    "pagina_origen": 42,
+    "bbox": [
+      10,
+      10,
+      962,
+      1381
+    ],
+    "archivo_recortado": "productos_recortados/25858.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "25530",
+    "descripcion_sql": "Afila Cuchillo Incluye cuchillo + protector con afilador",
+    "pagina_origen": 42,
+    "bbox": [
+      982,
+      10,
+      2990,
+      982
+    ],
+    "archivo_recortado": "productos_recortados/25530.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "23543",
+    "descripcion_sql": "Tijeras Chef Corta Destapa corcholatas Destapa roscas Quita escamas Polipropileno y Acero inoxidable. D. 21x 8 x 1 cm. 00",
+    "pagina_origen": 42,
+    "bbox": [
+      10,
+      1002,
+      2990,
+      2551
+    ],
+    "archivo_recortado": "productos_recortados/23543.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "23516",
+    "descripcion_sql": "Tri Afilador",
+    "pagina_origen": 42,
+    "bbox": [
+      10,
+      1401,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/23516.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "25572",
+    "descripcion_sql": "Cuchillo Katana Chef Cortes perfectos, nada se pega Acero inoxidable y Polipropileno. D. 33 x 3 cm.",
+    "pagina_origen": 42,
+    "bbox": [
+      10,
+      2571,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/25572.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26519",
+    "descripcion_sql": "Afila Tabla",
+    "pagina_origen": 43,
+    "bbox": [
+      10,
+      10,
+      2003,
+      1380
+    ],
+    "archivo_recortado": "productos_recortados/26519.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26549",
+    "descripcion_sql": "Cuadri Tablas",
+    "pagina_origen": 43,
+    "bbox": [
+      2023,
+      10,
+      2990,
+      1380
+    ],
+    "archivo_recortado": "productos_recortados/26549.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26802",
+    "descripcion_sql": "Condimentos Lux 2 PIEZAS",
+    "pagina_origen": 43,
+    "bbox": [
+      10,
+      1400,
+      2018,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26802.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26538",
+    "descripcion_sql": "Practi Moli Dúo",
+    "pagina_origen": 43,
+    "bbox": [
+      2038,
+      1400,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26538.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "24549",
+    "descripcion_sql": "Bowls Inox Pink",
+    "pagina_origen": 44,
+    "bbox": [
+      10,
+      10,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/24549.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "25534",
+    "descripcion_sql": "Agita Hot Cakes",
+    "pagina_origen": 44,
+    "bbox": [
+      10,
+      10,
+      1490,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/25534.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26506",
+    "descripcion_sql": "Palomitas Pop",
+    "pagina_origen": 44,
+    "bbox": [
+      1510,
+      10,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26506.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26548",
+    "descripcion_sql": "Mandil Flora Correas ajustables 2 microfibras removibles Poliéster y Microfibra. Mandil: D. 71x 68 cm. Microfibras desprendibles: D. 20x 28 cm. 9",
+    "pagina_origen": 45,
+    "bbox": [
+      10,
+      10,
+      2016,
+      1381
+    ],
+    "archivo_recortado": "productos_recortados/26548.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26057",
+    "descripcion_sql": "Tortillero Lino Termo",
+    "pagina_origen": 45,
+    "bbox": [
+      2036,
+      10,
+      2990,
+      1380
+    ],
+    "archivo_recortado": "productos_recortados/26057.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26773",
+    "descripcion_sql": "Absorbe Max Flores",
+    "pagina_origen": 45,
+    "bbox": [
+      10,
+      1401,
+      2018,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26773.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26019",
+    "descripcion_sql": "Sella Fácil",
+    "pagina_origen": 45,
+    "bbox": [
+      2038,
+      1400,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26019.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26803",
+    "descripcion_sql": "Tri Frutero Black",
+    "pagina_origen": 47,
+    "bbox": [
+      10,
+      10,
+      2018,
+      980
+    ],
+    "archivo_recortado": "productos_recortados/26803.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26836",
+    "descripcion_sql": "Set Sujeti Ganchos",
+    "pagina_origen": 47,
+    "bbox": [
+      2038,
+      10,
+      2990,
+      1380
+    ],
+    "archivo_recortado": "productos_recortados/26836.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "20844",
+    "descripcion_sql": "Canasta Black Lleva el segundo a",
+    "pagina_origen": 47,
+    "bbox": [
+      10,
+      1000,
+      2990,
+      2550
+    ],
+    "archivo_recortado": "productos_recortados/20844.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26828",
+    "descripcion_sql": "Organizador Adjust",
+    "pagina_origen": 47,
+    "bbox": [
+      10,
+      1400,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26828.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "25560",
+    "descripcion_sql": "Frutero Black",
+    "pagina_origen": 47,
+    "bbox": [
+      10,
+      2570,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/25560.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26844",
+    "descripcion_sql": "Escurri Tijera Max",
+    "pagina_origen": 48,
+    "bbox": [
+      10,
+      10,
+      2990,
+      1376
+    ],
+    "archivo_recortado": "productos_recortados/26844.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "24039",
+    "descripcion_sql": "Dúo Escurridor Black",
+    "pagina_origen": 48,
+    "bbox": [
+      10,
+      1396,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/24039.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "25060",
+    "descripcion_sql": "Organi Canastilla Fregadero",
+    "pagina_origen": 49,
+    "bbox": [
+      10,
+      10,
+      2017,
+      1016
+    ],
+    "archivo_recortado": "productos_recortados/25060.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26048",
+    "descripcion_sql": "Organi Tarja",
+    "pagina_origen": 49,
+    "bbox": [
+      2037,
+      10,
+      2990,
+      1016
+    ],
+    "archivo_recortado": "productos_recortados/26048.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26990",
+    "descripcion_sql": "Escurritapete Jumbo 2 PIEZAS",
+    "pagina_origen": 49,
+    "bbox": [
+      10,
+      1036,
+      2020,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26990.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "25049",
+    "descripcion_sql": "Canastilla Dúo Protect iProtege tu fregadero! Botón de bloqueo ABS, Polipropileno; Acero Inoxidable, Silicón. Cap. 100 ml. D. 10 x 5 cm.",
+    "pagina_origen": 49,
+    "bbox": [
+      2040,
+      1036,
+      2990,
+      2618
+    ],
+    "archivo_recortado": "productos_recortados/25049.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "23566",
+    "descripcion_sql": "Eco Push iÚLTIMAS PIEZAS! Incluye esponja",
+    "pagina_origen": 49,
+    "bbox": [
+      10,
+      2638,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/23566.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "21027",
+    "descripcion_sql": "Eco Repisa Escalonada € Esalade TomaTo Vegetale PASTE ceBOl Miaeha Granos Z Atun PVC. Soporta. 3kg. 12x 27 x 15 cm. Juno Atún Atún",
+    "pagina_origen": 50,
+    "bbox": [
+      10,
+      10,
+      961,
+      1381
+    ],
+    "archivo_recortado": "productos_recortados/21027.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "25464",
+    "descripcion_sql": "Repisa Apilable 2 PIEZAS",
+    "pagina_origen": 50,
+    "bbox": [
+      981,
+      10,
+      2990,
+      980
+    ],
+    "archivo_recortado": "productos_recortados/25464.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "25059",
+    "descripcion_sql": "Desli Organi Utensilios",
+    "pagina_origen": 50,
+    "bbox": [
+      10,
+      1000,
+      2990,
+      2550
+    ],
+    "archivo_recortado": "productos_recortados/25059.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26528",
+    "descripcion_sql": "Ordena Sartenes Dúo",
+    "pagina_origen": 50,
+    "bbox": [
+      10,
+      1401,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26528.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26801",
+    "descripcion_sql": "Modu Repisa Esquinera 2 PIEZAS",
+    "pagina_origen": 50,
+    "bbox": [
+      10,
+      2570,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26801.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26029",
+    "descripcion_sql": "Portavasos Flor 6 PIEZAS",
+    "pagina_origen": 51,
+    "bbox": [
+      10,
+      10,
+      2990,
+      1380
+    ],
+    "archivo_recortado": "productos_recortados/26029.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "25841",
+    "descripcion_sql": "Maxi Servilletero",
+    "pagina_origen": 51,
+    "bbox": [
+      10,
+      10,
+      2990,
+      2550
+    ],
+    "archivo_recortado": "productos_recortados/25841.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "25827",
+    "descripcion_sql": "Polipropileno y TPR. Incluye 7 piezas: (1) Base D.10 x 2 cm. (6) Portavasos 10 x 8 x 0.5 cm 1 Tri Carrito Slim 3 repisas Ruedas con seguro SOPORTA 6KG Poliestireno de alto impacto y PVC. Soporta. 2 kg. por repisa. 47 x 15 x 64 cm.",
+    "pagina_origen": 51,
+    "bbox": [
+      10,
+      1400,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/25827.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "19831",
+    "descripcion_sql": "Organi Cubiertos",
+    "pagina_origen": 51,
+    "bbox": [
+      10,
+      2570,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/19831.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "24821",
+    "descripcion_sql": "Protecti Tapete",
+    "pagina_origen": 52,
+    "bbox": [
+      10,
+      10,
+      2990,
+      981
+    ],
+    "archivo_recortado": "productos_recortados/24821.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "25808",
+    "descripcion_sql": "Porta Rollo Granito",
+    "pagina_origen": 52,
+    "bbox": [
+      10,
+      1001,
+      2990,
+      2550
+    ],
+    "archivo_recortado": "productos_recortados/25808.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26800",
+    "descripcion_sql": "Porta Rollos Klin",
+    "pagina_origen": 52,
+    "bbox": [
+      10,
+      2570,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26800.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "25364",
+    "descripcion_sql": "2Ó MÁS A PRECIO ROJO IGUALES 0 COMBINADOS Servi 3 2 PIEZAS 250 ml por compartimento Polipropileno. D. 22x 11x 8 cm Deslisalsa Dispensador 2 PIEZAS 500 ml 1 deslizante antiderrames Polipropileno. D. 8 x 18 cm_ Tapa",
+    "pagina_origen": 53,
+    "bbox": [
+      10,
+      10,
+      2990,
+      1906
+    ],
+    "archivo_recortado": "productos_recortados/25364.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26515",
+    "descripcion_sql": "Gelati Flor",
+    "pagina_origen": 53,
+    "bbox": [
+      10,
+      1926,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26515.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "24880",
+    "descripcion_sql": "Organi Blanquillos 2 PIEZAS",
+    "pagina_origen": 54,
+    "bbox": [
+      10,
+      10,
+      962,
+      1379
+    ],
+    "archivo_recortado": "productos_recortados/24880.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "25801",
+    "descripcion_sql": "Maxi Huevera Translucent",
+    "pagina_origen": 54,
+    "bbox": [
+      982,
+      10,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/25801.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26964",
+    "descripcion_sql": "Organi Canasta 2 PIEZAS",
+    "pagina_origen": 54,
+    "bbox": [
+      10,
+      1399,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26964.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26870",
+    "descripcion_sql": "Organi 3 2 PIEZAS",
+    "pagina_origen": 55,
+    "bbox": [
+      10,
+      10,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26870.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26992",
+    "descripcion_sql": "Organi Cajón 2 PIEZAS",
+    "pagina_origen": 55,
+    "bbox": [
+      10,
+      10,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26992.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "25064",
+    "descripcion_sql": "Set Cerealeros Max 5 PIEZAS",
+    "pagina_origen": 56,
+    "bbox": [
+      10,
+      10,
+      962,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/25064.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26010",
+    "descripcion_sql": "Set Bolzips 5 PIEZAS",
+    "pagina_origen": 56,
+    "bbox": [
+      982,
+      10,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26010.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "24027",
+    "descripcion_sql": "Agua Click Turbo",
+    "pagina_origen": 57,
+    "bbox": [
+      10,
+      10,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/24027.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "23164",
+    "descripcion_sql": "Lunch Max",
+    "pagina_origen": 58,
+    "bbox": [
+      10,
+      10,
+      941,
+      1862
+    ],
+    "archivo_recortado": "productos_recortados/23164.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26874",
+    "descripcion_sql": "Gurmy Nutri Dúo 2 PIEZAS",
+    "pagina_origen": 58,
+    "bbox": [
+      961,
+      10,
+      2990,
+      1862
+    ],
+    "archivo_recortado": "productos_recortados/26874.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "25000",
+    "descripcion_sql": "Gurmy Quesadilla Conmigo",
+    "pagina_origen": 58,
+    "bbox": [
+      10,
+      1882,
+      941,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/25000.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26908",
+    "descripcion_sql": "Gurmy Porciones PIEZAS",
+    "pagina_origen": 58,
+    "bbox": [
+      961,
+      1882,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26908.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26062",
+    "descripcion_sql": "Gurmy Doble Sandwichera Azul",
+    "pagina_origen": 59,
+    "bbox": [
+      10,
+      10,
+      2990,
+      843
+    ],
+    "archivo_recortado": "productos_recortados/26062.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26004",
+    "descripcion_sql": "Gurmy Lunch Conmigo 5 PIEZAS",
+    "pagina_origen": 59,
+    "bbox": [
+      10,
+      1824,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26004.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26873",
+    "descripcion_sql": "Gurmy Pizza 2 PIEZAS",
+    "pagina_origen": 60,
+    "bbox": [
+      10,
+      10,
+      941,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26873.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26053",
+    "descripcion_sql": "Lunch Pack 5 5 PIEZAS",
+    "pagina_origen": 60,
+    "bbox": [
+      961,
+      10,
+      2990,
+      1083
+    ],
+    "archivo_recortado": "productos_recortados/26053.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26001",
+    "descripcion_sql": "Gurmy Econo Pack 3 3 PIEZAS",
+    "pagina_origen": 60,
+    "bbox": [
+      10,
+      1103,
+      1719,
+      1819
+    ],
+    "archivo_recortado": "productos_recortados/26001.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26993",
+    "descripcion_sql": "Gurmy Porciones Value Pack 16 PIEZAS",
+    "pagina_origen": 60,
+    "bbox": [
+      10,
+      2520,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26993.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "24006",
+    "descripcion_sql": "Conserva Set Blue 5 PIEZAS",
+    "pagina_origen": 61,
+    "bbox": [
+      10,
+      10,
+      2990,
+      1484
+    ],
+    "archivo_recortado": "productos_recortados/24006.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26034",
+    "descripcion_sql": "Gurmy Deco Bowls PIEZAS",
+    "pagina_origen": 61,
+    "bbox": [
+      10,
+      1504,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26034.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "20038",
+    "descripcion_sql": "Circulock",
+    "pagina_origen": 62,
+    "bbox": [
+      10,
+      10,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/20038.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26016",
+    "descripcion_sql": "Gurmy Quesera Fresh",
+    "pagina_origen": 62,
+    "bbox": [
+      10,
+      10,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26016.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26000",
+    "descripcion_sql": "Escurre Chiles Pick Conserva Cebolla Canastilla escurridora 1.2 L 600 ml Polipropileno; Polietileno y ABS. D. 16 x 11 x 14 cm. Polipropileno. D. 12 x 8 cm. Salchichas Lockit Max Gurmy Conserva Aguacate 750 ml 18 salchichas grandes Polipropileno. D. 25 x 20 x 5 cm_ Polipropileno. D. 15 x 11x 8 cm. Conserva Queso Conserva Mantequilla 350 ml Fácil de guardar Polipropileno. D. 25 x 22 x 12 cm. Poliestireno y Polipropileno. Incluye tapa y charola escurridora. D.14 x 8 x 4 cm_ Incluye untador. Warar escurridora Rejilla _",
+    "pagina_origen": 63,
+    "bbox": [
+      10,
+      10,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26000.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "25047",
+    "descripcion_sql": "Gurmy Conserva Aguacate",
+    "pagina_origen": 63,
+    "bbox": [
+      10,
+      10,
+      2990,
+      2497
+    ],
+    "archivo_recortado": "productos_recortados/25047.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26025",
+    "descripcion_sql": "Conserva Mantequilla",
+    "pagina_origen": 63,
+    "bbox": [
+      10,
+      2517,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26025.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26778",
+    "descripcion_sql": "Lonchera Toy Story iÚLTIMAS PIEZAS! 1 Increíble diseño Correa Ygran capacidad JEVO ra 8",
+    "pagina_origen": 64,
+    "bbox": [
+      10,
+      10,
+      2990,
+      2007
+    ],
+    "archivo_recortado": "productos_recortados/26778.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "21525",
+    "descripcion_sql": "Marcianitos Pop",
+    "pagina_origen": 64,
+    "bbox": [
+      10,
+      10,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/21525.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "25028",
+    "descripcion_sql": "Destapador Bota Woody",
+    "pagina_origen": 64,
+    "bbox": [
+      10,
+      2027,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/25028.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26763",
+    "descripcion_sql": "Lonchera Fresh",
+    "pagina_origen": 65,
+    "bbox": [
+      10,
+      10,
+      2016,
+      1665
+    ],
+    "archivo_recortado": "productos_recortados/26763.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26703",
+    "descripcion_sql": "Lonchera Box",
+    "pagina_origen": 65,
+    "bbox": [
+      2036,
+      10,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26703.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26872",
+    "descripcion_sql": "Cubiertos Compact 2 PIEZAS ABS y Polipropileno. D.18 x 5 cm. 4",
+    "pagina_origen": 65,
+    "bbox": [
+      10,
+      1685,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26872.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26997",
+    "descripcion_sql": "Tina Spa Lila + Lima Pies Pro A SOLO Plegable Textura Cuidado para masaje y belleza para tus pies CAPACIDAD 1SL TECNOLOGIA NANOCRYSTAL Polipropileno; TPR. D. 40x35 x 8 cm (contraido) , EXFOLIADORA D. 40 x 35 x 21 cm (extendido). Soporta hasta 15 L. se recomienda llenar con 7 L de agua para su uso. Vidrio y ABS. 10 x 6 x 3 cm. Bétterware",
+    "pagina_origen": 68,
+    "bbox": [
+      10,
+      10,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26997.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26882",
+    "descripcion_sql": "Barras Pedi Spa Lavanda + Frutal 6 PIEZAS",
+    "pagina_origen": 68,
+    "bbox": [
+      10,
+      10,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26882.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26217",
+    "descripcion_sql": "Pedi Tapete",
+    "pagina_origen": 69,
+    "bbox": [
+      10,
+      10,
+      2017,
+      1380
+    ],
+    "archivo_recortado": "productos_recortados/26217.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26236",
+    "descripcion_sql": "Corta Uñas Zoom",
+    "pagina_origen": 69,
+    "bbox": [
+      2037,
+      10,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26236.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26401",
+    "descripcion_sql": "Cepillo Spa Electric Exfolia Masajea Lava Cuerpo cuerpo Talla Enjabona Pies Mango removible Rostro RESISTENTE AL AGUA Electrónico. 6 V 0.7 Watts. Funciona con 4 baterías AA (No incluidas ",
+    "pagina_origen": 69,
+    "bbox": [
+      10,
+      1400,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26401.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26243",
+    "descripcion_sql": "Parches Aloe 15 PARCHES",
+    "pagina_origen": 70,
+    "bbox": [
+      10,
+      10,
+      319,
+      299
+    ],
+    "archivo_recortado": "productos_recortados/26243.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "25625",
+    "descripcion_sql": "Set Gel Pack Frío y Caliente 2 PIEZAS PeWae",
+    "pagina_origen": 70,
+    "bbox": [
+      998,
+      10,
+      2990,
+      1381
+    ],
+    "archivo_recortado": "productos_recortados/25625.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26767",
+    "descripcion_sql": "Maxi Cepillo Klin",
+    "pagina_origen": 70,
+    "bbox": [
+      10,
+      1490,
+      961,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26767.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "24221",
+    "descripcion_sql": "Gel Pack Max",
+    "pagina_origen": 70,
+    "bbox": [
+      981,
+      1401,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/24221.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26229",
+    "descripcion_sql": "Spa Facial Magic",
+    "pagina_origen": 71,
+    "bbox": [
+      10,
+      10,
+      2018,
+      1379
+    ],
+    "archivo_recortado": "productos_recortados/26229.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26244",
+    "descripcion_sql": "Mascarilla Relax",
+    "pagina_origen": 71,
+    "bbox": [
+      2038,
+      10,
+      2990,
+      1380
+    ],
+    "archivo_recortado": "productos_recortados/26244.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26210",
+    "descripcion_sql": "Facial Klin -15% Elimina residuos ycélulas muertas 5 modos de vibración Eclv <",
+    "pagina_origen": 71,
+    "bbox": [
+      10,
+      1399,
+      2018,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26210.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "25217",
+    "descripcion_sql": "Bye Vello Pro",
+    "pagina_origen": 71,
+    "bbox": [
+      2038,
+      1400,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/25217.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26318",
+    "descripcion_sql": "Fundas Fresh 2 PIEZAS",
+    "pagina_origen": 72,
+    "bbox": [
+      10,
+      10,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26318.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26228",
+    "descripcion_sql": "Almohada Air Confort Curva ergonómica de àe Incluye funda TECNOLOGIA MEMORY CONFORT Funda: Algodón. Interior: Espuma de Poliuretano. D. 53 x 34 x 9 cm 1 L La a AA l+; € > &v+ A .+ f  _ Naav: € Y f v+ ; aire flujo 1 g",
+    "pagina_origen": 73,
+    "bbox": [
+      10,
+      10,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26228.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26411",
+    "descripcion_sql": "Cortina Brisa Azul",
+    "pagina_origen": 74,
+    "bbox": [
+      10,
+      10,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26411.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "22457",
+    "descripcion_sql": "Cortina Spring Tela impermeable Ganchos de fácil instalación",
+    "pagina_origen": 75,
+    "bbox": [
+      10,
+      10,
+      2018,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/22457.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26417",
+    "descripcion_sql": "Perchero Flex",
+    "pagina_origen": 75,
+    "bbox": [
+      2038,
+      10,
+      2990,
+      1644
+    ],
+    "archivo_recortado": "productos_recortados/26417.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26416",
+    "descripcion_sql": "Tapete Camel",
+    "pagina_origen": 75,
+    "bbox": [
+      10,
+      1664,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26416.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "23425",
+    "descripcion_sql": "Dental Dúo Blanc iÚLTIMAS PIEZAS! *Hasta agotar existencias. Silicón; ABS. Soporta. 250g. 15 x 7 x 10 cm. Instalación con tornillería ylo adhesivo incluidos. 1",
+    "pagina_origen": 76,
+    "bbox": [
+      10,
+      10,
+      2990,
+      1383
+    ],
+    "archivo_recortado": "productos_recortados/23425.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "25369",
+    "descripcion_sql": "Set Organi Glass 2 PIEZAS",
+    "pagina_origen": 76,
+    "bbox": [
+      10,
+      10,
+      962,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/25369.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26300",
+    "descripcion_sql": "Cestos Lux 3 CESTOS",
+    "pagina_origen": 76,
+    "bbox": [
+      982,
+      1403,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26300.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "22428",
+    "descripcion_sql": "Extensión Flex",
+    "pagina_origen": 77,
+    "bbox": [
+      10,
+      10,
+      2016,
+      1381
+    ],
+    "archivo_recortado": "productos_recortados/22428.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "21423",
+    "descripcion_sql": "Renova Juntas",
+    "pagina_origen": 77,
+    "bbox": [
+      2036,
+      10,
+      2990,
+      1381
+    ],
+    "archivo_recortado": "productos_recortados/21423.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26412",
+    "descripcion_sql": "Cinta Anti Caídas Max",
+    "pagina_origen": 77,
+    "bbox": [
+      10,
+      1401,
+      2018,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26412.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "24426",
+    "descripcion_sql": "Tapete Anticaídas",
+    "pagina_origen": 77,
+    "bbox": [
+      2038,
+      1401,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/24426.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26410",
+    "descripcion_sql": "Porta Rollo Slim 0 Hasta rollos",
+    "pagina_origen": 78,
+    "bbox": [
+      10,
+      10,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26410.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26968",
+    "descripcion_sql": "2ÓMÁS A PRECIO ROJO IGUALES COMBINADOS Gotas Cero 11 Olores Verano 2 PIEZAS Elimina malos olores BOTE DE COLADERA BASURA INODORO Agua humectante y fragancia. D. 3x 8 cm. Cont. 30 mI. Organi Rollo Black Canastilla de fácil acceso Instalación con tornillería pintado. Soporta. 2 kg D. 18 x 17 x 14 cm. Nos on oo oro Coa Au) Suuol0 Ouas 28Mj9298 Acero",
+    "pagina_origen": 78,
+    "bbox": [
+      10,
+      10,
+      2990,
+      1254
+    ],
+    "archivo_recortado": "productos_recortados/26968.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26400",
+    "descripcion_sql": "Organi Rollos Nube",
+    "pagina_origen": 78,
+    "bbox": [
+      10,
+      2740,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26400.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "21432",
+    "descripcion_sql": "Espuma Push",
+    "pagina_origen": 79,
+    "bbox": [
+      10,
+      10,
+      2990,
+      1381
+    ],
+    "archivo_recortado": "productos_recortados/21432.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "24438",
+    "descripcion_sql": "Dispensador Push",
+    "pagina_origen": 79,
+    "bbox": [
+      10,
+      1401,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/24438.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "70414",
+    "descripcion_sql": "Repi Esquinero",
+    "pagina_origen": 80,
+    "bbox": [
+      10,
+      10,
+      963,
+      1780
+    ],
+    "archivo_recortado": "productos_recortados/70414.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26402",
+    "descripcion_sql": "Esquinero Black",
+    "pagina_origen": 80,
+    "bbox": [
+      983,
+      10,
+      2990,
+      1380
+    ],
+    "archivo_recortado": "productos_recortados/26402.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "25439",
+    "descripcion_sql": "Modu Caddy Antideslizante Ventosas para mejor agarre Rejillas para drenaje Canastas ajustables Polipropileno; TPRy PVC. Soporta. 1kg. por canasta (2 kg), 250 g en repisa y 150 g por gancho (450 g).30 x 13 x 76 cm.",
+    "pagina_origen": 80,
+    "bbox": [
+      10,
+      1400,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/25439.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26405",
+    "descripcion_sql": "Caddy Black Antideslizante Ideal para botellas altas Ventosas para mejor agarre Acero pintado. Soporta. Repisa (4 kg) , Jabonera (300 g) y Gancho (200 g c/u) . 24 x 12 x 65 cm.",
+    "pagina_origen": 80,
+    "bbox": [
+      10,
+      1800,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26405.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "22608",
+    "descripcion_sql": "Escoba Pro 20 Escoba No levanta polvo 2 Jalador Fácil de limpiar Con cerdas 3 Sujeta jerga de hule",
+    "pagina_origen": 82,
+    "bbox": [
+      10,
+      10,
+      2017,
+      1438
+    ],
+    "archivo_recortado": "productos_recortados/22608.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "24134",
+    "descripcion_sql": "Trapi Mop Blue",
+    "pagina_origen": 82,
+    "bbox": [
+      2037,
+      10,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/24134.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "23121",
+    "descripcion_sql": "Esquina Practiklin Polipropileno. Soporta. 8kg. 45 x 45 x 56 cm.",
+    "pagina_origen": 82,
+    "bbox": [
+      10,
+      1458,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/23121.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "25133",
+    "descripcion_sql": "Polipropileno; Poliéster y Acero inoxidable. 127.5 cm desplegado; 82 cm plegado. ENCUENTRA TU REPUESTO IDEAL R. Mechu R. Trapi Mop Blue Trenza Tira de de algodón microfibra Mop",
+    "pagina_origen": 82,
+    "bbox": [
+      10,
+      10,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/25133.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26112",
+    "descripcion_sql": "Funda Lavadora Platina",
+    "pagina_origen": 83,
+    "bbox": [
+      10,
+      10,
+      962,
+      1781
+    ],
+    "archivo_recortado": "productos_recortados/26112.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "25580",
+    "descripcion_sql": "Set Esferas Atrapa Pelusa 12 PIEZAS",
+    "pagina_origen": 83,
+    "bbox": [
+      982,
+      10,
+      2990,
+      981
+    ],
+    "archivo_recortado": "productos_recortados/25580.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26110",
+    "descripcion_sql": "Set Lava Ropa 3 PIEZAS",
+    "pagina_origen": 83,
+    "bbox": [
+      10,
+      1001,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26110.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26119",
+    "descripcion_sql": "Lava Bra Flex",
+    "pagina_origen": 83,
+    "bbox": [
+      10,
+      1801,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26119.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "23180",
+    "descripcion_sql": "Limpia Tenis Bétterr) en Wa20 Cont. 250 mI. D. 5 x 19 cm. QMRD TEIS Limpieza seco UMRL TS",
+    "pagina_origen": 84,
+    "bbox": [
+      10,
+      10,
+      2017,
+      981
+    ],
+    "archivo_recortado": "productos_recortados/23180.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26111",
+    "descripcion_sql": "Lava Tenis Max",
+    "pagina_origen": 84,
+    "bbox": [
+      2037,
+      10,
+      2990,
+      1781
+    ],
+    "archivo_recortado": "productos_recortados/26111.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "24113",
+    "descripcion_sql": "Tallabón",
+    "pagina_origen": 84,
+    "bbox": [
+      10,
+      1001,
+      2990,
+      2551
+    ],
+    "archivo_recortado": "productos_recortados/24113.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "25105",
+    "descripcion_sql": "Talla Lavadero",
+    "pagina_origen": 84,
+    "bbox": [
+      10,
+      2571,
+      2012,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/25105.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "25126",
+    "descripcion_sql": "Exten Lavadero Rejillas para drenar elagua SOPORTA AKG Polipropileno. 19 x 14 x 18 cm.",
+    "pagina_origen": 84,
+    "bbox": [
+      2032,
+      1801,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/25126.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26113",
+    "descripcion_sql": "Tendedero Estrella Gancho antiviento #oy 8 Hi P1",
+    "pagina_origen": 85,
+    "bbox": [
+      10,
+      10,
+      963,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26113.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "24601",
+    "descripcion_sql": "Tendedero Plegable 32 Plegable Gancho antivientos 32 PINZAS",
+    "pagina_origen": 85,
+    "bbox": [
+      983,
+      10,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/24601.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "25104",
+    "descripcion_sql": "Plancha Protect Asa ajustable Teflón, Acero y Silicón. 27 x 16 cm",
+    "pagina_origen": 86,
+    "bbox": [
+      10,
+      10,
+      2990,
+      1080
+    ],
+    "archivo_recortado": "productos_recortados/25104.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26884",
+    "descripcion_sql": "2Ó MÁS A PRECIO ROJO IGUALES 0 COMBINADOS Agujas Mágicas 20 PIEZAS Inserta hilo fácil y rápido Acero. (8) 4.1cm. (12) 3.6 cm. Quita Max Roller Fácil de limpiar Polipropileno Poliéster y TPR. 20 x 18 x 5 cm.",
+    "pagina_origen": 86,
+    "bbox": [
+      10,
+      1100,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26884.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26125",
+    "descripcion_sql": "Canasta Flex",
+    "pagina_origen": 86,
+    "bbox": [
+      10,
+      10,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26125.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "22253",
+    "descripcion_sql": "Brazo Limpia Fácil",
+    "pagina_origen": 88,
+    "bbox": [
+      10,
+      10,
+      2017,
+      1381
+    ],
+    "archivo_recortado": "productos_recortados/22253.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "24600",
+    "descripcion_sql": "Set Limpia WC 2 modos de uso WC Lavabo Polipropileno y TPR. Incluye 3 piezas: (Base) 15 x 21x 15 cm: (Cepillo) 41 cm de largo. (Destapacaño) 44 cm de largo.",
+    "pagina_origen": 88,
+    "bbox": [
+      2037,
+      10,
+      2990,
+      980
+    ],
+    "archivo_recortado": "productos_recortados/24600.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26115",
+    "descripcion_sql": "Cepillo WC Flex Lleva el segundo a",
+    "pagina_origen": 88,
+    "bbox": [
+      10,
+      1000,
+      2990,
+      2550
+    ],
+    "archivo_recortado": "productos_recortados/26115.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "25581",
+    "descripcion_sql": "Talla Pomex Pro 2 PIEZAS",
+    "pagina_origen": 88,
+    "bbox": [
+      10,
+      1401,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/25581.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "25976",
+    "descripcion_sql": "Limpia WC 2 PIEZAS",
+    "pagina_origen": 88,
+    "bbox": [
+      10,
+      2570,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/25976.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "23178",
+    "descripcion_sql": "IGUALES 2Ó MÁS A PRECIO ROJO 0 COMBINADOS Cloritas PASTILLAS Béttèrn] 8 Spa7 CLORITAS SIN CON Un 1s1 Pastillas de cloro. Cont. 4 pastillas de 15 g c/u. D. 2x 1cm. Limpia Lavadora Sticks Tuberías 4 PIEZAS 12 STICKS Béttèr 12 pen 1 SIN Mnas lu CON Agentes Antibacteriales Y Compuestos Limpiador en polvo: 45 g c/u. Tensioactivos. D. 0.6x 9 cm:. liliAa 0Elos Giahinu ULTRA POTENTE ULTRA DURABLE aie liahodin Pastilas de ",
+    "pagina_origen": 89,
+    "bbox": [
+      10,
+      10,
+      2990,
+      1048
+    ],
+    "archivo_recortado": "productos_recortados/23178.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "24163",
+    "descripcion_sql": "Limpia Lavadora PIEZAS",
+    "pagina_origen": 89,
+    "bbox": [
+      10,
+      1068,
+      962,
+      2553
+    ],
+    "archivo_recortado": "productos_recortados/24163.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "24111",
+    "descripcion_sql": "Sticks Tuberías 12 STICKS",
+    "pagina_origen": 89,
+    "bbox": [
+      982,
+      10,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/24111.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26121",
+    "descripcion_sql": "Tabs Limpia Vidrios 20 TABLETAS",
+    "pagina_origen": 89,
+    "bbox": [
+      10,
+      2573,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26121.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "22436",
+    "descripcion_sql": "Limpia Vidrios 5 en 1",
+    "pagina_origen": 90,
+    "bbox": [
+      10,
+      10,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/22436.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26101",
+    "descripcion_sql": "Atrapa Polvo Slim",
+    "pagina_origen": 90,
+    "bbox": [
+      10,
+      10,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26101.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26100",
+    "descripcion_sql": "Trapos Roll 20",
+    "pagina_origen": 91,
+    "bbox": [
+      10,
+      10,
+      2990,
+      1380
+    ],
+    "archivo_recortado": "productos_recortados/26100.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26116",
+    "descripcion_sql": "Set Fibra Esponja 5 PIEZAS Esponja Y acero Resistente Y duradera Esponja, Poliester y Acero inoxidable. D. 13 x 9 x 2 cm. Incluye 5 piezas.",
+    "pagina_origen": 91,
+    "bbox": [
+      10,
+      1400,
+      962,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26116.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26108",
+    "descripcion_sql": "Esponjas Aqua Pop 6 PIEZAS",
+    "pagina_origen": 91,
+    "bbox": [
+      982,
+      10,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26108.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26885",
+    "descripcion_sql": "Cepillo Slim 2 PIEZAS",
+    "pagina_origen": 92,
+    "bbox": [
+      10,
+      10,
+      2016,
+      1479
+    ],
+    "archivo_recortado": "productos_recortados/26885.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "22128",
+    "descripcion_sql": "Cepillo Flex",
+    "pagina_origen": 92,
+    "bbox": [
+      2036,
+      10,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/22128.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "80140",
+    "descripcion_sql": "IGUALES 2Ó MÁS A PRECIO ROJO 0 COMBINADOS Fibra de Acero Inoxidable Cepi Estufa 4 en 1 5 PIEZAS Espátula Mango ergonómico Limpia cochambre Limpia superficies Limpia hornillas Acero inoxidable. (5) D.5 cm: Polipropileno; Nailon y Cobre. 17 x 2x 5 cm.",
+    "pagina_origen": 92,
+    "bbox": [
+      10,
+      1499,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/80140.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26246",
+    "descripcion_sql": "Paraguas Stitch",
+    "pagina_origen": 93,
+    "bbox": [
+      10,
+      10,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26246.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26795",
+    "descripcion_sql": "Poncho Stitch",
+    "pagina_origen": 94,
+    "bbox": [
+      10,
+      10,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26795.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26811",
+    "descripcion_sql": "Funda Moto Protect Cubre del sol, Iluvia Y polvo Úsalo bici Material impermeable Polietileno. 137 x 248 cm_ 6 para",
+    "pagina_origen": 95,
+    "bbox": [
+      10,
+      10,
+      2990,
+      951
+    ],
+    "archivo_recortado": "productos_recortados/26811.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26817",
+    "descripcion_sql": "Impermeable Aqua",
+    "pagina_origen": 95,
+    "bbox": [
+      10,
+      971,
+      961,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26817.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26818",
+    "descripcion_sql": "Cubre Zapatos _ Aqua",
+    "pagina_origen": 95,
+    "bbox": [
+      981,
+      10,
+      2990,
+      2498
+    ],
+    "archivo_recortado": "productos_recortados/26818.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "24815",
+    "descripcion_sql": "Spray Anti-Fog Adiós vidrios Yespejos empañados Ve SoRYY SIN 25Oml CON Cont. 250 mI. D. 5x 19 cm MTl-fog",
+    "pagina_origen": 95,
+    "bbox": [
+      10,
+      2518,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/24815.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "24620",
+    "descripcion_sql": "B-Better Colors Aqua",
+    "pagina_origen": 96,
+    "bbox": [
+      10,
+      10,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/24620.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26704",
+    "descripcion_sql": "Vaso Dúo B Shaker Conmigo $ 109 Tapa con asa i2 en 1! Vaso shaker 70Oml 70Oml Bolita mezcladora con popote LIBRE LIBRE BPA BPA Polipropileno; Silicón y Acero inoxidable. Polipropileno. D. 9x 23 cm. D.12 x 21 cm. 2da tapa, popote Y esfera mezcladora. Incluye esfera mezcladora. Tapa",
+    "pagina_origen": 96,
+    "bbox": [
+      10,
+      10,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26704.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26134",
+    "descripcion_sql": "Baggy Tech",
+    "pagina_origen": 97,
+    "bbox": [
+      10,
+      10,
+      962,
+      1016
+    ],
+    "archivo_recortado": "productos_recortados/26134.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "21774",
+    "descripcion_sql": "Organi Bolso",
+    "pagina_origen": 97,
+    "bbox": [
+      982,
+      10,
+      2990,
+      1017
+    ],
+    "archivo_recortado": "productos_recortados/21774.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26737",
+    "descripcion_sql": "Cuelga Bolso Flor Base antideslizante iTu bolsa segura y a la mano! SOPORTA AKG Polipropileno y Zinc. Cerrado: D. 4.6x 1.7 cm Extendido: D 4.6x10.3 cm",
+    "pagina_origen": 97,
+    "bbox": [
+      10,
+      1036,
+      961,
+      2617
+    ],
+    "archivo_recortado": "productos_recortados/26737.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "24794",
+    "descripcion_sql": "Set Bolso Elegant -20% Compartimento oculto Asa para hombro Vinipiel Poliéster; PVC y Poliuretano. Incluye 2 piezas: (Bolso) Cap. 12 L. Soporta. 4 kg. 37 x 31x 12 cm. (Monedero) 16x 13 cm",
+    "pagina_origen": 97,
+    "bbox": [
+      981,
+      1037,
+      2990,
+      2618
+    ],
+    "archivo_recortado": "productos_recortados/24794.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26771",
+    "descripcion_sql": "Separa Pastillero Lleva solo lo del día LUN Mar x15 PASTILLAS Polipropileno. D. 24 x 4 x 3 cm_ DoM [2v8 ViE Jue Mie MAr LuN",
+    "pagina_origen": 97,
+    "bbox": [
+      10,
+      2637,
+      963,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26771.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "25436",
+    "descripcion_sql": "Pasti Semanal Pro Muele 0: Corta Poliestireno; Polipropileno; ABS y Acero inoxidable. D. 8 x 10 cm:",
+    "pagina_origen": 97,
+    "bbox": [
+      983,
+      2638,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/25436.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26810",
+    "descripcion_sql": "Porta Cepillos Lila",
+    "pagina_origen": 98,
+    "bbox": [
+      10,
+      10,
+      1993,
+      982
+    ],
+    "archivo_recortado": "productos_recortados/26810.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26133",
+    "descripcion_sql": "Retoque Express",
+    "pagina_origen": 98,
+    "bbox": [
+      2680,
+      10,
+      2990,
+      302
+    ],
+    "archivo_recortado": "productos_recortados/26133.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "24784",
+    "descripcion_sql": "Cepillo Conmigo",
+    "pagina_origen": 98,
+    "bbox": [
+      10,
+      1002,
+      2990,
+      2550
+    ],
+    "archivo_recortado": "productos_recortados/24784.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "23228",
+    "descripcion_sql": "Cápsula Perfume Max 10 ml Polipropileno; ABS y Vidrio. D. 2x 11 cm. Incluye dosificador Y embudo.",
+    "pagina_origen": 98,
+    "bbox": [
+      10,
+      2570,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/23228.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26788",
+    "descripcion_sql": "Bici Asiento Confort",
+    "pagina_origen": 99,
+    "bbox": [
+      10,
+      10,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26788.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26702",
+    "descripcion_sql": "Basurero Click resistente 500 ml Presiona para abrir ABS y Polipropileno. 500 mI. D. 8 x 16 cm. Tapa Cap.",
+    "pagina_origen": 99,
+    "bbox": [
+      10,
+      10,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26702.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26779",
+    "descripcion_sql": "Lumi Espejo Auto",
+    "pagina_origen": 100,
+    "bbox": [
+      10,
+      10,
+      2017,
+      981
+    ],
+    "archivo_recortado": "productos_recortados/26779.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26124",
+    "descripcion_sql": "Paños Soft Klin 5 PIEZAS",
+    "pagina_origen": 100,
+    "bbox": [
+      2037,
+      10,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26124.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "23796",
+    "descripcion_sql": "Soporte Cel Lux",
+    "pagina_origen": 100,
+    "bbox": [
+      10,
+      1001,
+      2990,
+      2550
+    ],
+    "archivo_recortado": "productos_recortados/23796.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26762",
+    "descripcion_sql": "Soporte Movi Cel",
+    "pagina_origen": 100,
+    "bbox": [
+      10,
+      2570,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26762.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26005",
+    "descripcion_sql": "CUBI HIELOS MAX A SÓLO *Sujeto a disponibilidad; puede recibirse un modelo similar:",
+    "pagina_origen": 101,
+    "bbox": [
+      10,
+      10,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26005.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26746",
+    "descripcion_sql": "Toalla Absorb Lila Ligera, absorbente y lista para Ilevar 1 PZon gcoarear Poliéster y Poliamida. D. 138 x 70 cm.",
+    "pagina_origen": 105,
+    "bbox": [
+      10,
+      10,
+      2990,
+      1672
+    ],
+    "archivo_recortado": "productos_recortados/26746.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26838",
+    "descripcion_sql": "Organi Bolsas Estilo 8249 Fácil de limpiar Organiza y ahorra espacio CUBI HIELOS MAX ^sóLo Poliéster. Incluye: 4 Piezas. (2) Bolsa grande 37 x 27 x 10 cm. (1) Bolsa mediana 29x 21x 10 cm. (1) *Sujeto a disponibilidad; puede recibirse un modelo similar: Bolsa pequeña 25 x 7 x 14 cm. 6",
+    "pagina_origen": 105,
+    "bbox": [
+      10,
+      1692,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26838.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26024",
+    "descripcion_sql": "Moldi Paletas Fácil desmolde Diseño único Y divertido LIBRE BPA CONGELA Polipropileno y TPR D. 15 x 9 x 11 cm. (Paletas) 90 mI. D.6x 3x8 cm clu. Cap.",
+    "pagina_origen": 106,
+    "bbox": [
+      10,
+      10,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/26024.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "24043",
+    "descripcion_sql": "Better Jarra Smart",
+    "pagina_origen": 107,
+    "bbox": [
+      10,
+      10,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/24043.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "23607",
+    "descripcion_sql": "Maleta Mascota Go",
+    "pagina_origen": 111,
+    "bbox": [
+      10,
+      10,
+      573,
+      1468
+    ],
+    "archivo_recortado": "productos_recortados/23607.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "23346",
+    "descripcion_sql": "Piscina Pop",
+    "pagina_origen": 111,
+    "bbox": [
+      593,
+      10,
+      1264,
+      1469
+    ],
+    "archivo_recortado": "productos_recortados/23346.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26403",
+    "descripcion_sql": "Cuadri Organizador Hasta agotar existencias.",
+    "pagina_origen": 111,
+    "bbox": [
+      1284,
+      10,
+      1957,
+      1471
+    ],
+    "archivo_recortado": "productos_recortados/26403.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26311",
+    "descripcion_sql": "Ganchos Dúo *Hasta agotar existencias.",
+    "pagina_origen": 111,
+    "bbox": [
+      1977,
+      10,
+      2990,
+      1469
+    ],
+    "archivo_recortado": "productos_recortados/26311.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "25804",
+    "descripcion_sql": "Multi Repisas Bambú",
+    "pagina_origen": 111,
+    "bbox": [
+      10,
+      1488,
+      570,
+      2667
+    ],
+    "archivo_recortado": "productos_recortados/25804.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "26527",
+    "descripcion_sql": "8149 Rebana Chef",
+    "pagina_origen": 111,
+    "bbox": [
+      590,
+      1489,
+      1264,
+      2667
+    ],
+    "archivo_recortado": "productos_recortados/26527.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "25134",
+    "descripcion_sql": "5149 Multi Cepillo Dispensador",
+    "pagina_origen": 111,
+    "bbox": [
+      1284,
+      1491,
+      1960,
+      2671
+    ],
+    "archivo_recortado": "productos_recortados/25134.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "23734",
+    "descripcion_sql": "Converti Pañalera",
+    "pagina_origen": 111,
+    "bbox": [
+      1980,
+      1489,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/23734.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "23345",
+    "descripcion_sql": "Cambia Pañales Baby",
+    "pagina_origen": 111,
+    "bbox": [
+      10,
+      2687,
+      571,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/23345.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "24855",
+    "descripcion_sql": "Tri Charola Chef",
+    "pagina_origen": 111,
+    "bbox": [
+      591,
+      2687,
+      1263,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/24855.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "22333",
+    "descripcion_sql": "Sports Stickers",
+    "pagina_origen": 111,
+    "bbox": [
+      1283,
+      2691,
+      2990,
+      5324
+    ],
+    "archivo_recortado": "productos_recortados/22333.png",
+    "estado": "vinculado"
+  },
+  {
+    "id_sql": "02026",
+    "descripcion_sql": "Banlie 02026 Mattel- Set Barbie TM 70",
+    "pagina_origen": null,
+    "bbox": null,
+    "archivo_recortado": null,
+    "estado": "producto_sin_imagen"
+  }
+]

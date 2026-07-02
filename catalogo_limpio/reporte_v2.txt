@@ -1,0 +1,72 @@
+====================================================================================================
+REPORTE v2 - PRECIOS SQL vs CATALOGO
+====================================================================================================
+Total SQL: 344  | Encontrados: 326  | Coinciden: 281  | Difieren: 45  | No encontrados: 18
+
+--- DIFIEREN ---
+Codigo  Nombre                                SQL    Catal    Tipo      Reg    Promo  Pag
+12411   Multi Organizador Dental           119.00   159.00 regular   159.00     0.00   76
+17725   Guardapolvo Translucent             54.90    69.90 regular    69.90     0.00   26
+21750   Guarda Clima                       199.00   229.00 regular   229.00     0.00   26
+21762   Guardapolvo                        199.00   229.00 regular   229.00     0.00   26
+23346   Piscina Pop                        800.00   169.00 regular   169.00     0.00  111
+24155   Better Purificador                 699.00  1200.00 regular  1200.00     0.00   57
+24404   Tapita Lavabo                       29.90    34.90 regular    34.90     0.00   79
+24566   Estufa Protect                     109.00   139.00 regular   139.00     0.00   52
+24620   B-Better Colors Aqua               119.00    99.90 regular    99.90     0.00   96
+25141   Better Contacto Pro                159.00   199.00 regular   199.00     0.00   25
+25383   Adherible Cantera                  139.00   189.00 regular   189.00     0.00   28
+25391   Adherible Piedra Laja              139.00   189.00 regular   189.00     0.00   28
+25436   Pasti Semanal Pro                   59.90   159.00 regular   159.00     0.00   97
+25444   Atrapa Cabellos Dúo                 49.90    59.90 regular    59.90     0.00   79
+25467   Adherible Textur Ladrillo          179.00   209.00 regular   209.00     0.00   28
+25748   Maxi Tapete Habitat                499.00   649.00 regular   649.00     0.00   24
+25789   Tapete Media Luna                  129.00   179.00 regular   179.00     0.00   23
+26005   Cubi Hielos Max                      1.00400101108.00 regular400101108.00     0.00  101
+26021   Set Dispensa Vitrolux              599.00  1300.00 regular  1300.00     0.00    4
+26025   Conserva Mantequilla                90.00    69.90 regular    69.90     0.00   63
+26053   Lunch Pack 5                       149.00    99.90 regular    99.90     0.00   60
+26062   Gurmy Doble Sandwichera Azul        99.90   119.00 regular   119.00     0.00   59
+26063   Gurmy Doble Sandwichera Lila        99.90   119.00 regular   119.00     0.00   59
+26135   Set Barre Fácil                    700.00   459.00 regular   459.00     0.00   81
+26210   Facial Klin                        249.00   299.00 regular   299.00     0.00   71
+26220   Set Fresh Confort                  449.00   700.00 regular   700.00     0.00   72
+26301   Modu Zapatera Moka                 799.00  1200.00 regular  1200.00     0.00   13
+26302   Better Ganchos Combo               399.00   600.00 regular   600.00     0.00   35
+26317   Cajonera Pardo                     699.00  1000.00 regular  1000.00     0.00   12
+26400   Organi Rollos Nube                 119.00   119.90 regular   119.90     0.00   78
+26405   Organi Rollo Black                  99.90   269.00 regular   269.00     0.00   80
+26409   Rack WC Ébano                      899.00  1300.00 regular  1300.00     0.00   15
+26733   Mueble TV Álamo                    649.00  1000.00 regular  1000.00     0.00   11
+26734   Luz Multi Flor                      99.90   109.00 regular   109.00     0.00   23
+26753   Cuña Dúo                            44.90    59.90 regular    59.90     0.00   26
+26783   Protecti Alimentos Max              74.90    99.90 regular    99.90     0.00   46
+26812   Set Otomesitas                     699.00  1100.00 regular  1100.00     0.00   11
+26815   Tendedero Plegable Pro             900.00   599.00 regular   599.00     0.00   85
+26844   Canasta Black                      259.00   399.00 regular   399.00     0.00   48
+26879   Adherible 3D Laja                  229.00   279.00 regular   279.00     0.00   28
+26884   Agujas Mágicas                      79.90   129.00 regular   129.00     0.00   86
+26968   Gotas Cero Olores Verano           119.00    99.00 regular    99.00     0.00   78
+26988   Set Lumi Aqua                      199.00   259.00 regular   259.00     0.00   18
+26994   Set Barbie™ 70s                    718.00   649.00 regular   649.00     0.00  109
+80140   Fibra de Acero Inoxidable           69.90    59.90 regular    59.90     0.00   92
+
+--- NO ENCONTRADOS ---
+20223  Cepillo WC Flex                  SQL=79.9  page=None
+20224  Cepillo Conmigo                  SQL=109.0  page=None
+25432  Protecti Desagüe Max             SQL=29.9  page=None
+25966  Luz Noche                        SQL=129.0  page=None
+26997  Tina Spa Lila + Lim              SQL=269.0  page=None
+90001  Better Cooler Max                SQL=1280.0  page=None
+90002  Practi Ganchos                   SQL=79.9  page=None
+90003  Set Cuelga Fácil                 SQL=79.9  page=None
+90004  Multi Organizador B              SQL=59.9  page=None
+90005  Broches Gold                     SQL=99.9  page=None
+90006  Cubre Colchón Protect            SQL=459.0  page=None
+90007  Maxi Condimentos                 SQL=229.0  page=None
+90008  Tijeras Chef                     SQL=64.9  page=None
+90009  Desli Organi Utensilios          SQL=49.9  page=None
+90010  Maxi Servilletero                SQL=129.0  page=None
+90011  Porta Rollo Granito              SQL=129.0  page=None
+90012  Salchichas Lockit Max            SQL=74.9  page=None
+90013  Conserva Aguacate                SQL=59.9  page=None

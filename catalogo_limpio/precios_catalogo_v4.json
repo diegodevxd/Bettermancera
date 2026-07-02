@@ -1,0 +1,1296 @@
+{
+  "26987": {
+    "regular": null,
+    "promo": 650.0,
+    "canonico": 650.0,
+    "tipo": "promo",
+    "page": 2,
+    "promo_block": 19
+  },
+  "26021": {
+    "regular": null,
+    "promo": 1300.0,
+    "canonico": 1300.0,
+    "tipo": "promo",
+    "page": 4,
+    "promo_block": 2
+  },
+  "26736": {
+    "regular": 750.0,
+    "promo": null,
+    "canonico": 750.0,
+    "tipo": "regular",
+    "page": 6
+  },
+  "26813": {
+    "regular": 1800.0,
+    "promo": null,
+    "canonico": 1800.0,
+    "tipo": "regular",
+    "page": 7
+  },
+  "16108": {
+    "regular": 59.9,
+    "promo": null,
+    "canonico": 59.9,
+    "tipo": "regular",
+    "page": 8
+  },
+  "26995": {
+    "regular": 850.0,
+    "promo": null,
+    "canonico": 850.0,
+    "tipo": "regular",
+    "page": 8
+  },
+  "26793": {
+    "regular": 700.0,
+    "promo": null,
+    "canonico": 700.0,
+    "tipo": "regular",
+    "page": 10
+  },
+  "26812": {
+    "regular": null,
+    "promo": 699.0,
+    "canonico": 699.0,
+    "tipo": "promo",
+    "page": 11,
+    "promo_block": 11
+  },
+  "26733": {
+    "regular": null,
+    "promo": 649.0,
+    "canonico": 649.0,
+    "tipo": "promo",
+    "page": 11,
+    "promo_block": 25
+  },
+  "26317": {
+    "regular": 1000.0,
+    "promo": null,
+    "canonico": 1000.0,
+    "tipo": "regular",
+    "page": 12
+  },
+  "26301": {
+    "regular": null,
+    "promo": 799.0,
+    "canonico": 799.0,
+    "tipo": "promo",
+    "page": 13,
+    "promo_block": 22
+  },
+  "26713": {
+    "regular": null,
+    "promo": 1099.0,
+    "canonico": 1099.0,
+    "tipo": "promo",
+    "page": 13,
+    "promo_block": 25
+  },
+  "26749": {
+    "regular": 750.0,
+    "promo": null,
+    "canonico": 750.0,
+    "tipo": "regular",
+    "page": 14
+  },
+  "26712": {
+    "regular": 900.0,
+    "promo": null,
+    "canonico": 900.0,
+    "tipo": "regular",
+    "page": 14
+  },
+  "24409": {
+    "regular": null,
+    "promo": 549.0,
+    "canonico": 549.0,
+    "tipo": "promo",
+    "page": 15,
+    "promo_block": 24
+  },
+  "26409": {
+    "regular": null,
+    "promo": 899.0,
+    "canonico": 899.0,
+    "tipo": "promo",
+    "page": 15,
+    "promo_block": 27
+  },
+  "25610": {
+    "regular": null,
+    "promo": 649.0,
+    "canonico": 649.0,
+    "tipo": "promo",
+    "page": 15,
+    "promo_block": 30
+  },
+  "26757": {
+    "regular": 750.0,
+    "promo": null,
+    "canonico": 750.0,
+    "tipo": "regular",
+    "page": 16
+  },
+  "26750": {
+    "regular": 249.0,
+    "promo": null,
+    "canonico": 249.0,
+    "tipo": "regular",
+    "page": 17
+  },
+  "25342": {
+    "regular": 139.0,
+    "promo": null,
+    "canonico": 139.0,
+    "tipo": "regular",
+    "page": 17
+  },
+  "26988": {
+    "regular": 259.0,
+    "promo": null,
+    "canonico": 259.0,
+    "tipo": "regular",
+    "page": 18
+  },
+  "12733": {
+    "regular": 239.0,
+    "promo": null,
+    "canonico": 239.0,
+    "tipo": "regular",
+    "page": 20
+  },
+  "25774": {
+    "regular": 169.0,
+    "promo": null,
+    "canonico": 169.0,
+    "tipo": "regular",
+    "page": 22
+  },
+  "26786": {
+    "regular": 54.9,
+    "promo": null,
+    "canonico": 54.9,
+    "tipo": "regular",
+    "page": 22
+  },
+  "25331": {
+    "regular": 499.0,
+    "promo": null,
+    "canonico": 499.0,
+    "tipo": "regular",
+    "page": 22
+  },
+  "26996": {
+    "regular": 299.0,
+    "promo": null,
+    "canonico": 299.0,
+    "tipo": "regular",
+    "page": 22
+  },
+  "26878": {
+    "regular": 209.0,
+    "promo": null,
+    "canonico": 209.0,
+    "tipo": "regular",
+    "page": 23
+  },
+  "26732": {
+    "regular": 149.0,
+    "promo": null,
+    "canonico": 149.0,
+    "tipo": "regular",
+    "page": 24
+  },
+  "26708": {
+    "regular": 89.9,
+    "promo": null,
+    "canonico": 89.9,
+    "tipo": "regular",
+    "page": 24
+  },
+  "25748": {
+    "regular": 649.0,
+    "promo": null,
+    "canonico": 649.0,
+    "tipo": "regular",
+    "page": 24
+  },
+  "21750": {
+    "regular": 229.0,
+    "promo": null,
+    "canonico": 229.0,
+    "tipo": "regular",
+    "page": 26
+  },
+  "21762": {
+    "regular": 229.0,
+    "promo": null,
+    "canonico": 229.0,
+    "tipo": "regular",
+    "page": 26
+  },
+  "17725": {
+    "regular": 69.9,
+    "promo": null,
+    "canonico": 69.9,
+    "tipo": "regular",
+    "page": 26
+  },
+  "26753": {
+    "regular": 59.9,
+    "promo": null,
+    "canonico": 59.9,
+    "tipo": "regular",
+    "page": 26
+  },
+  "25872": {
+    "regular": 299.0,
+    "promo": null,
+    "canonico": 299.0,
+    "tipo": "regular",
+    "page": 27
+  },
+  "26879": {
+    "regular": 279.0,
+    "promo": null,
+    "canonico": 279.0,
+    "tipo": "regular",
+    "page": 28
+  },
+  "25383": {
+    "regular": 189.0,
+    "promo": null,
+    "canonico": 189.0,
+    "tipo": "regular",
+    "page": 28
+  },
+  "25391": {
+    "regular": 189.0,
+    "promo": null,
+    "canonico": 189.0,
+    "tipo": "regular",
+    "page": 28
+  },
+  "25467": {
+    "regular": 209.0,
+    "promo": null,
+    "canonico": 209.0,
+    "tipo": "regular",
+    "page": 28
+  },
+  "26327": {
+    "regular": 900.0,
+    "promo": null,
+    "canonico": 900.0,
+    "tipo": "regular",
+    "page": 30
+  },
+  "23367": {
+    "regular": 129.0,
+    "promo": null,
+    "canonico": 129.0,
+    "tipo": "regular",
+    "page": 31
+  },
+  "26989": {
+    "regular": 139.0,
+    "promo": null,
+    "canonico": 139.0,
+    "tipo": "regular",
+    "page": 32
+  },
+  "25300": {
+    "regular": 159.0,
+    "promo": null,
+    "canonico": 159.0,
+    "tipo": "regular",
+    "page": 32
+  },
+  "24222": {
+    "regular": 199.0,
+    "promo": null,
+    "canonico": 199.0,
+    "tipo": "regular",
+    "page": 32
+  },
+  "26312": {
+    "regular": 179.0,
+    "promo": null,
+    "canonico": 179.0,
+    "tipo": "regular",
+    "page": 32
+  },
+  "24384": {
+    "regular": 499.0,
+    "promo": null,
+    "canonico": 499.0,
+    "tipo": "regular",
+    "page": 34
+  },
+  "26316": {
+    "regular": 109.0,
+    "promo": null,
+    "canonico": 109.0,
+    "tipo": "regular",
+    "page": 34
+  },
+  "25979": {
+    "regular": 59.9,
+    "promo": null,
+    "canonico": 59.9,
+    "tipo": "regular",
+    "page": 34
+  },
+  "25981": {
+    "regular": 89.9,
+    "promo": null,
+    "canonico": 89.9,
+    "tipo": "regular",
+    "page": 34
+  },
+  "26302": {
+    "regular": null,
+    "promo": 399.0,
+    "canonico": 399.0,
+    "tipo": "promo",
+    "page": 35,
+    "promo_block": 19
+  },
+  "25556": {
+    "regular": 499.0,
+    "promo": null,
+    "canonico": 499.0,
+    "tipo": "regular",
+    "page": 36
+  },
+  "26524": {
+    "regular": 579.0,
+    "promo": null,
+    "canonico": 579.0,
+    "tipo": "regular",
+    "page": 36
+  },
+  "24526": {
+    "regular": 3400.0,
+    "promo": 1799.0,
+    "canonico": 1799.0,
+    "tipo": "promo",
+    "page": 38,
+    "promo_block": 22
+  },
+  "11515": {
+    "regular": 259.0,
+    "promo": null,
+    "canonico": 259.0,
+    "tipo": "regular",
+    "page": 38
+  },
+  "26537": {
+    "regular": 54.9,
+    "promo": null,
+    "canonico": 54.9,
+    "tipo": "regular",
+    "page": 38
+  },
+  "26563": {
+    "regular": 169.0,
+    "promo": null,
+    "canonico": 169.0,
+    "tipo": "regular",
+    "page": 38
+  },
+  "26534": {
+    "regular": 219.0,
+    "promo": null,
+    "canonico": 219.0,
+    "tipo": "regular",
+    "page": 40
+  },
+  "26514": {
+    "regular": 189.0,
+    "promo": null,
+    "canonico": 189.0,
+    "tipo": "regular",
+    "page": 40
+  },
+  "26542": {
+    "regular": 129.0,
+    "promo": null,
+    "canonico": 129.0,
+    "tipo": "regular",
+    "page": 40
+  },
+  "24519": {
+    "regular": 139.0,
+    "promo": null,
+    "canonico": 139.0,
+    "tipo": "regular",
+    "page": 40
+  },
+  "25572": {
+    "regular": 129.0,
+    "promo": null,
+    "canonico": 129.0,
+    "tipo": "regular",
+    "page": 42
+  },
+  "23516": {
+    "regular": 159.0,
+    "promo": null,
+    "canonico": 159.0,
+    "tipo": "regular",
+    "page": 42
+  },
+  "25530": {
+    "regular": 149.0,
+    "promo": null,
+    "canonico": 149.0,
+    "tipo": "regular",
+    "page": 42
+  },
+  "25858": {
+    "regular": 179.0,
+    "promo": null,
+    "canonico": 179.0,
+    "tipo": "regular",
+    "page": 42
+  },
+  "24549": {
+    "regular": 549.0,
+    "promo": null,
+    "canonico": 549.0,
+    "tipo": "regular",
+    "page": 44
+  },
+  "26506": {
+    "regular": 189.0,
+    "promo": null,
+    "canonico": 189.0,
+    "tipo": "regular",
+    "page": 44
+  },
+  "26564": {
+    "regular": 229.0,
+    "promo": null,
+    "canonico": 229.0,
+    "tipo": "regular",
+    "page": 46
+  },
+  "26531": {
+    "regular": 74.9,
+    "promo": null,
+    "canonico": 74.9,
+    "tipo": "regular",
+    "page": 46
+  },
+  "26783": {
+    "regular": 99.9,
+    "promo": null,
+    "canonico": 99.9,
+    "tipo": "regular",
+    "page": 46
+  },
+  "26844": {
+    "regular": 399.0,
+    "promo": null,
+    "canonico": 399.0,
+    "tipo": "regular",
+    "page": 48
+  },
+  "24039": {
+    "regular": 549.0,
+    "promo": null,
+    "canonico": 549.0,
+    "tipo": "regular",
+    "page": 48
+  },
+  "26801": {
+    "regular": 139.0,
+    "promo": null,
+    "canonico": 139.0,
+    "tipo": "regular",
+    "page": 50
+  },
+  "25464": {
+    "regular": 199.0,
+    "promo": null,
+    "canonico": 199.0,
+    "tipo": "regular",
+    "page": 50
+  },
+  "21027": {
+    "regular": 109.0,
+    "promo": null,
+    "canonico": 109.0,
+    "tipo": "regular",
+    "page": 50
+  },
+  "26528": {
+    "regular": 179.0,
+    "promo": null,
+    "canonico": 179.0,
+    "tipo": "regular",
+    "page": 50
+  },
+  "26800": {
+    "regular": 109.0,
+    "promo": null,
+    "canonico": 109.0,
+    "tipo": "regular",
+    "page": 52
+  },
+  "24821": {
+    "regular": 79.9,
+    "promo": null,
+    "canonico": 79.9,
+    "tipo": "regular",
+    "page": 52
+  },
+  "24566": {
+    "regular": 139.0,
+    "promo": null,
+    "canonico": 139.0,
+    "tipo": "regular",
+    "page": 52
+  },
+  "25364": {
+    "regular": 149.0,
+    "promo": null,
+    "canonico": 149.0,
+    "tipo": "regular",
+    "page": 53
+  },
+  "25639": {
+    "regular": 64.9,
+    "promo": null,
+    "canonico": 64.9,
+    "tipo": "regular",
+    "page": 53
+  },
+  "26028": {
+    "regular": 54.9,
+    "promo": null,
+    "canonico": 54.9,
+    "tipo": "regular",
+    "page": 53
+  },
+  "25801": {
+    "regular": 179.0,
+    "promo": null,
+    "canonico": 179.0,
+    "tipo": "regular",
+    "page": 54
+  },
+  "26869": {
+    "regular": 249.0,
+    "promo": null,
+    "canonico": 249.0,
+    "tipo": "regular",
+    "page": 54
+  },
+  "24880": {
+    "regular": 109.0,
+    "promo": null,
+    "canonico": 109.0,
+    "tipo": "regular",
+    "page": 54
+  },
+  "26964": {
+    "regular": 209.0,
+    "promo": null,
+    "canonico": 209.0,
+    "tipo": "regular",
+    "page": 54
+  },
+  "26870": {
+    "regular": 299.0,
+    "promo": null,
+    "canonico": 299.0,
+    "tipo": "regular",
+    "page": 55
+  },
+  "26992": {
+    "regular": 109.0,
+    "promo": null,
+    "canonico": 109.0,
+    "tipo": "regular",
+    "page": 55
+  },
+  "26010": {
+    "regular": 109.0,
+    "promo": null,
+    "canonico": 109.0,
+    "tipo": "regular",
+    "page": 56
+  },
+  "25064": {
+    "regular": 399.0,
+    "promo": null,
+    "canonico": 399.0,
+    "tipo": "regular",
+    "page": 56
+  },
+  "26043": {
+    "regular": 900.0,
+    "promo": null,
+    "canonico": 900.0,
+    "tipo": "regular",
+    "page": 56
+  },
+  "24155": {
+    "regular": null,
+    "promo": 699.0,
+    "canonico": 699.0,
+    "tipo": "promo",
+    "page": 57,
+    "promo_block": 16
+  },
+  "24027": {
+    "regular": null,
+    "promo": 399.0,
+    "canonico": 399.0,
+    "tipo": "promo",
+    "page": 57,
+    "promo_block": 19
+  },
+  "23164": {
+    "regular": 199.0,
+    "promo": null,
+    "canonico": 199.0,
+    "tipo": "regular",
+    "page": 58
+  },
+  "26874": {
+    "regular": 219.0,
+    "promo": null,
+    "canonico": 219.0,
+    "tipo": "regular",
+    "page": 58
+  },
+  "25000": {
+    "regular": 59.9,
+    "promo": null,
+    "canonico": 59.9,
+    "tipo": "regular",
+    "page": 58
+  },
+  "26908": {
+    "regular": 129.0,
+    "promo": null,
+    "canonico": 129.0,
+    "tipo": "regular",
+    "page": 58
+  },
+  "26037": {
+    "regular": 109.0,
+    "promo": null,
+    "canonico": 109.0,
+    "tipo": "regular",
+    "page": 60
+  },
+  "26873": {
+    "regular": 139.0,
+    "promo": null,
+    "canonico": 139.0,
+    "tipo": "regular",
+    "page": 60
+  },
+  "26053": {
+    "regular": 149.0,
+    "promo": null,
+    "canonico": 149.0,
+    "tipo": "regular",
+    "page": 60
+  },
+  "26993": {
+    "regular": 189.0,
+    "promo": null,
+    "canonico": 189.0,
+    "tipo": "regular",
+    "page": 60
+  },
+  "25053": {
+    "regular": 449.0,
+    "promo": null,
+    "canonico": 449.0,
+    "tipo": "regular",
+    "page": 62
+  },
+  "20038": {
+    "regular": 199.0,
+    "promo": null,
+    "canonico": 199.0,
+    "tipo": "regular",
+    "page": 62
+  },
+  "26016": {
+    "regular": 169.0,
+    "promo": null,
+    "canonico": 169.0,
+    "tipo": "regular",
+    "page": 62
+  },
+  "24619": {
+    "regular": 74.9,
+    "promo": null,
+    "canonico": 74.9,
+    "tipo": "regular",
+    "page": 62
+  },
+  "25028": {
+    "regular": 99.9,
+    "promo": null,
+    "canonico": 99.9,
+    "tipo": "regular",
+    "page": 64
+  },
+  "21525": {
+    "regular": 129.0,
+    "promo": null,
+    "canonico": 129.0,
+    "tipo": "regular",
+    "page": 64
+  },
+  "26054": {
+    "regular": 249.0,
+    "promo": null,
+    "canonico": 249.0,
+    "tipo": "regular",
+    "page": 64
+  },
+  "26778": {
+    "regular": 399.0,
+    "promo": null,
+    "canonico": 399.0,
+    "tipo": "regular",
+    "page": 64
+  },
+  "25211": {
+    "regular": 750.0,
+    "promo": null,
+    "canonico": 750.0,
+    "tipo": "regular",
+    "page": 66
+  },
+  "26245": {
+    "regular": 249.0,
+    "promo": null,
+    "canonico": 249.0,
+    "tipo": "regular",
+    "page": 67
+  },
+  "26997": {
+    "regular": 269.0,
+    "promo": null,
+    "canonico": 269.0,
+    "tipo": "regular",
+    "page": 68
+  },
+  "24212": {
+    "regular": 950.0,
+    "promo": null,
+    "canonico": 950.0,
+    "tipo": "regular",
+    "page": 68
+  },
+  "26882": {
+    "regular": 199.0,
+    "promo": null,
+    "canonico": 199.0,
+    "tipo": "regular",
+    "page": 68
+  },
+  "25625": {
+    "regular": 169.0,
+    "promo": null,
+    "canonico": 169.0,
+    "tipo": "regular",
+    "page": 70
+  },
+  "26767": {
+    "regular": 59.9,
+    "promo": null,
+    "canonico": 59.9,
+    "tipo": "regular",
+    "page": 70
+  },
+  "24221": {
+    "regular": 169.0,
+    "promo": null,
+    "canonico": 169.0,
+    "tipo": "regular",
+    "page": 70
+  },
+  "26243": {
+    "regular": 99.9,
+    "promo": null,
+    "canonico": 99.9,
+    "tipo": "regular",
+    "page": 70
+  },
+  "26318": {
+    "regular": 199.0,
+    "promo": null,
+    "canonico": 199.0,
+    "tipo": "regular",
+    "page": 72
+  },
+  "26220": {
+    "regular": 700.0,
+    "promo": null,
+    "canonico": 700.0,
+    "tipo": "regular",
+    "page": 72
+  },
+  "26242": {
+    "regular": 149.0,
+    "promo": null,
+    "canonico": 149.0,
+    "tipo": "regular",
+    "page": 72
+  },
+  "26419": {
+    "regular": 299.0,
+    "promo": null,
+    "canonico": 299.0,
+    "tipo": "regular",
+    "page": 74
+  },
+  "23425": {
+    "regular": 109.0,
+    "promo": null,
+    "canonico": 109.0,
+    "tipo": "regular",
+    "page": 76
+  },
+  "12411": {
+    "regular": 159.0,
+    "promo": null,
+    "canonico": 159.0,
+    "tipo": "regular",
+    "page": 76
+  },
+  "26300": {
+    "regular": 219.0,
+    "promo": null,
+    "canonico": 219.0,
+    "tipo": "regular",
+    "page": 76
+  },
+  "25369": {
+    "regular": 169.0,
+    "promo": null,
+    "canonico": 169.0,
+    "tipo": "regular",
+    "page": 76
+  },
+  "26400": {
+    "regular": 119.0,
+    "promo": null,
+    "canonico": 119.0,
+    "tipo": "regular",
+    "page": 78
+  },
+  "26410": {
+    "regular": 169.0,
+    "promo": null,
+    "canonico": 169.0,
+    "tipo": "regular",
+    "page": 78
+  },
+  "26968": {
+    "regular": 149.0,
+    "promo": null,
+    "canonico": 149.0,
+    "tipo": "regular",
+    "page": 78
+  },
+  "70414": {
+    "regular": 299.0,
+    "promo": null,
+    "canonico": 299.0,
+    "tipo": "regular",
+    "page": 80
+  },
+  "25439": {
+    "regular": 169.0,
+    "promo": null,
+    "canonico": 169.0,
+    "tipo": "regular",
+    "page": 80
+  },
+  "26405": {
+    "regular": 269.0,
+    "promo": null,
+    "canonico": 269.0,
+    "tipo": "regular",
+    "page": 80
+  },
+  "26402": {
+    "regular": 379.0,
+    "promo": null,
+    "canonico": 379.0,
+    "tipo": "regular",
+    "page": 80
+  },
+  "26135": {
+    "regular": 700.0,
+    "promo": null,
+    "canonico": 700.0,
+    "tipo": "regular",
+    "page": 81
+  },
+  "25580": {
+    "regular": 159.0,
+    "promo": null,
+    "canonico": 159.0,
+    "tipo": "regular",
+    "page": 83
+  },
+  "26119": {
+    "regular": 89.9,
+    "promo": null,
+    "canonico": 89.9,
+    "tipo": "regular",
+    "page": 83
+  },
+  "26112": {
+    "regular": 299.0,
+    "promo": null,
+    "canonico": 299.0,
+    "tipo": "regular",
+    "page": 83
+  },
+  "26113": {
+    "regular": 139.0,
+    "promo": null,
+    "canonico": 139.0,
+    "tipo": "regular",
+    "page": 85
+  },
+  "26815": {
+    "regular": 900.0,
+    "promo": null,
+    "canonico": 900.0,
+    "tipo": "regular",
+    "page": 85
+  },
+  "24601": {
+    "regular": 169.0,
+    "promo": null,
+    "canonico": 169.0,
+    "tipo": "regular",
+    "page": 85
+  },
+  "24116": {
+    "regular": 1300.0,
+    "promo": null,
+    "canonico": 1300.0,
+    "tipo": "regular",
+    "page": 87
+  },
+  "23178": {
+    "regular": 54.9,
+    "promo": null,
+    "canonico": 54.9,
+    "tipo": "regular",
+    "page": 89
+  },
+  "26121": {
+    "regular": 49.9,
+    "promo": null,
+    "canonico": 49.9,
+    "tipo": "regular",
+    "page": 89
+  },
+  "25132": {
+    "regular": 89.9,
+    "promo": null,
+    "canonico": 89.9,
+    "tipo": "regular",
+    "page": 89
+  },
+  "26116": {
+    "regular": 79.9,
+    "promo": null,
+    "canonico": 79.9,
+    "tipo": "regular",
+    "page": 91
+  },
+  "26100": {
+    "regular": 159.0,
+    "promo": null,
+    "canonico": 159.0,
+    "tipo": "regular",
+    "page": 91
+  },
+  "26108": {
+    "regular": 89.9,
+    "promo": null,
+    "canonico": 89.9,
+    "tipo": "regular",
+    "page": 91
+  },
+  "26885": {
+    "regular": 69.9,
+    "promo": null,
+    "canonico": 69.9,
+    "tipo": "regular",
+    "page": 92
+  },
+  "26246": {
+    "regular": 299.0,
+    "promo": null,
+    "canonico": 299.0,
+    "tipo": "regular",
+    "page": 93
+  },
+  "26811": {
+    "regular": 199.0,
+    "promo": null,
+    "canonico": 199.0,
+    "tipo": "regular",
+    "page": 95
+  },
+  "26817": {
+    "regular": 179.0,
+    "promo": null,
+    "canonico": 179.0,
+    "tipo": "regular",
+    "page": 95
+  },
+  "26818": {
+    "regular": 149.0,
+    "promo": null,
+    "canonico": 149.0,
+    "tipo": "regular",
+    "page": 95
+  },
+  "24815": {
+    "regular": 119.0,
+    "promo": null,
+    "canonico": 119.0,
+    "tipo": "regular",
+    "page": 95
+  },
+  "24620": {
+    "regular": 119.0,
+    "promo": null,
+    "canonico": 119.0,
+    "tipo": "regular",
+    "page": 96
+  },
+  "25436": {
+    "regular": 159.0,
+    "promo": null,
+    "canonico": 159.0,
+    "tipo": "regular",
+    "page": 97
+  },
+  "26737": {
+    "regular": 79.9,
+    "promo": null,
+    "canonico": 79.9,
+    "tipo": "regular",
+    "page": 97
+  },
+  "21774": {
+    "regular": 179.0,
+    "promo": null,
+    "canonico": 179.0,
+    "tipo": "regular",
+    "page": 97
+  },
+  "24794": {
+    "regular": 650.0,
+    "promo": null,
+    "canonico": 650.0,
+    "tipo": "regular",
+    "page": 97
+  },
+  "26134": {
+    "regular": 149.0,
+    "promo": null,
+    "canonico": 149.0,
+    "tipo": "regular",
+    "page": 97
+  },
+  "25718": {
+    "regular": 479.0,
+    "promo": null,
+    "canonico": 479.0,
+    "tipo": "regular",
+    "page": 99
+  },
+  "26702": {
+    "regular": 69.9,
+    "promo": null,
+    "canonico": 69.9,
+    "tipo": "regular",
+    "page": 99
+  },
+  "26780": {
+    "regular": 249.0,
+    "promo": null,
+    "canonico": 249.0,
+    "tipo": "regular",
+    "page": 99
+  },
+  "26788": {
+    "regular": 199.0,
+    "promo": null,
+    "canonico": 199.0,
+    "tipo": "regular",
+    "page": 99
+  },
+  "26748": {
+    "regular": 1600.0,
+    "promo": null,
+    "canonico": 1600.0,
+    "tipo": "regular",
+    "page": 101
+  },
+  "26887": {
+    "regular": 1000.0,
+    "promo": null,
+    "canonico": 1000.0,
+    "tipo": "regular",
+    "page": 103
+  },
+  "24323": {
+    "regular": 179.0,
+    "promo": null,
+    "canonico": 179.0,
+    "tipo": "regular",
+    "page": 104
+  },
+  "26746": {
+    "regular": 199.0,
+    "promo": null,
+    "canonico": 199.0,
+    "tipo": "regular",
+    "page": 105
+  },
+  "26838": {
+    "regular": 249.0,
+    "promo": null,
+    "canonico": 249.0,
+    "tipo": "regular",
+    "page": 105
+  },
+  "24615": {
+    "regular": 1900.0,
+    "promo": null,
+    "canonico": 1900.0,
+    "tipo": "regular",
+    "page": 105
+  },
+  "24486": {
+    "regular": 149.0,
+    "promo": null,
+    "canonico": 149.0,
+    "tipo": "regular",
+    "page": 106
+  },
+  "26547": {
+    "regular": 299.0,
+    "promo": null,
+    "canonico": 299.0,
+    "tipo": "regular",
+    "page": 107
+  },
+  "24043": {
+    "regular": 189.0,
+    "promo": null,
+    "canonico": 189.0,
+    "tipo": "regular",
+    "page": 107
+  },
+  "26994": {
+    "regular": 718.0,
+    "promo": null,
+    "canonico": 718.0,
+    "tipo": "regular",
+    "page": 109
+  },
+  "26311": {
+    "regular": 159.0,
+    "promo": null,
+    "canonico": 159.0,
+    "tipo": "regular",
+    "page": 111
+  },
+  "26403": {
+    "regular": 219.0,
+    "promo": null,
+    "canonico": 219.0,
+    "tipo": "regular",
+    "page": 111
+  },
+  "23607": {
+    "regular": 499.0,
+    "promo": null,
+    "canonico": 499.0,
+    "tipo": "regular",
+    "page": 111
+  },
+  "23346": {
+    "regular": 800.0,
+    "promo": null,
+    "canonico": 800.0,
+    "tipo": "regular",
+    "page": 111
+  },
+  "23345": {
+    "regular": 349.0,
+    "promo": null,
+    "canonico": 349.0,
+    "tipo": "regular",
+    "page": 111
+  },
+  "25134": {
+    "regular": 179.0,
+    "promo": null,
+    "canonico": 179.0,
+    "tipo": "regular",
+    "page": 111
+  },
+  "23734": {
+    "regular": 899.0,
+    "promo": null,
+    "canonico": 899.0,
+    "tipo": "regular",
+    "page": 111
+  },
+  "25804": {
+    "regular": 499.0,
+    "promo": null,
+    "canonico": 499.0,
+    "tipo": "regular",
+    "page": 111
+  },
+  "26527": {
+    "regular": 169.0,
+    "promo": null,
+    "canonico": 169.0,
+    "tipo": "regular",
+    "page": 111
+  },
+  "24855": {
+    "regular": 549.0,
+    "promo": null,
+    "canonico": 549.0,
+    "tipo": "regular",
+    "page": 111
+  },
+  "22333": {
+    "regular": 119.0,
+    "promo": null,
+    "canonico": 119.0,
+    "tipo": "regular",
+    "page": 111
+  }
+}

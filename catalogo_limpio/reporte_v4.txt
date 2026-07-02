@@ -1,0 +1,206 @@
+==============================================================================================================
+REPORTE v4
+==============================================================================================================
+Total SQL: 344 | Encontrados: 183 | Coinciden: 147 | Difieren: 36 | No enc: 161
+
+--- DIFIEREN ---
+Codigo  Nombre                              SQL    Catal    Tipo      Reg    Promo  Pag
+12411   Multi Organizador Dental         119.00   159.00 regular   159.00     0.00   76
+12733   Mosquitero Magnético             179.00   239.00 regular   239.00     0.00   20
+17725   Guardapolvo Translucent           54.90    69.90 regular    69.90     0.00   26
+21750   Guarda Clima                     199.00   229.00 regular   229.00     0.00   26
+21762   Guardapolvo                      199.00   229.00 regular   229.00     0.00   26
+24212   Pedi Spa Smart                   649.00   950.00 regular   950.00     0.00   68
+24566   Estufa Protect                   109.00   139.00 regular   139.00     0.00   52
+25211   Planti Difusor                   499.00   750.00 regular   750.00     0.00   66
+25364   Servi 3                          129.00   149.00 regular   149.00     0.00   53
+25383   Adherible Cantera                139.00   189.00 regular   189.00     0.00   28
+25391   Adherible Piedra Laja            139.00   189.00 regular   189.00     0.00   28
+25436   Pasti Semanal Pro                 59.90   159.00 regular   159.00     0.00   97
+25467   Adherible Textur Ladrillo        179.00   209.00 regular   209.00     0.00   28
+25748   Maxi Tapete Habitat              499.00   649.00 regular   649.00     0.00   24
+25872   Adherible Black Out              249.00   299.00 regular   299.00     0.00   27
+26021   Set Dispensa Vitrolux            599.00  1300.00   promo     0.00  1300.00    4
+26043   Cerealeros Hermetic Colors       549.00   900.00 regular   900.00     0.00   56
+26220   Set Fresh Confort                449.00   700.00 regular   700.00     0.00   72
+26317   Cajonera Pardo                   699.00  1000.00 regular  1000.00     0.00   12
+26327   Maxi Zapatera Protect            599.00   900.00 regular   900.00     0.00   30
+26405   Organi Rollo Black                99.90   269.00 regular   269.00     0.00   80
+26712   Set Mesas Álamo                  599.00   900.00 regular   900.00     0.00   14
+26736   Triangu Almohada Confort         499.00   750.00 regular   750.00     0.00    6
+26749   Deco Macetero                    479.00   750.00 regular   750.00     0.00   14
+26753   Cuña Dúo                          44.90    59.90 regular    59.90     0.00   26
+26757   Practi Venti Fresh               499.00   750.00 regular   750.00     0.00   16
+26783   Protecti Alimentos Max            74.90    99.90 regular    99.90     0.00   46
+26793   Repisa Oslo                      499.00   700.00 regular   700.00     0.00   10
+26813   Mesa Roll                        899.00  1800.00 regular  1800.00     0.00    7
+26844   Canasta Black                    259.00   399.00 regular   399.00     0.00   48
+26879   Adherible 3D Laja                229.00   279.00 regular   279.00     0.00   28
+26968   Gotas Cero Olores Verano         119.00   149.00 regular   149.00     0.00   78
+26987   Silla Hielera Fresh              449.00   650.00   promo     0.00   650.00    2
+26988   Set Lumi Aqua                    199.00   259.00 regular   259.00     0.00   18
+26989   Luz Estrella                      99.90   139.00 regular   139.00     0.00   32
+26995   Fácil Mop Edición Especial       559.00   850.00 regular   850.00     0.00    8
+
+--- NO ENCONTRADOS ---
+12512  Pelador Jumbo                  SQL=69.9  page=None
+18832  Organi Cubiertos Ajustable     SQL=179.0  page=None
+20223  Cepillo WC Flex                SQL=79.9  page=None
+20224  Cepillo Conmigo                SQL=109.0  page=None
+21423  Renova Juntas                  SQL=69.9  page=None
+21432  Espuma Push                    SQL=169.0  page=None
+21540  Multi Pelador Chef             SQL=54.9  page=None
+21734  Lumi Rosas                     SQL=149.0  page=None
+22128  Cepillo Flex                   SQL=69.9  page=None
+22253  Brazo Limpia Fácil             SQL=89.9  page=None
+22359  Set Modular                    SQL=129.0  page=None
+22428  Extensión Flex                 SQL=129.0  page=None
+22436  Limpia Vidrios 5 en 1          SQL=109.0  page=None
+22457  Cortina Spring                 SQL=369.0  page=None
+22518  Exprimcut                      SQL=199.0  page=None
+22608  Escoba Pro 2.0                 SQL=299.0  page=None
+23106  Cepi Estufa 4 en 1             SQL=64.9  page=None
+23121  Esquina Practiklin             SQL=369.0  page=None
+23144  Quita Polvo Flex               SQL=179.0  page=None
+23180  Limpia Tenis                   SQL=109.0  page=None
+23186  Jalador Extensible             SQL=109.0  page=None
+23228  Cápsula Perfume Max            SQL=129.0  page=None
+23306  Almohada Multi Confort         SQL=249.0  page=None
+23518  Vaporera Pro                   SQL=229.0  page=None
+23531  Corta Manzanas Pro             SQL=119.0  page=None
+23723  Soporte Maxi Visión            SQL=129.0  page=None
+23796  Soporte Cel Lux                SQL=89.9  page=None
+23870  B Shaker Conmigo               SQL=119.0  page=None
+24006  Conserva Set Blue              SQL=289.0  page=None
+24134  Trapi Mop Blue                 SQL=299.0  page=None
+24139  R. Trapi Mop Blue              SQL=139.0  page=None
+24160  Deslisalsa Dispensador         SQL=99.9  page=None
+24162  Hielos Stick Flex              SQL=159.0  page=None
+24245  Multi Contacto Roll            SQL=299.0  page=None
+24324  Vaso Cool Blue                 SQL=179.0  page=None
+24327  Zapatera 4 Niveles             SQL=279.0  page=None
+24404  Tapita Lavabo                  SQL=29.9  page=None
+24426  Tapete Anticaídas              SQL=199.0  page=None
+24438  Dispensador Push               SQL=149.0  page=None
+24472  Gancho Pantalones Max          SQL=159.0  page=None
+24600  Set Limpia WC                  SQL=219.0  page=None
+24771  Luz Sensor Slim                SQL=159.0  page=None
+24791  Lámpara Elegant Touch          SQL=449.0  page=None
+24843  Eco Push Dúo                   SQL=179.0  page=None
+25038  Estación Fresh                 SQL=259.0  page=None
+25049  Canastilla Dúo Protect         SQL=69.9  page=None
+25052  Conserva Cebolla               SQL=59.9  page=None
+25060  Organi Canastilla Fregadero    SQL=59.9  page=None
+25104  Plancha Protect                SQL=179.0  page=None
+25124  Renueva Burro De Planchar      SQL=159.0  page=None
+25133  R. Mechu Mop                   SQL=139.0  page=None
+25141  Better Contacto Pro            SQL=159.0  page=None
+25217  Bye Vello Pro                  SQL=299.0  page=None
+25322  Ganchos Antidesliz             SQL=129.0  page=None
+25327  Organi Joyas 4                 SQL=129.0  page=None
+25377  Adherible Parota               SQL=189.0  page=None
+25432  Protecti Desagüe Max           SQL=29.9  page=None
+25444  Atrapa Cabellos Dúo            SQL=49.9  page=None
+25465  Canasta Dúo Fresh              SQL=279.0  page=None
+25534  Agita Hot Cakes                SQL=149.0  page=None
+25573  B-Better Colors Durazno        SQL=119.0  page=None
+25576  Adherible Panel Madera         SQL=149.0  page=None
+25581  Talla Pomex Pro                SQL=179.0  page=None
+25612  Kit Restauración               SQL=79.9  page=None
+25789  Tapete Media Luna              SQL=129.0  page=None
+25827  Tri Carrito Slim               SQL=499.0  page=None
+25855  No Me Mires Florecer           SQL=189.0  page=None
+25869  Funda Prendas Protect          SQL=159.0  page=None
+25873  No Me Mires Reflex             SQL=249.0  page=None
+25966  Luz Noche                      SQL=129.0  page=None
+26000  Escurre Chiles Pick            SQL=84.9  page=None
+26004  Gurmy Lunch Conmigo            SQL=169.0  page=None
+26005  Cubi Hielos Max                SQL=1.0  page=None
+26019  Sella Fácil                    SQL=149.0  page=None
+26024  Moldi Paletas                  SQL=79.9  page=None
+26025  Conserva Mantequilla           SQL=90.0  page=None
+26029  Portavasos Flor                SQL=59.9  page=None
+26034  Gurmy Deco Bowls               SQL=289.0  page=None
+26036  Better Jarra Mix               SQL=149.0  page=None
+26044  Esfera Bowls                   SQL=229.0  page=None
+26045  Cervetarro ¡Vamos México!      SQL=349.0  page=None
+26048  Organi Tarja                   SQL=149.0  page=None
+26057  Tortillero Lino Termo          SQL=129.0  page=None
+26062  Gurmy Doble Sandwichera Azul   SQL=99.9  page=None
+26063  Gurmy Doble Sandwichera Lila   SQL=99.9  page=None
+26101  Atrapa Polvo Slim              SQL=89.9  page=None
+26111  Lava Tenis Max                 SQL=69.9  page=None
+26124  Paños Soft Klin                SQL=69.9  page=None
+26125  Canasta Flex                   SQL=189.0  page=None
+26131  Bolsa Barbie™ 70s              SQL=499.0  page=None
+26133  Retoque Express                SQL=99.9  page=None
+26210  Facial Klin                    SQL=249.0  page=None
+26217  Pedi Tapete                    SQL=119.0  page=None
+26224  Practi Toalla Grey             SQL=219.0  page=None
+26228  Almohada Air Confort           SQL=399.0  page=None
+26229  Spa Facial Magic               SQL=359.0  page=None
+26233  Antifaz Maxi Confort           SQL=59.9  page=None
+26236  Corta Uñas Zoom                SQL=79.9  page=None
+26237  Perlas Aroma Lavanda           SQL=89.9  page=None
+26244  Mascarilla Relax               SQL=119.0  page=None
+26322  Cesto Marino                   SQL=329.0  page=None
+26323  Gira Organi Cosmetics          SQL=129.0  page=None
+26324  Cubo Fundas Marino             SQL=299.0  page=None
+26401  Cepillo Spa Electric           SQL=449.0  page=None
+26412  Cinta Anti Caídas Max          SQL=49.9  page=None
+26416  Tapete Camel                   SQL=149.0  page=None
+26417  Perchero Flex                  SQL=129.0  page=None
+26507  Exprim Fold                    SQL=109.0  page=None
+26515  Gelati Flor                    SQL=159.0  page=None
+26519  Afila Tabla                    SQL=159.0  page=None
+26538  Practi Moli Dúo                SQL=139.0  page=None
+26539  Better Crepas Dúo              SQL=549.0  page=None
+26540  Gira Pelador                   SQL=59.9  page=None
+26548  Mandil Flora                   SQL=229.0  page=None
+26549  Cuadri Tablas                  SQL=79.9  page=None
+26553  Escurre Bowl                   SQL=99.9  page=None
+26554  Pinza Inox Black               SQL=119.0  page=None
+26703  Lonchera Box                   SQL=199.0  page=None
+26704  Vaso Dúo                       SQL=149.0  page=None
+26731  Flexi Cool Packs               SQL=119.0  page=None
+26734  Luz Multi Flor                 SQL=99.9  page=None
+26747  Destapa Porta Bebidas          SQL=249.0  page=None
+26754  Extendi Paraguas               SQL=349.0  page=None
+26762  Soporte Movi Cel               SQL=109.0  page=None
+26763  Lonchera Fresh                 SQL=259.0  page=None
+26772  Jarrones Classic               SQL=289.0  page=None
+26773  Absorbe Max Flores             SQL=199.0  page=None
+26779  Lumi Espejo Auto               SQL=249.0  page=None
+26789  Protecti Derrames              SQL=69.9  page=None
+26795  Poncho Stitch                  SQL=199.0  page=None
+26802  Condimentos Lux                SQL=79.9  page=None
+26803  Tri Frutero Black              SQL=479.0  page=None
+26808  Repisas Esquineras             SQL=499.0  page=None
+26810  Porta Cepillos Lila            SQL=69.9  page=None
+26821  Banquito ¡Vamos México!        SQL=449.0  page=None
+26822  Insectos Shock                 SQL=379.0  page=None
+26825  Cubre Zapatos Blue             SQL=119.0  page=None
+26828  Organizador Adjust             SQL=169.0  page=None
+26836  Set Sujeti Ganchos             SQL=59.9  page=None
+26842  Vaso Barbie™ 70s               SQL=219.0  page=None
+26872  Cubiertos Compact              SQL=119.0  page=None
+26881  Adherible Talavera Cobalto     SQL=189.0  page=None
+26884  Agujas Mágicas                 SQL=79.9  page=None
+26901  Adherible Mármol Black         SQL=189.0  page=None
+26966  Cinta Instala Fácil            SQL=89.9  page=None
+26967  No Me Mires Electrostático     SQL=189.0  page=None
+26990  Escurritapete Jumbo            SQL=199.0  page=None
+80140  Fibra de Acero Inoxidable      SQL=69.9  page=None
+90001  Better Cooler Max              SQL=1280.0  page=None
+90002  Practi Ganchos                 SQL=79.9  page=None
+90003  Set Cuelga Fácil               SQL=79.9  page=None
+90004  Multi Organizador B            SQL=59.9  page=None
+90005  Broches Gold                   SQL=99.9  page=None
+90006  Cubre Colchón Protect          SQL=459.0  page=None
+90007  Maxi Condimentos               SQL=229.0  page=None
+90008  Tijeras Chef                   SQL=64.9  page=None
+90009  Desli Organi Utensilios        SQL=49.9  page=None
+90010  Maxi Servilletero              SQL=129.0  page=None
+90011  Porta Rollo Granito            SQL=129.0  page=None
+90012  Salchichas Lockit Max          SQL=74.9  page=None
+90013  Conserva Aguacate              SQL=59.9  page=None

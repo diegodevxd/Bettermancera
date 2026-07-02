@@ -1,0 +1,893 @@
+
+##### 12411 Multi Organizador Dental  SQL=119.0  pag=76
+    v5: regular=159.0 promo=None canonico=159.0 tipo=regular #precios=2
+    card: y=98..919  cx=120
+      y=76 x=272 sz=17 'BETTER'
+      y=81 x=384 sz=42 'OFERTA'
+      y=98 x=120 sz=20 '12411'
+      y=126 x=185 sz=26 'Multi Organizador'
+      y=157 x=123 sz=26 'Denta'
+      y=159 x=157 sz=22 'l'
+      y=187 x=97 sz=23 '$'  <-- PRECIO?
+      y=193 x=137 sz=40 '159'  <-- PRECIO?
+      y=244 x=105 sz=19 '$'  <-- PRECIO?
+      y=246 x=137 sz=33 '119'  <-- PRECIO?
+      y=644 x=163 sz=16 'Instalación'
+      y=662 x=159 sz=16 'con ventosas'
+      y=787 x=293 sz=15 'Soporta. 1.5 kg. Cap. 5 cepillos,'
+      y=787 x=136 sz=15 'Polipropileno.'
+      y=806 x=219 sz=15 '1 pasta dental y 1 rastrillo. 28 x 8 x 9 cm.'
+      y=825 x=168 sz=15 'Instalación con ventosa.'
+
+##### 17725 Guardapolvo Translucent  SQL=54.9  pag=26
+    v5: regular=69.9 promo=None canonico=69.9 tipo=regular #precios=2
+    card: y=978..1578  cx=600
+      y=978 x=600 sz=20 '17725'
+      y=1007 x=641 sz=26 'Guardapolvo'
+      y=1038 x=631 sz=26 'Translucent'
+      y=1068 x=577 sz=23 '$'  <-- PRECIO?
+      y=1068 x=641 sz=23 '90'  <-- PRECIO?
+      y=1074 x=605 sz=40 '69'  <-- PRECIO?
+      y=1122 x=644 sz=22 '90'
+      y=1126 x=585 sz=22 '$'  <-- PRECIO?
+      y=1128 x=612 sz=37 '54'  <-- PRECIO?
+      y=1278 x=910 sz=22 'Pega y protege'
+      y=1422 x=395 sz=18 'Para todo tipo'
+      y=1441 x=380 sz=18 'de puertas'
+      y=1556 x=270 sz=16 'Punta delgada'
+
+##### 21750 Guarda Clima  SQL=199.0  pag=26
+    v5: regular=229.0 promo=None canonico=229.0 tipo=regular #precios=2
+    card: y=183..978  cx=600
+      y=183 x=600 sz=20 '21750'
+      y=212 x=642 sz=26 'Guarda Clima'
+      y=242 x=577 sz=23 '$'  <-- PRECIO?
+      y=248 x=617 sz=40 '229'  <-- PRECIO?
+      y=299 x=585 sz=22 '$'  <-- PRECIO?
+      y=302 x=622 sz=37 '199'  <-- PRECIO?
+      y=710 x=681 sz=16 'Ajustable'
+      y=885 x=680 sz=15 'Poliéster y Espuma de Polietileno.'
+      y=903 x=750 sz=15 '95 x 16 x 5 cm. Incluye velcros ajustables de 70 a 95 cm.'
+      y=903 x=251 sz=15 '95 x 22 x 5 cm. Incluye velcros ajustables de 70 a 95 cm.'
+
+##### 21762 Guardapolvo  SQL=199.0  pag=26
+    v5: regular=229.0 promo=None canonico=229.0 tipo=regular #precios=2
+    card: y=183..978  cx=100
+      y=183 x=100 sz=20 '21762'
+      y=212 x=138 sz=26 'Guardapolvo'
+      y=242 x=77 sz=23 '$'  <-- PRECIO?
+      y=248 x=117 sz=40 '229'  <-- PRECIO?
+      y=299 x=85 sz=22 '$'  <-- PRECIO?
+      y=302 x=122 sz=37 '199'  <-- PRECIO?
+      y=710 x=184 sz=16 'Ajustable'
+      y=885 x=168 sz=15 'PVC y Espuma de Polietileno.'
+      y=903 x=251 sz=15 '95 x 22 x 5 cm. Incluye velcros ajustables de 70 a 95 cm.'
+
+##### 24116 Cepillo Turbo Klin  SQL=1300.0  pag=87
+    v5: regular=1300.0 promo=799.0 canonico=799.0 tipo=promo #precios=2
+    card: y=140..740  cx=193
+      y=140 x=193 sz=24 '24116'  <-- PRECIO?
+      y=177 x=252 sz=40 'Cepillo Turbo Klin'
+      y=228 x=110 sz=37 '$'  <-- PRECIO?
+      y=235 x=202 sz=64 '1,300'  <-- PRECIO?
+      y=272 x=514 sz=18 'Cepillo giratorio'
+      y=292 x=530 sz=18 'automático'
+      y=307 x=137 sz=35 '$'  <-- PRECIO?
+      y=312 x=194 sz=59 '799'  <-- PRECIO?
+      y=355 x=223 sz=18 '3'
+      y=357 x=179 sz=15 'Al comprar'  <-- PROMO MARKER
+      y=375 x=146 sz=15 'productos'  <-- PROMO MARKER
+      y=375 x=219 sz=15 'del catálogo'
+      y=645 x=296 sz=39 'LIMPIA HASTA'
+      y=687 x=292 sz=39 'el último rincón'
+
+##### 24404 Tapita Lavabo  SQL=29.9  pag=79
+    v5: regular=34.9 promo=None canonico=34.9 tipo=regular #precios=2
+    card: y=1208..1808  cx=960
+      y=1208 x=960 sz=20 '24404'
+      y=1236 x=917 sz=26 'Tapita Lavabo'
+      y=1266 x=977 sz=23 '90'  <-- PRECIO?
+      y=1269 x=913 sz=23 '$'  <-- PRECIO?
+      y=1272 x=941 sz=40 '34'  <-- PRECIO?
+      y=1321 x=968 sz=22 '90'
+      y=1324 x=908 sz=22 '$'  <-- PRECIO?
+      y=1326 x=935 sz=37 '29'  <-- PRECIO?
+      y=1514 x=923 sz=18 'Ajustable'
+      y=1534 x=925 sz=18 'a distintos'
+      y=1554 x=917 sz=18 'tamaños'
+      y=1668 x=653 sz=15 'Silicón. D. 4 x 4 cm.'
+
+##### 24566 Estufa Protect  SQL=109.0  pag=52
+    v5: regular=139.0 promo=None canonico=139.0 tipo=regular #precios=2
+    card: y=146..746  cx=120
+      y=146 x=120 sz=20 '24566'
+      y=175 x=164 sz=26 'Estufa Protect'
+      y=208 x=97 sz=23 '$'  <-- PRECIO?
+      y=210 x=185 sz=18 '4'
+      y=210 x=214 sz=10 'PIEZAS'
+      y=211 x=137 sz=40 '139'  <-- PRECIO?
+      y=263 x=105 sz=22 '$'  <-- PRECIO?
+      y=265 x=142 sz=37 '109'  <-- PRECIO?
+      y=663 x=131 sz=18 'Resistente'
+      y=683 x=142 sz=18 'al calor'
+
+##### 24615 Maleta Cabina Estilo  SQL=1900.0  pag=105
+    v5: regular=1900.0 promo=999.0 canonico=999.0 tipo=promo #precios=2
+    card: y=113..713  cx=656
+      y=113 x=656 sz=20 '24615'
+      y=142 x=643 sz=26 'Maleta Cabina'
+      y=173 x=596 sz=26 'Estilo'
+      y=206 x=574 sz=23 '$'  <-- PRECIO?
+      y=209 x=631 sz=40 '1,900'  <-- PRECIO?
+      y=262 x=593 sz=22 '$'  <-- PRECIO?
+      y=264 x=630 sz=37 '999'  <-- PRECIO?
+      y=296 x=917 sz=18 'o'
+      y=297 x=931 sz=18 'a'
+      y=297 x=907 sz=18 'd'
+      y=297 x=625 sz=15 'Al comprar'  <-- PROMO MARKER
+      y=299 x=897 sz=18 'a'
+      y=299 x=945 sz=18 '3'
+      y=302 x=887 sz=18 'd'
+      y=304 x=958 sz=18 'd'
+      y=306 x=877 sz=18 'n'
+      y=308 x=965 sz=18 'í'
+      y=311 x=869 sz=18 'a'
+      y=311 x=971 sz=18 'g'
+      y=314 x=590 sz=18 '3'
+      y=315 x=977 sz=18 'i'
+      y=316 x=635 sz=15 'productos'  <-- PROMO MARKER
+      y=317 x=860 sz=18 'C'
+      y=319 x=981 sz=18 't'
+      y=325 x=987 sz=18 'o'
+      y=331 x=993 sz=18 's'
+      y=334 x=624 sz=15 'del catálogo'
+
+##### 24620 B-Better Colors Aqua  SQL=119.0  pag=96
+    v5: regular=99.9 promo=None canonico=99.9 tipo=regular #precios=2
+    card: y=143..743  cx=100
+      y=143 x=100 sz=20 '24620'
+      y=171 x=184 sz=26 'B-Better Colors Aqua'
+      y=201 x=77 sz=23 '$'  <-- PRECIO?
+      y=207 x=121 sz=40 '119'  <-- PRECIO?
+      y=256 x=145 sz=22 '90'
+      y=259 x=85 sz=22 '$'  <-- PRECIO?
+      y=261 x=111 sz=37 '99'  <-- PRECIO?
+
+##### 25141 Better Contacto Pro  SQL=159.0  pag=25
+    v5: regular=199.0 promo=None canonico=199.0 tipo=regular #precios=2
+    card: y=141..919  cx=960
+      y=141 x=960 sz=20 '25141'
+      y=170 x=886 sz=26 'Better Contacto Pro'
+      y=200 x=916 sz=23 '$'  <-- PRECIO?
+      y=206 x=956 sz=40 '199'  <-- PRECIO?
+      y=258 x=913 sz=22 '$'  <-- PRECIO?
+      y=260 x=950 sz=37 '159'  <-- PRECIO?
+      y=346 x=634 sz=18 'Botón corta'
+      y=366 x=642 sz=18 'corriente'
+      y=654 x=938 sz=19 '•	3 contactos'
+      y=676 x=940 sz=19 'aterrizados'
+      y=698 x=916 sz=19 '•	2 USB'
+      y=720 x=922 sz=19 '•	1 USB C'
+      y=826 x=732 sz=15 'Eléctrico. 127 V 10 A. ABS. D. 10 x 7 x 6 cm.'
+
+##### 25300 Set Bolsas Compress  SQL=159.0  pag=32
+    v5: regular=459.0 promo=None canonico=459.0 tipo=regular #precios=2
+    card: y=77..1208  cx=600
+      y=77 x=600 sz=20 '25300'
+      y=106 x=623 sz=26 'Set Bolsas'
+      y=137 x=623 sz=26 'Compress'
+      y=167 x=577 sz=23 '$'  <-- PRECIO?
+      y=173 x=621 sz=40 '159'  <-- PRECIO?
+      y=178 x=668 sz=16 '4'
+      y=178 x=696 sz=10 'PIEZAS'
+      y=274 x=423 sz=22 'Material anti'
+      y=299 x=419 sz=22 'ácaros y polvo'
+      y=395 x=690 sz=16 '4 piezas, 3 tamaños'
+      y=502 x=645 sz=15 'Polietileno y Poliamida.'
+      y=521 x=642 sz=15 'Soporta. 4 kg.'
+      y=521 x=581 sz=15 '(1)'
+      y=521 x=731 sz=15 '60 x 40 cm.'
+      y=539 x=641 sz=15 'Soporta. 5 kg.'
+      y=539 x=581 sz=15 '(1)'
+      y=539 x=729 sz=15 '69 x 50 cm.'
+      y=558 x=645 sz=15 'Soporta. 6 kg.'
+      y=558 x=582 sz=15 '(2)'
+      y=558 x=747 sz=15 '80 x 60 cm c/u.'
+      y=632 x=600 sz=20 '24350'
+      y=661 x=690 sz=26 'Cubre Colchón Protect'
+      y=694 x=577 sz=23 '$'  <-- PRECIO?
+      y=697 x=617 sz=40 '459'  <-- PRECIO?
+      y=978 x=642 sz=16 'Impermeable'
+      y=1049 x=804 sz=18 'Tamaño matrimonial'
+      y=1134 x=692 sz=15 'Poliéster y TPU. D. 190 x 135 x 38 cm.'
+
+##### 25383 Adherible Cantera  SQL=139.0  pag=28
+    v5: regular=189.0 promo=None canonico=189.0 tipo=regular #precios=2
+    card: y=183..979  cx=100
+      y=183 x=100 sz=20 '25383'
+      y=212 x=165 sz=26 'Adherible Cantera'
+      y=242 x=76 sz=23 '$'  <-- PRECIO?
+      y=248 x=117 sz=40 '189'  <-- PRECIO?
+      y=253 x=168 sz=18 '2'
+      y=253 x=196 sz=10 'PIEZAS'
+      y=300 x=85 sz=22 '$'  <-- PRECIO?
+      y=303 x=122 sz=37 '139'  <-- PRECIO?
+      y=858 x=92 sz=26 '2D'  <-- PRECIO?
+      y=903 x=302 sz=16 'Recortable.'
+      y=903 x=166 sz=15 'PVC Adherible. 200 x 45 cm.'
+
+##### 25391 Adherible Piedra Laja  SQL=139.0  pag=28
+    v5: regular=189.0 promo=None canonico=189.0 tipo=regular #precios=2
+    card: y=978..1578  cx=600
+      y=978 x=600 sz=20 '25391'
+      y=1007 x=681 sz=26 'Adherible Piedra Laja'
+      y=1037 x=577 sz=23 '$'  <-- PRECIO?
+      y=1043 x=617 sz=40 '189'  <-- PRECIO?
+      y=1048 x=668 sz=18 '2'
+      y=1048 x=696 sz=10 'PIEZAS'
+      y=1095 x=585 sz=22 '$'  <-- PRECIO?
+      y=1097 x=622 sz=37 '139'  <-- PRECIO?
+
+##### 25436 Pasti Semanal Pro  SQL=59.9  pag=97
+    v5: regular=159.0 promo=None canonico=159.0 tipo=regular #precios=1
+    card: y=1230..1830  cx=600
+      y=1230 x=600 sz=20 '25436'
+      y=1259 x=662 sz=26 'Pasti Semanal Pro'
+      y=1289 x=577 sz=23 '$'  <-- PRECIO?
+      y=1295 x=617 sz=40 '159'  <-- PRECIO?
+      y=1483 x=853 sz=18 'Muele'
+      y=1602 x=865 sz=18 'Corta'
+      y=1671 x=679 sz=15 'Poliestireno, Polipropileno, ABS y'
+      y=1690 x=671 sz=15 'Acero inoxidable. D. 8 x 10 cm.'
+      y=1815 x=921 sz=37 'OFERTAS'
+      y=1816 x=595 sz=37 'MENÚ'
+
+##### 25444 Atrapa Cabellos Dúo  SQL=49.9  pag=79
+    v5: regular=59.9 promo=None canonico=59.9 tipo=regular #precios=4
+    card: y=155..1208  cx=960
+      y=155 x=960 sz=20 '25444'
+      y=184 x=882 sz=26 'Atrapa Cabellos Dúo'
+      y=213 x=913 sz=23 '$'  <-- PRECIO?
+      y=213 x=977 sz=23 '90'  <-- PRECIO?
+      y=220 x=941 sz=40 '59'  <-- PRECIO?
+      y=268 x=969 sz=22 '90'
+      y=271 x=909 sz=22 '$'  <-- PRECIO?
+      y=274 x=936 sz=37 '49'  <-- PRECIO?
+      y=452 x=924 sz=16 'Presiona para'
+      y=470 x=922 sz=16 'abrir y cerrar'
+      y=493 x=696 sz=22 'Atrapa cabellos'
+      y=517 x=693 sz=22 'y evita malos olores'
+      y=558 x=654 sz=15 'Silicón. D. 13 x 1 cm.'
+      y=632 x=960 sz=20 '23432'
+      y=661 x=876 sz=26 'Protecti Desagüe Max'
+      y=691 x=913 sz=23 '$'  <-- PRECIO?
+      y=691 x=977 sz=23 '90'  <-- PRECIO?
+      y=697 x=941 sz=40 '34'  <-- PRECIO?
+      y=745 x=968 sz=22 '90'
+      y=748 x=908 sz=22 '$'  <-- PRECIO?
+      y=751 x=935 sz=37 '29'  <-- PRECIO?
+      y=1134 x=637 sz=15 'TPR. D. 15 cm.'
+
+##### 25464 Repisa Apilable  SQL=199.0  pag=50
+    v5: regular=49.9 promo=None canonico=49.9 tipo=regular #precios=2
+    card: y=77..1208  cx=600
+      y=77 x=600 sz=20 '25464'
+      y=106 x=650 sz=26 'Repisa Apilable'
+      y=136 x=577 sz=23 '$'  <-- PRECIO?
+      y=142 x=621 sz=40 '199'  <-- PRECIO?
+      y=147 x=668 sz=18 '2'
+      y=147 x=696 sz=10 'PIEZAS'
+      y=539 x=682 sz=15 'Polipropileno y Acero plastificado.'
+      y=558 x=670 sz=15 'Soporta. 2 kg.'
+      y=558 x=595 sz=15 '1 pieza.'
+      y=558 x=780 sz=15 'D. 31 x 20 x 16 cm.'
+      y=632 x=600 sz=20 '25059'
+      y=661 x=637 sz=26 'Desli Organi'
+      y=692 x=622 sz=26 'Utensilios'
+      y=722 x=641 sz=23 '90'  <-- PRECIO?
+      y=725 x=577 sz=23 '$'  <-- PRECIO?
+      y=728 x=605 sz=40 '49'  <-- PRECIO?
+      y=748 x=932 sz=22 '¡Ten a la mano'
+      y=773 x=930 sz=22 'tus utensilios!'
+      y=846 x=255 sz=15 '12 x 27 x 15 cm.'
+      y=922 x=943 sz=18 '10 ganchos'
+      y=942 x=940 sz=18 'deslizables'
+      y=1081 x=406 sz=22 'Apto para'
+      y=1096 x=755 sz=15 'Soporta. 1 kg.'
+      y=1096 x=638 sz=15 'PVC y Polipropileno.'
+      y=1105 x=406 sz=22 'cualquier'
+      y=1115 x=686 sz=15 '50 cm de largo. Incluye 10 ganchos.'
+      y=1129 x=404 sz=22 'sartén o tapa'
+      y=1134 x=690 sz=15 'Instalación con tornillería o adhesivo.'
+
+##### 25467 Adherible Textur Ladrillo  SQL=179.0  pag=28
+    v5: regular=209.0 promo=None canonico=209.0 tipo=regular #precios=2
+    card: y=183..978  cx=600
+      y=183 x=600 sz=20 '25467'
+      y=212 x=626 sz=26 'Adherible'
+      y=243 x=645 sz=26 'Textur Ladrillo'
+      y=276 x=577 sz=23 '$'  <-- PRECIO?
+      y=279 x=617 sz=40 '209'  <-- PRECIO?
+      y=284 x=665 sz=18 '2'
+      y=285 x=694 sz=10 'PIEZAS'
+      y=331 x=585 sz=22 '$'  <-- PRECIO?
+      y=333 x=622 sz=37 '179'  <-- PRECIO?
+      y=885 x=683 sz=15 'PVC adherible, interior de espuma'
+      y=903 x=302 sz=16 'Recortable.'
+      y=903 x=664 sz=15 'de polietileno. 50 cm x 1.5 m.'
+
+##### 25530 Afila Cuchillo  SQL=149.0  pag=42
+    v5: regular=64.9 promo=None canonico=64.9 tipo=regular #precios=2
+    card: y=77..1208  cx=600
+      y=77 x=600 sz=20 '25530'
+      y=106 x=640 sz=26 'Afila Cuchillo'
+      y=136 x=577 sz=23 '$'  <-- PRECIO?
+      y=142 x=617 sz=40 '149'  <-- PRECIO?
+      y=446 x=867 sz=22 'Incluye cuchillo +'
+      y=470 x=865 sz=22 'protector con afilador'
+      y=558 x=722 sz=15 'Polipropileno y Acero pintado. D. 31 x 4 x 2 cm.'
+      y=632 x=600 sz=20 '23543'
+      y=661 x=636 sz=26 'Tijeras Chef'
+      y=691 x=577 sz=23 '$'  <-- PRECIO?
+      y=691 x=641 sz=23 '90'  <-- PRECIO?
+      y=697 x=605 sz=40 '64'  <-- PRECIO?
+      y=807 x=594 sz=15 '•	 Corta'
+      y=824 x=604 sz=15 '•	 Destapa'
+      y=842 x=619 sz=15 'corcholatas'
+      y=859 x=624 sz=15 '•	 Destapa roscas'
+      y=877 x=623 sz=15 '•	 Quita escamas'
+      y=1134 x=729 sz=15 'Polipropileno y Acero inoxidable. D. 21 x 8 x 1 cm.'
+      y=1138 x=428 sz=18 'Afila,'
+      y=1158 x=398 sz=18 'repara y pule'
+
+##### 25612 Kit Restauración  SQL=79.9  pag=25
+    v5: regular=59.9 promo=None canonico=59.9 tipo=regular #precios=2
+    card: y=77..1209  cx=480
+      y=70 x=796 sz=17 'BETTER'
+      y=77 x=480 sz=20 '25612'
+      y=106 x=427 sz=26 'Kit Restauración'
+      y=136 x=431 sz=23 '90'  <-- PRECIO?
+      y=139 x=366 sz=23 '$'  <-- PRECIO?
+      y=142 x=395 sz=40 '79'  <-- PRECIO?
+      y=147 x=461 sz=18 '6'
+      y=147 x=490 sz=10 'PIEZAS'
+      y=182 x=454 sz=14 '¡últimas piezas!'
+      y=334 x=146 sz=16 '6 diferentes'
+      y=346 x=634 sz=18 'Botón corta'
+      y=350 x=143 sz=16 'colores de madera'
+      y=366 x=642 sz=18 'corriente'
+      y=376 x=444 sz=22 'Restaura'
+      y=400 x=445 sz=22 'tus muebles'
+      y=424 x=441 sz=22 'en segundos'
+      y=521 x=155 sz=15 '*Hasta agotar existencias.'
+      y=539 x=173 sz=15 'Polipropileno. Incluye 6 piezas:'
+      y=558 x=208 sz=15 '(6) D. 2 x 13 cm c/u. 50 m de rendimiento.'
+      y=632 x=480 sz=20 '26716'
+      y=661 x=405 sz=26 'Multi Organizador B'
+      y=691 x=433 sz=23 '$'  <-- PRECIO?
+      y=691 x=497 sz=23 '90'  <-- PRECIO?
+      y=697 x=461 sz=40 '59'  <-- PRECIO?
+      y=811 x=352 sz=18 'Separador'
+      y=826 x=732 sz=15 'Eléctrico. 127 V 10 A. ABS. D. 10 x 7 x 6 cm.'
+      y=831 x=349 sz=18 'removible'
+      y=1040 x=655 sz=22 'Extensión'
+      y=1064 x=655 sz=22 'retráctil'
+      y=1134 x=167 sz=15 'Polipropileno. D. 13 x 9 x 11 cm.'
+
+##### 25748 Maxi Tapete Habitat  SQL=499.0  pag=24
+    v5: regular=649.0 promo=None canonico=649.0 tipo=regular #precios=2
+    card: y=1208..1808  cx=100
+      y=1208 x=100 sz=20 '25748'
+      y=1236 x=177 sz=26 'Maxi Tapete Habitat'
+      y=1266 x=77 sz=23 '$'  <-- PRECIO?
+      y=1272 x=117 sz=40 '649'  <-- PRECIO?
+      y=1322 x=117 sz=24 '-20%'
+      y=1353 x=86 sz=22 '$'  <-- PRECIO?
+      y=1355 x=123 sz=37 '499'  <-- PRECIO?
+      y=1527 x=115 sz=18 '2 m'
+      y=1612 x=357 sz=18 '1.5 m'
+      y=1688 x=177 sz=15 'Poliéster y PVC. D. 200 x 150 cm.'
+
+##### 25789 Tapete Media Luna  SQL=129.0  pag=23
+    v5: regular=179.0 promo=None canonico=179.0 tipo=regular #precios=2
+    card: y=979..1579  cx=960
+      y=979 x=960 sz=20 '25789'
+      y=1008 x=890 sz=26 'Tapete Media Luna'
+      y=1041 x=916 sz=23 '$'  <-- PRECIO?
+      y=1044 x=960 sz=40 '179'  <-- PRECIO?
+      y=1097 x=912 sz=22 '$'  <-- PRECIO?
+      y=1099 x=949 sz=37 '129'  <-- PRECIO?
+
+##### 26025 Conserva Mantequilla  SQL=90.0  pag=63
+    v5: regular=69.9 promo=None canonico=69.9 tipo=regular #precios=1
+    card: y=1189..1789  cx=995
+      y=1189 x=995 sz=16 '26025'
+      y=1213 x=977 sz=22 'Conserva'
+      y=1239 x=964 sz=22 'Mantequilla'
+      y=1265 x=1008 sz=19 '90'
+      y=1268 x=956 sz=19 '$'  <-- PRECIO?
+      y=1270 x=979 sz=33 '69'  <-- PRECIO?
+      y=1361 x=914 sz=19 '350 ml'
+      y=1524 x=963 sz=16 'Fácil de guardar'
+      y=1618 x=658 sz=15 'D. 14 x 8 x 4 cm. Incluye untador.'
+
+##### 26053 Lunch Pack 5  SQL=149.0  pag=60
+    v5: regular=99.9 promo=None canonico=99.9 tipo=regular #precios=2
+    card: y=159..1115  cx=604
+      y=159 x=604 sz=20 '26053'
+      y=168 x=508 sz=37 'nuevo'
+      y=187 x=646 sz=26 'Lunch Pack 5'
+      y=220 x=581 sz=23 '$'  <-- PRECIO?
+      y=223 x=621 sz=40 '149'  <-- PRECIO?
+      y=228 x=672 sz=16 '5'
+      y=229 x=699 sz=10 'PIEZAS'
+      y=282 x=373 sz=22 'Incluye 2 contenedores'
+      y=306 x=371 sz=22 'con tapa'
+      y=448 x=660 sz=19 '900 ml c/u'
+      y=547 x=631 sz=15 'Polipropileno. (5)'
+      y=566 x=631 sz=15 'D. 24 x 17 x 5 cm.'
+      y=624 x=604 sz=20 '26001'
+      y=653 x=682 sz=26 'Gurmy Econo Pack 3'
+      y=683 x=581 sz=23 '$'  <-- PRECIO?
+      y=683 x=645 sz=23 '90'  <-- PRECIO?
+      y=689 x=610 sz=40 '99'  <-- PRECIO?
+      y=694 x=675 sz=16 '3'
+      y=694 x=703 sz=10 'PIEZAS'
+      y=734 x=276 sz=22 'Capacidad'
+      y=759 x=274 sz=22 '2 rebanadas grandes'  <-- PRECIO?
+      y=768 x=821 sz=19 '900 ml c/u'
+      y=873 x=827 sz=18 'Válvula'
+      y=1038 x=676 sz=15 'Polipropileno. Incluye 3 piezas:'
+      y=1056 x=646 sz=15 '(3) 24 x 17 x 5 cm c/u.'
+
+##### 26062 Gurmy Doble Sandwichera Azul  SQL=99.9  pag=59
+    v5: regular=119.0 promo=None canonico=119.0 tipo=regular #precios=2
+    card: y=230..830  cx=482
+      y=230 x=482 sz=20 '26062'
+      y=247 x=596 sz=37 'nuevo'
+      y=258 x=445 sz=26 'Gurmy Doble'
+      y=290 x=419 sz=26 'Sandwichera Azul'
+      y=323 x=439 sz=23 '$'  <-- PRECIO?
+      y=326 x=483 sz=40 '119'  <-- PRECIO?
+      y=375 x=491 sz=22 '90'
+      y=378 x=431 sz=22 '$'  <-- PRECIO?
+      y=381 x=458 sz=37 '99'  <-- PRECIO?
+      y=522 x=541 sz=16 'EDICIÓN'
+      y=538 x=541 sz=18 'especial'
+      y=626 x=453 sz=18 'Extensión'
+      y=646 x=453 sz=18 'máxima'
+      y=666 x=451 sz=18 '66 cm'
+      y=679 x=134 sz=19 '1 L'
+      y=679 x=666 sz=19 '1 L'
+      y=718 x=364 sz=18 'Dos niveles'
+      y=821 x=211 sz=15 'Cap. 1000 ml.'
+      y=821 x=713 sz=15 'Cap. 1000 ml.'
+      y=821 x=616 sz=15 'Polipropileno.'
+
+##### 26063 Gurmy Doble Sandwichera Lila  SQL=99.9  pag=59
+    v5: regular=119.0 promo=None canonico=119.0 tipo=regular #precios=2
+    card: y=231..919  cx=982
+      y=231 x=982 sz=20 '26063'
+      y=260 x=945 sz=26 'Gurmy Doble'
+      y=291 x=925 sz=26 'Sandwichera Lila'
+      y=324 x=939 sz=23 '$'  <-- PRECIO?
+      y=327 x=983 sz=40 '119'  <-- PRECIO?
+      y=377 x=988 sz=22 '90'
+      y=380 x=929 sz=22 '$'  <-- PRECIO?
+      y=382 x=955 sz=37 '99'  <-- PRECIO?
+      y=626 x=980 sz=18 'Extensión'
+      y=646 x=980 sz=18 'máxima'
+      y=666 x=978 sz=18 '66 cm'
+      y=679 x=666 sz=19 '1 L'
+      y=718 x=865 sz=18 'Dos niveles'
+      y=799 x=1048 sz=20 'NOVEDADES'
+      y=821 x=713 sz=15 'Cap. 1000 ml.'
+
+##### 26135 Set Barre Fácil  SQL=700.0  pag=81
+    v5: regular=700.0 promo=459.0 canonico=459.0 tipo=promo #precios=2
+    card: y=235..835  cx=194
+      y=235 x=194 sz=24 '26135'  <-- PRECIO?
+      y=272 x=220 sz=40 'Set Barre Fácil'
+      y=323 x=110 sz=37 '$'  <-- PRECIO?
+      y=330 x=175 sz=64 '700'  <-- PRECIO?
+      y=345 x=245 sz=18 '3'
+      y=345 x=273 sz=10 'PIEZAS'
+      y=396 x=137 sz=35 '$'  <-- PRECIO?
+      y=402 x=195 sz=59 '459'  <-- PRECIO?
+      y=444 x=223 sz=18 '3'
+      y=446 x=179 sz=15 'Al comprar'  <-- PROMO MARKER
+      y=465 x=146 sz=15 'productos'  <-- PROMO MARKER
+      y=465 x=219 sz=15 'del catálogo'
+      y=608 x=264 sz=39 'Barre, recoge y tira'
+      y=654 x=264 sz=39 'SIN ESFUERZO'
+      y=772 x=320 sz=31 'Set de 3 piezas:'
+      y=810 x=263 sz=24 '•	Escoba'
+
+##### 26210 Facial Klin  SQL=249.0  pag=71
+    v5: regular=299.0 promo=None canonico=299.0 tipo=regular #precios=2
+    card: y=919..1519  cx=480
+      y=919 x=480 sz=20 '26210'
+      y=948 x=458 sz=26 'Facial Klin'
+      y=978 x=436 sz=23 '$'  <-- PRECIO?
+      y=984 x=476 sz=40 '299'  <-- PRECIO?
+      y=1033 x=464 sz=24 '-15%'
+      y=1065 x=432 sz=22 '$'  <-- PRECIO?
+      y=1067 x=470 sz=37 '249'  <-- PRECIO?
+      y=1239 x=441 sz=18 'Elimina residuos'
+      y=1258 x=441 sz=18 'y células muertas'
+      y=1306 x=444 sz=22 '5 modos'  <-- PRECIO?
+      y=1331 x=440 sz=22 'de vibración'
+      y=1489 x=681 sz=18 'Rostro'
+      y=1504 x=139 sz=16 'Limpia la piel'
+      y=1504 x=294 sz=16 'Aplica cremas,'
+
+##### 26220 Set Fresh Confort  SQL=449.0  pag=72
+    v5: regular=700.0 promo=None canonico=700.0 tipo=regular #precios=2
+    card: y=77..919  cx=600
+      y=77 x=600 sz=20 '26220'
+      y=94 x=484 sz=37 'nuevo'
+      y=106 x=661 sz=26 'Set Fresh Confort'
+      y=127 x=913 sz=18 'Gel refrescante'
+      y=136 x=577 sz=23 '$'  <-- PRECIO?
+      y=142 x=617 sz=40 '700'  <-- PRECIO?
+      y=191 x=616 sz=24 '-35%'
+      y=223 x=585 sz=22 '$'  <-- PRECIO?
+      y=225 x=622 sz=37 '449'  <-- PRECIO?
+      y=361 x=690 sz=22 'Asiento + Respaldo'
+      y=388 x=694 sz=22 'úsalos juntos'
+      y=414 x=690 sz=22 'o separados'
+      y=807 x=727 sz=15 'Poliéster, Algodón, Gel y Espuma de Poliuretano.'
+      y=826 x=707 sz=15 'Incluye 2 piezas: (Asiento) D. 50 x 48 cm.'
+      y=844 x=655 sz=15 '(Respaldo) D. 64 x 44 cm.'
+
+##### 26400 Organi Rollos Nube  SQL=119.0  pag=78
+    v5: regular=119.9 promo=None canonico=119.9 tipo=regular #precios=1
+    card: y=1209..1809  cx=600
+      y=1209 x=600 sz=20 '26400'
+      y=1238 x=672 sz=26 'Organi Rollos Nube'
+      y=1252 x=932 sz=22 'Organiza tus'
+      y=1268 x=577 sz=23 '$'  <-- PRECIO?
+      y=1274 x=617 sz=40 '119'  <-- PRECIO?
+      y=1278 x=927 sz=22 'rollos y decora'
+      y=1635 x=734 sz=25 '8'  <-- PRECIO?
+      y=1657 x=734 sz=10 'ROLLOS'
+      y=1688 x=712 sz=15 'Soporta. 2 kg.'
+      y=1688 x=616 sz=15 'Polipropileno.'
+      y=1688 x=799 sz=15 '49 x 12 cm.'
+      y=1688 x=352 sz=15 'en gancho. D. 15 x 54 cm.'
+
+##### 26405 Organi Rollo Black  SQL=99.9  pag=80
+    v5: regular=269.0 promo=None canonico=269.0 tipo=regular #precios=1
+    card: y=1208..1808  cx=100
+      y=1208 x=100 sz=20 '26405'
+      y=1236 x=135 sz=26 'Caddy Black'
+      y=1252 x=429 sz=18 'Antideslizante'
+      y=1266 x=77 sz=23 '$'  <-- PRECIO?
+      y=1272 x=117 sz=40 '269'  <-- PRECIO?
+      y=1414 x=159 sz=22 'Ideal para'
+      y=1438 x=155 sz=22 'botellas altas'
+      y=1497 x=428 sz=18 'Ventosas'
+      y=1516 x=434 sz=18 'para mejor'
+      y=1536 x=416 sz=18 'agarre'
+      y=1651 x=198 sz=15 'Soporta.'
+      y=1651 x=118 sz=15 'Acero pintado.'
+      y=1651 x=279 sz=15 'Repisa (4 kg),'
+      y=1670 x=202 sz=15 'Jabonera (300 g) y Gancho (200 g c/u).'
+      y=1688 x=122 sz=15 '24 x 12 x 65 cm.'
+
+##### 26732 Cuadri Espejos  SQL=149.0  pag=24
+    v5: regular=79.9 promo=None canonico=79.9 tipo=regular #precios=2
+    card: y=77..1208  cx=100
+      y=77 x=100 sz=20 '26732'
+      y=106 x=147 sz=26 'Cuadri Espejos'
+      y=136 x=77 sz=23 '$'  <-- PRECIO?
+      y=142 x=121 sz=40 '149'  <-- PRECIO?
+      y=144 x=383 sz=18 '100% vidrio'
+      y=147 x=168 sz=18 '4'
+      y=147 x=196 sz=10 'PIEZAS'
+      y=224 x=414 sz=18 'Fácil'
+      y=244 x=436 sz=18 'instalación'
+      y=435 x=140 sz=22 'Configura'
+      y=459 x=136 sz=22 'a tu gusto'
+      y=539 x=152 sz=15 'Vidrio. D. 20 x 20 cm c/u.'
+      y=558 x=151 sz=15 'Instalación con adhesivo.'
+      y=632 x=100 sz=20 '24568'
+      y=661 x=149 sz=26 'Practi Ganchos'
+      y=691 x=77 sz=23 '$'  <-- PRECIO?
+      y=691 x=143 sz=23 '90'  <-- PRECIO?
+      y=696 x=168 sz=18 '4'
+      y=697 x=205 sz=10 'GANCHOS'
+      y=697 x=105 sz=40 '79'  <-- PRECIO?
+      y=1115 x=183 sz=15 'PVC adherible y Acero inoxidable.'
+      y=1134 x=144 sz=15 'Soporta. 2 kg.'
+      y=1134 x=83 sz=15 '(4)'
+      y=1134 x=247 sz=15 '6 x 6 x 2 cm c/u.'
+
+##### 26734 Luz Multi Flor  SQL=99.9  pag=23
+    v5: regular=109.0 promo=None canonico=109.0 tipo=regular #precios=2
+    card: y=77..979  cx=980
+      y=77 x=980 sz=20 '26734'
+      y=106 x=938 sz=26 'Luz Multi Flor'
+      y=136 x=936 sz=23 '$'  <-- PRECIO?
+      y=138 x=981 sz=40 '109'  <-- PRECIO?
+      y=191 x=962 sz=24 '-5%'
+      y=219 x=989 sz=22 '90'
+      y=223 x=929 sz=22 '$'  <-- PRECIO?
+      y=225 x=956 sz=37 '99'  <-- PRECIO?
+      y=276 x=707 sz=18 'Panel solar'
+      y=826 x=691 sz=15 'Electrónico. Batería solar recargable.'
+      y=844 x=692 sz=15 'Polipropileno y ABS. D. 10 x 7 x 11 cm.'
+      y=911 x=794 sz=17 'BETTER'
+      y=912 x=1017 sz=52 '$'  <-- PRECIO?
+      y=916 x=906 sz=42 'OFERTA'
+
+##### 26748 Better Carrito Pro  SQL=1600.0  pag=101
+    v5: regular=1600.0 promo=999.0 canonico=999.0 tipo=promo #precios=2
+    card: y=395..995  cx=193
+      y=395 x=193 sz=24 '26748'  <-- PRECIO?
+      y=433 x=250 sz=40 'Better Carrito Pro'
+      y=480 x=110 sz=37 '$'  <-- PRECIO?
+      y=490 x=208 sz=64 '1,600'  <-- PRECIO?
+      y=564 x=136 sz=35 '$'  <-- PRECIO?
+      y=570 x=194 sz=59 '999'  <-- PRECIO?
+      y=612 x=223 sz=18 '3'
+      y=614 x=179 sz=15 'Al comprar'  <-- PROMO MARKER
+      y=633 x=146 sz=15 'productos'  <-- PROMO MARKER
+      y=633 x=219 sz=15 'del catálogo'
+
+##### 26753 Cuña Dúo  SQL=44.9  pag=26
+    v5: regular=59.9 promo=None canonico=59.9 tipo=regular #precios=2
+    card: y=978..1578  cx=100
+      y=978 x=100 sz=20 '26753'
+      y=1007 x=123 sz=26 'Cuña Dúo'
+      y=1037 x=77 sz=23 '$'  <-- PRECIO?
+      y=1037 x=143 sz=23 '90'  <-- PRECIO?
+      y=1041 x=168 sz=18 '2'
+      y=1041 x=196 sz=10 'PIEZAS'
+      y=1043 x=105 sz=40 '59'  <-- PRECIO?
+      y=1091 x=145 sz=22 '90'
+      y=1095 x=85 sz=22 '$'  <-- PRECIO?
+      y=1097 x=112 sz=37 '44'  <-- PRECIO?
+      y=1422 x=395 sz=18 'Para todo tipo'
+      y=1441 x=380 sz=18 'de puertas'
+      y=1556 x=270 sz=16 'Punta delgada'
+
+##### 26783 Protecti Alimentos Max  SQL=74.9  pag=46
+    v5: regular=99.9 promo=None canonico=99.9 tipo=regular #precios=2
+    card: y=1221..1821  cx=120
+      y=1221 x=120 sz=20 '26783'
+      y=1250 x=213 sz=26 'Protecti Alimentos Max'
+      y=1280 x=166 sz=23 '90'  <-- PRECIO?
+      y=1283 x=97 sz=23 '$'  <-- PRECIO?
+      y=1286 x=128 sz=40 '99'  <-- PRECIO?
+      y=1334 x=161 sz=22 '90'
+      y=1338 x=105 sz=22 '$'  <-- PRECIO?
+      y=1340 x=130 sz=37 '74'  <-- PRECIO?
+      y=1437 x=130 sz=16 'Plegable'
+      y=1650 x=173 sz=15 '*Hasta agotar existencias.'
+      y=1668 x=256 sz=15 'Poliéster, Acero y Polipropileno. D. 62 x 62 x 22 cm.'
+      y=1815 x=247 sz=37 'PORTADA'
+
+##### 26810 Porta Cepillos Lila  SQL=69.9  pag=98
+    v5: regular=109.0 promo=None canonico=109.0 tipo=regular #precios=2
+    card: y=79..1208  cx=474
+      y=79 x=474 sz=24 '26810'  <-- PRECIO?
+      y=96 x=594 sz=37 'nuevo'
+      y=109 x=417 sz=26 'Porta Cepillos Lila'
+      y=139 x=497 sz=23 '90'  <-- PRECIO?
+      y=142 x=433 sz=23 '$'  <-- PRECIO?
+      y=145 x=461 sz=40 '69'  <-- PRECIO?
+      y=272 x=811 sz=18 'Espejo de'
+      y=280 x=465 sz=18 'Usa la tapa'
+      y=292 x=824 sz=18 'vidrio'
+      y=300 x=465 sz=18 'como vaso'
+      y=414 x=616 sz=18 'Fácil de'
+      y=434 x=616 sz=18 'limpiar'
+      y=539 x=162 sz=15 'Polipropileno y Poliestireno.'
+      y=632 x=480 sz=20 '24784'
+      y=661 x=423 sz=26 'Cepillo Conmigo'
+      y=691 x=436 sz=23 '$'  <-- PRECIO?
+      y=697 x=476 sz=40 '109'  <-- PRECIO?
+      y=752 x=159 sz=22 '3 en 1'  <-- PRECIO?
+      y=802 x=172 sz=18 'Estuche'
+      y=827 x=686 sz=15 'ABS y Nylon. Dimensiones abierto:'
+      y=846 x=735 sz=15 '18 x 3 x 1.5 cm. Dimensiones cerrado: 10 x 3 x 3 cm.'
+      y=922 x=275 sz=18 'Dispensador'
+      y=923 x=142 sz=18 'Cepillo'
+      y=939 x=594 sz=37 'nuevo'
+      y=1032 x=728 sz=22 'Evita'
+      y=1056 x=723 sz=22 'derrames'
+      y=1115 x=302 sz=15 'Cap. 8 ml.'
+      y=1115 x=169 sz=15 'Polipropileno y Policarbonato.'
+      y=1115 x=380 sz=15 '2.5 x 15 cm.'
+      y=1134 x=242 sz=15 'Ensamblado: 2.5 x 23 cm. Incluye cepillo de repuesto.'
+
+##### 26815 Tendedero Plegable Pro  SQL=900.0  pag=85
+    v5: regular=900.0 promo=599.0 canonico=599.0 tipo=promo #precios=2
+    card: y=111..1125  cx=156
+      y=111 x=156 sz=20 '26815'
+      y=140 x=193 sz=26 'Tendedero Plegable Pro'
+      y=173 x=77 sz=23 '$'  <-- PRECIO?
+      y=176 x=117 sz=40 '900'  <-- PRECIO?
+      y=226 x=91 sz=22 '$'  <-- PRECIO?
+      y=228 x=128 sz=37 '599'  <-- PRECIO?
+      y=261 x=125 sz=15 'Al comprar'  <-- PROMO MARKER
+      y=278 x=87 sz=18 '3'
+      y=280 x=131 sz=15 'productos'  <-- PROMO MARKER
+      y=298 x=122 sz=15 'del catálogo'
+      y=664 x=263 sz=33 'MÁS CAPACIDAD'
+      y=697 x=263 sz=33 'en menos espacio'
+      y=847 x=112 sz=16 'Plegable'
+      y=878 x=31 sz=20 'NOVEDADES'
+      y=969 x=277 sz=10 'SOPORTA'
+      y=980 x=276 sz=10 'HASTA'
+      y=997 x=276 sz=22 '18kg'  <-- PRECIO?
+      y=1033 x=369 sz=15 'Acero pintado y Polipropileno. Extendido: D. 134 x 57 x 175 cm, Cerrado: D. 10 x 57 x 99 cm.'
+      y=1051 x=411 sz=15 '(Tubo superior) 2.5 kg, (Parillas centrales) 6 kg c/u (Parilla inferior) 3.5 kg. Incluye accesorios para armar.'
+
+##### 26844 Canasta Black  SQL=259.0  pag=48
+    v5: regular=399.0 promo=None canonico=399.0 tipo=regular #precios=1
+    card: y=77..916  cx=100
+      y=77 x=100 sz=20 '26844'
+      y=106 x=163 sz=26 'Escurri Tijera Max'
+      y=139 x=77 sz=23 '$'  <-- PRECIO?
+      y=142 x=117 sz=40 '399'  <-- PRECIO?
+      y=330 x=193 sz=18 'Escurre'
+      y=349 x=171 sz=18 'tazas y vasos'
+      y=478 x=186 sz=22 'Espacioso y'
+      y=502 x=183 sz=22 'fácil de guardar'
+      y=689 x=235 sz=18 'Charola'
+      y=709 x=220 sz=18 'escurridora'
+      y=791 x=101 sz=10 'SOPORTA'
+      y=807 x=101 sz=25 '10kg'  <-- PRECIO?
+      y=841 x=320 sz=15 'Soporta. 10 kg.'
+      y=841 x=168 sz=15 'Acero pintado y Polipropileno.'
+      y=883 x=32 sz=20 'NOVEDADES'
+
+##### 26879 Adherible 3D Laja  SQL=229.0  pag=28
+    v5: regular=279.0 promo=None canonico=279.0 tipo=regular #precios=2
+    card: y=979..1579  cx=100
+      y=979 x=100 sz=20 '26879'
+      y=1008 x=163 sz=26 'Adherible 3D Laja'
+      y=1041 x=76 sz=23 '$'  <-- PRECIO?
+      y=1044 x=116 sz=40 '279'  <-- PRECIO?
+      y=1049 x=165 sz=18 '2'
+      y=1049 x=193 sz=10 'PIEZAS'
+      y=1096 x=85 sz=22 '$'  <-- PRECIO?
+      y=1099 x=122 sz=37 '229'  <-- PRECIO?
+      y=1533 x=148 sz=16 '1 pieza = 76 x 70 cm'
+
+##### 26884 Agujas Mágicas  SQL=79.9  pag=86
+    v5: regular=129.0 promo=None canonico=129.0 tipo=regular #precios=3
+    card: y=703..1303  cx=380
+      y=703 x=380 sz=20 '26884'
+      y=732 x=329 sz=26 'Agujas Mágicas'
+      y=762 x=327 sz=23 '90'  <-- PRECIO?
+      y=765 x=262 sz=23 '$'  <-- PRECIO?
+      y=768 x=291 sz=40 '79'  <-- PRECIO?
+      y=773 x=357 sz=18 '20'
+      y=773 x=390 sz=10 'PIEZAS'
+      y=789 x=615 sz=15 'Poliéster y Algodón. 115 x 38 cm.'
+      y=807 x=614 sz=15 'Para burro de planchar estándar.'
+      y=816 x=388 sz=22 '90'
+      y=819 x=329 sz=22 '$'  <-- PRECIO?
+      y=822 x=355 sz=37 '59'  <-- PRECIO?
+      y=826 x=608 sz=15 '*No incluye burro de planchar.'
+      y=939 x=514 sz=37 'nuevo'
+      y=996 x=664 sz=22 'Gran capacidad'
+      y=1013 x=164 sz=22 'Inserta hilo'
+      y=1020 x=662 sz=22 'abierto'
+      y=1038 x=160 sz=22 'fácil y rápido'
+      y=1134 x=189 sz=15 'Acero. (8) 4.1 cm. (12) 3.6 cm.'
+      y=1208 x=380 sz=20 '23107'
+      y=1236 x=322 sz=26 'Quita Max Roller'
+      y=1266 x=336 sz=23 '$'  <-- PRECIO?
+      y=1272 x=376 sz=40 '129'  <-- PRECIO?
+
+##### 26887 Set Termos Aqua Dúo  SQL=1000.0  pag=103
+    v5: regular=1000.0 promo=599.0 canonico=599.0 tipo=promo #precios=2
+    card: y=140..1585  cx=194
+      y=140 x=194 sz=24 '26887'  <-- PRECIO?
+      y=177 x=199 sz=40 'Set Termos'
+      y=221 x=186 sz=40 'Aqua Dúo'
+      y=269 x=110 sz=37 '$'  <-- PRECIO?
+      y=279 x=202 sz=64 '1,000'  <-- PRECIO?
+      y=288 x=303 sz=16 '2'
+      y=288 x=330 sz=10 'PIEZAS'
+      y=352 x=137 sz=35 '$'  <-- PRECIO?
+      y=358 x=195 sz=59 '599'  <-- PRECIO?
+      y=400 x=223 sz=18 '3'
+      y=402 x=179 sz=15 'Al comprar'  <-- PROMO MARKER
+      y=421 x=146 sz=15 'productos'  <-- PROMO MARKER
+      y=421 x=219 sz=15 'del catálogo'
+      y=843 x=32 sz=20 'NOVEDADES'
+      y=1292 x=329 sz=22 'Tapa doble función:'
+      y=1343 x=144 sz=18 'Boquilla'
+      y=1343 x=351 sz=18 'Popote'
+      y=1506 x=412 sz=18 'Botón de seguridad'
+      y=1513 x=544 sz=22 '6h'  <-- PRECIO?
+
+##### 26968 Gotas Cero Olores Verano  SQL=119.0  pag=78
+    v5: regular=99.0 promo=None canonico=99.0 tipo=regular #precios=4
+    card: y=154..1209  cx=620
+      y=154 x=620 sz=20 '26968'
+      y=183 x=652 sz=26 'Gotas Cero'
+      y=214 x=665 sz=26 'Olores Verano'
+      y=244 x=597 sz=23 '$'  <-- PRECIO?
+      y=250 x=641 sz=40 '149'  <-- PRECIO?
+      y=255 x=688 sz=18 '2'
+      y=256 x=716 sz=10 'PIEZAS'
+      y=302 x=605 sz=22 '$'  <-- PRECIO?
+      y=304 x=641 sz=37 '119'  <-- PRECIO?
+      y=400 x=929 sz=22 'Elimina'
+      y=424 x=925 sz=22 'malos olores'
+      y=501 x=690 sz=10 'BOTE DE'
+      y=510 x=623 sz=10 'COLADERA'
+      y=510 x=752 sz=10 'INODORO'
+      y=512 x=689 sz=10 'BASURA'
+      y=539 x=686 sz=15 'Agua humectante y fragancia.'
+      y=558 x=712 sz=15 'Cont. 30 ml.'
+      y=558 x=629 sz=15 'D. 3 x 8 cm.'
+      y=634 x=620 sz=20 '26408'
+      y=662 x=685 sz=26 'Organi Rollo Black'
+      y=695 x=597 sz=23 '$'  <-- PRECIO?
+      y=698 x=637 sz=40 '119'  <-- PRECIO?
+      y=747 x=665 sz=22 '90'
+      y=750 x=605 sz=22 '$'  <-- PRECIO?
+      y=752 x=631 sz=37 '99'  <-- PRECIO?
+      y=873 x=727 sz=18 'Canastilla de'
+      y=892 x=725 sz=18 'fácil acceso'
+      y=929 x=645 sz=16 'Instalación'
+      y=948 x=642 sz=16 'con tornillería'
+      y=1014 x=450 sz=16 'Hasta 4'
+      y=1032 x=464 sz=16 'rollos jumbo'
+      y=1095 x=735 sz=15 'Soporta. 2 kg.'
+      y=1095 x=638 sz=15 'Acero pintado.'
+      y=1114 x=648 sz=15 'D. 18 x 17 x 14 cm.'
+
+##### 26988 Set Lumi Aqua  SQL=199.0  pag=18
+    v5: regular=259.0 promo=None canonico=259.0 tipo=regular #precios=1
+    card: y=244..844  cx=136
+      y=244 x=136 sz=24 '26988'  <-- PRECIO?
+      y=281 x=224 sz=40 'Set Lumi Aqua'
+      y=332 x=110 sz=37 '$'  <-- PRECIO?
+      y=339 x=179 sz=64 '259'  <-- PRECIO?
+      y=352 x=260 sz=16 '2'
+      y=352 x=288 sz=10 'PIEZAS'
+      y=532 x=406 sz=45 'relájate'
+      y=729 x=283 sz=18 'Efecto'
+      y=748 x=260 sz=18 'movimiento'
+
+##### 26994 Set Barbie™ 70s  SQL=718.0  pag=109
+    v5: regular=649.0 promo=None canonico=649.0 tipo=regular #precios=2
+    card: y=337..937  cx=136
+      y=337 x=136 sz=24 '26994'  <-- PRECIO?
+      y=374 x=243 sz=40 'Set Barbie™ 70's'
+      y=424 x=113 sz=37 '$'  <-- PRECIO?
+      y=432 x=187 sz=64 '718'  <-- PRECIO?
+      y=495 x=168 sz=31 '-15%'
+      y=536 x=119 sz=35 '$'  <-- PRECIO?
+      y=542 x=177 sz=59 '649'  <-- PRECIO?
+      y=685 x=206 sz=40 'ESTILO'
+      y=729 x=198 sz=40 'Y COLOR'
+      y=771 x=198 sz=40 'en cada paso'
+      y=878 x=32 sz=20 'NOVEDADES'
+      y=915 x=144 sz=18 'Textura'
+
+##### 80140 Fibra de Acero Inoxidable  SQL=69.9  pag=92
+    v5: regular=59.9 promo=None canonico=59.9 tipo=regular #precios=2
+    card: y=991..1591  cx=480
+      y=991 x=480 sz=20 '80140'
+      y=1020 x=378 sz=26 'Fibra de Acero Inoxidable'
+      y=1050 x=372 sz=23 '$'  <-- PRECIO?
+      y=1050 x=436 sz=23 '90'  <-- PRECIO?
+      y=1052 x=461 sz=18 '5'
+      y=1052 x=490 sz=10 'PIEZAS'
+      y=1056 x=400 sz=40 '69'  <-- PRECIO?
+      y=1104 x=487 sz=22 '90'
+      y=1107 x=428 sz=22 '$'  <-- PRECIO?
+      y=1110 x=455 sz=37 '59'  <-- PRECIO?
+      y=1129 x=649 sz=18 'Espátula'
+      y=1201 x=800 sz=18 'Mango'
+      y=1221 x=815 sz=18 'ergonómico'
+      y=1532 x=829 sz=18 'superficies'

@@ -1,0 +1,115 @@
+====================================================================================================
+REPORTE PRECIOS NORMALES
+====================================================================================================
+Total SQL: 344 | Encontrados: 314 | Iguales(ya normal): 238 | A cambiar: 76 | No enc: 30
+
+--- PRECIOS A CAMBIAR (SQL actual -> normal catalogo) ---
+Codigo  Nombre                                 SQL    Normal  Pag
+12411   Multi Organizador Dental            119.00    159.00   76
+12733   Mosquitero Magnético                179.00    239.00   20
+17725   Guardapolvo Translucent              54.90     69.90   26
+21750   Guarda Clima                        199.00    229.00   26
+21762   Guardapolvo                         199.00    229.00   26
+24027   Agua Click Turbo                    399.00    600.00   57
+24116   Cepillo Turbo Klin                  799.00   1300.00   87
+24155   Better Purificador                  699.00   1200.00   57
+24160   Deslisalsa Dispensador               99.90    109.00   53
+24212   Pedi Spa Smart                      649.00    950.00   68
+24404   Tapita Lavabo                        29.90     34.90   79
+24409   Rack Slim Bambú                     549.00    800.00   15
+24526   Fryer Dúo Lux                      1799.00   3400.00   38
+24566   Estufa Protect                      109.00    139.00   52
+24615   Maleta Cabina Estilo                999.00   1900.00  105
+24620   B-Better Colors Aqua                 99.90    119.00   96
+25141   Better Contacto Pro                 159.00    199.00   25
+25211   Planti Difusor                      499.00    750.00   66
+25364   Servi 3                             129.00    149.00   53
+25377   Adherible Parota                    189.00    239.00   29
+25383   Adherible Cantera                   139.00    189.00   28
+25391   Adherible Piedra Laja               139.00    189.00   28
+25444   Atrapa Cabellos Dúo                  49.90     59.90   79
+25467   Adherible Textur Ladrillo           179.00    209.00   28
+25576   Adherible Panel Madera              149.00    189.00   29
+25610   Organi Rack WC                      649.00    950.00   15
+25748   Maxi Tapete Habitat                 499.00    649.00   24
+25789   Tapete Media Luna                   129.00    179.00   23
+25855   No Me Mires Florecer                189.00    229.00   27
+25872   Adherible Black Out                 249.00    299.00   27
+25873   No Me Mires Reflex                  249.00    299.00   27
+26021   Set Dispensa Vitrolux               599.00   1300.00    4
+26043   Cerealeros Hermetic Colors          549.00    900.00   56
+26062   Gurmy Doble Sandwichera Azul         99.90    119.00   59
+26063   Gurmy Doble Sandwichera Lila         99.90    119.00   59
+26135   Set Barre Fácil                     459.00    700.00   81
+26210   Facial Klin                         249.00    299.00   71
+26220   Set Fresh Confort                   449.00    700.00   72
+26301   Modu Zapatera Moka                  799.00   1200.00   13
+26302   Better Ganchos Combo                399.00    600.00   35
+26317   Cajonera Pardo                      699.00   1000.00   12
+26327   Maxi Zapatera Protect               599.00    900.00   30
+26400   Organi Rollos Nube                  119.00    119.90   78
+26405   Organi Rollo Black                   99.90    269.00   80
+26409   Rack WC Ébano                       899.00   1300.00   15
+26539   Better Crepas Dúo                   549.00   1400.00   37
+26712   Set Mesas Álamo                     599.00    900.00   14
+26713   Modu Clóset Moka                   1099.00   1500.00   13
+26733   Mueble TV Álamo                     649.00   1000.00   11
+26734   Luz Multi Flor                       99.90    109.00   23
+26736   Triangu Almohada Confort            499.00    750.00    6
+26748   Better Carrito Pro                  999.00   1600.00  101
+26749   Deco Macetero                       479.00    750.00   14
+26753   Cuña Dúo                             44.90     59.90   26
+26754   Extendi Paraguas                    349.00    500.00    5
+26757   Practi Venti Fresh                  499.00    750.00   16
+26783   Protecti Alimentos Max               74.90     99.90   46
+26793   Repisa Oslo                         499.00    700.00   10
+26802   Condimentos Lux                      79.90     99.90   43
+26812   Set Otomesitas                      699.00   1100.00   11
+26813   Mesa Roll                           899.00   1800.00    7
+26815   Tendedero Plegable Pro              599.00    900.00   85
+26844   Canasta Black                       219.00    399.00   48
+26879   Adherible 3D Laja                   229.00    279.00   28
+26881   Adherible Talavera Cobalto          189.00    239.00   29
+26884   Agujas Mágicas                       59.90     79.90   86
+26887   Set Termos Aqua Dúo                 599.00   1000.00  103
+26901   Adherible Mármol Black              189.00    239.00   29
+26966   Cinta Instala Fácil                  89.90    109.00   25
+26967   No Me Mires Electrostático          189.00    229.00   27
+26968   Gotas Cero Olores Verano            119.00    149.00   78
+26987   Silla Hielera Fresh                 449.00    650.00    2
+26989   Luz Estrella                         99.90    139.00   32
+26994   Set Barbie™ 70s                     649.00    718.00  109
+26995   Fácil Mop Edición Especial          559.00    850.00    8
+80140   Fibra de Acero Inoxidable            59.90     69.90   92
+
+--- NO ENCONTRADOS ---
+20223  Cepillo WC Flex                  SQL=79.9
+20224  Cepillo Conmigo                  SQL=109.0
+22333  Sports Stickers                  SQL=119.0
+23345  Cambia Pañales Baby              SQL=349.0
+23346  Piscina Pop                      SQL=800.0
+23607  Maleta Mascota Go                SQL=499.0
+23734  Converti Pañalera                SQL=899.0
+24855  Tri Charola Chef                 SQL=549.0
+25134  Multi Cepillo Dispensador        SQL=179.0
+25432  Protecti Desagüe Max             SQL=29.9
+25804  Multi Repisas Bambú              SQL=499.0
+25966  Luz Noche                        SQL=129.0
+26005  Cubi Hielos Max                  SQL=400.0
+26311  Ganchos Dúo                      SQL=159.0
+26403  Cuadri Organizador               SQL=219.0
+26527  Rebana Chef                      SQL=169.0
+26997  Tina Spa Lila + Lim              SQL=269.0
+90001  Better Cooler Max                SQL=1280.0
+90002  Practi Ganchos                   SQL=79.9
+90003  Set Cuelga Fácil                 SQL=79.9
+90004  Multi Organizador B              SQL=59.9
+90005  Broches Gold                     SQL=99.9
+90006  Cubre Colchón Protect            SQL=459.0
+90007  Maxi Condimentos                 SQL=229.0
+90008  Tijeras Chef                     SQL=64.9
+90009  Desli Organi Utensilios          SQL=49.9
+90010  Maxi Servilletero                SQL=129.0
+90011  Porta Rollo Granito              SQL=129.0
+90012  Salchichas Lockit Max            SQL=74.9
+90013  Conserva Aguacate                SQL=59.9

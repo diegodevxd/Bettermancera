@@ -3,3 +3,11 @@
 .env.*
 .DS_Store
 catalogo/*.pdf
+config.js
+venv/
+__pycache__/
+catalogo/fotos_productos_corregidas/
+catalogo/fotos_productos_nuevo/
+catalogo/fotos_productos_web/
+catalogo_limpio/fotos_catalogo/
+catalogo_limpio/paginas_catalogo/
