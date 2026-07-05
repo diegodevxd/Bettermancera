@@ -1,0 +1,262 @@
+{
+  "16108": {
+    "bbox_norm": {
+      "x0": 0.083,
+      "x1": 0.20033,
+      "y0": 0.25441,
+      "y1": 0.4297
+    },
+    "categoria": null,
+    "nombre": "Repuesto",
+    "pagina": 8,
+    "precio_oferta": 59.9,
+    "precio_regular": 59.9
+  },
+  "24409": {
+    "bbox_norm": {
+      "x0": 0.03833,
+      "x1": 0.495,
+      "y0": 0.46457,
+      "y1": 0.89183
+    },
+    "categoria": null,
+    "nombre": "Rack Slim Bambú",
+    "pagina": 15,
+    "precio_oferta": 549.0,
+    "precio_regular": 800.0
+  },
+  "25610": {
+    "bbox_norm": {
+      "x0": 0.512,
+      "x1": 0.94967,
+      "y0": 0.02268,
+      "y1": 0.89183
+    },
+    "categoria": null,
+    "nombre": "Organi Rack WC",
+    "pagina": 15,
+    "precio_oferta": 950.0,
+    "precio_regular": 950.0
+  },
+  "26021": {
+    "bbox_norm": {
+      "x0": 0.02533,
+      "x1": 0.96033,
+      "y0": 0.00112,
+      "y1": 0.8847
+    },
+    "categoria": null,
+    "nombre": "Set Dispensa Vitrolux",
+    "pagina": 4,
+    "precio_oferta": 1300.0,
+    "precio_regular": 1300.0
+  },
+  "26301": {
+    "bbox_norm": {
+      "x0": 0.049,
+      "x1": 0.94967,
+      "y0": 0.02756,
+      "y1": 0.45126
+    },
+    "categoria": null,
+    "nombre": "Modu Zapatera Moka",
+    "pagina": 13,
+    "precio_oferta": 799.0,
+    "precio_regular": 1200.0
+  },
+  "26317": {
+    "bbox_norm": {
+      "x0": 0.049,
+      "x1": 0.954,
+      "y0": 0.02756,
+      "y1": 0.8907
+    },
+    "categoria": null,
+    "nombre": "Cajonera Pardo",
+    "pagina": 12,
+    "precio_oferta": 699.0,
+    "precio_regular": 1000.0
+  },
+  "26409": {
+    "bbox_norm": {
+      "x0": 0.05533,
+      "x1": 0.48867,
+      "y0": 0.02868,
+      "y1": 0.45126
+    },
+    "categoria": null,
+    "nombre": "Rack WC Ébano",
+    "pagina": 15,
+    "precio_oferta": 899.0,
+    "precio_regular": 1300.0
+  },
+  "26712": {
+    "bbox_norm": {
+      "x0": 0.04667,
+      "x1": 0.956,
+      "y0": 0.46213,
+      "y1": 0.88826
+    },
+    "categoria": null,
+    "nombre": "Set Mesas Álamo",
+    "pagina": 14,
+    "precio_oferta": 599.0,
+    "precio_regular": 900.0
+  },
+  "26713": {
+    "bbox_norm": {
+      "x0": 0.04467,
+      "x1": 0.94767,
+      "y0": 0.46213,
+      "y1": 0.8847
+    },
+    "categoria": null,
+    "nombre": "Modu Clóset Moka",
+    "pagina": 13,
+    "precio_oferta": 1099.0,
+    "precio_regular": 1500.0
+  },
+  "26733": {
+    "bbox_norm": {
+      "x0": 0.04467,
+      "x1": 0.95167,
+      "y0": 0.46082,
+      "y1": 0.88583
+    },
+    "categoria": null,
+    "nombre": "Mueble TV Álamo",
+    "pagina": 11,
+    "precio_oferta": 649.0,
+    "precio_regular": 1000.0
+  },
+  "26736": {
+    "bbox_norm": {
+      "x0": 0.04033,
+      "x1": 0.94767,
+      "y0": 0.02625,
+      "y1": 0.89426
+    },
+    "categoria": null,
+    "nombre": "Triangu Almohada Confort",
+    "pagina": 6,
+    "precio_oferta": 499.0,
+    "precio_regular": 750.0
+  },
+  "26749": {
+    "bbox_norm": {
+      "x0": 0.051,
+      "x1": 0.94967,
+      "y0": 0.02868,
+      "y1": 0.45013
+    },
+    "categoria": null,
+    "nombre": "Deco Macetero",
+    "pagina": 14,
+    "precio_oferta": 479.0,
+    "precio_regular": 750.0
+  },
+  "26754": {
+    "bbox_norm": {
+      "x0": 0.051,
+      "x1": 0.95167,
+      "y0": 0.024,
+      "y1": 0.89314
+    },
+    "categoria": null,
+    "nombre": "Extendi Paraguas",
+    "pagina": 5,
+    "precio_oferta": 349.0,
+    "precio_regular": 500.0
+  },
+  "26757": {
+    "bbox_norm": {
+      "x0": 0.049,
+      "x1": 0.94333,
+      "y0": 0.07199,
+      "y1": 0.89314
+    },
+    "categoria": null,
+    "nombre": "Practi Venti Fresh",
+    "pagina": 16,
+    "precio_oferta": 499.0,
+    "precio_regular": 750.0
+  },
+  "26793": {
+    "bbox_norm": {
+      "x0": 0.04267,
+      "x1": 0.94967,
+      "y0": 0.07443,
+      "y1": 0.8907
+    },
+    "categoria": null,
+    "nombre": "Repisa Oslo",
+    "pagina": 10,
+    "precio_oferta": 499.0,
+    "precio_regular": 700.0
+  },
+  "26812": {
+    "bbox_norm": {
+      "x0": 0.05333,
+      "x1": 0.94533,
+      "y0": 0.05024,
+      "y1": 0.44882
+    },
+    "categoria": null,
+    "nombre": "Set Otomesitas",
+    "pagina": 11,
+    "precio_oferta": 699.0,
+    "precio_regular": 1100.0
+  },
+  "26813": {
+    "bbox_norm": {
+      "x0": 0.00767,
+      "x1": 0.96733,
+      "y0": 0.14979,
+      "y1": 0.70585
+    },
+    "categoria": null,
+    "nombre": "Mesa Roll",
+    "pagina": 1,
+    "precio_oferta": 1800.0,
+    "precio_regular": 1800.0
+  },
+  "26987": {
+    "bbox_norm": {
+      "x0": 0.04667,
+      "x1": 0.96667,
+      "y0": 0.02512,
+      "y1": 0.89539
+    },
+    "categoria": null,
+    "nombre": "Silla Hielera Fresh",
+    "pagina": 2,
+    "precio_oferta": 449.0,
+    "precio_regular": 650.0
+  },
+  "26995": {
+    "bbox_norm": {
+      "x0": 0.04267,
+      "x1": 0.95167,
+      "y0": 0.02512,
+      "y1": 0.88939
+    },
+    "categoria": null,
+    "nombre": "Fácil Mop Edición Especial",
+    "pagina": 8,
+    "precio_oferta": 559.0,
+    "precio_regular": 850.0
+  },
+  "90001": {
+    "bbox_norm": {
+      "x0": 0.02333,
+      "x1": 0.94967,
+      "y0": 0.0,
+      "y1": 0.87983
+    },
+    "categoria": null,
+    "nombre": "Better Cooler Max",
+    "pagina": 3,
+    "precio_oferta": 1279.0,
+    "precio_regular": 3200.0
+  }
+}

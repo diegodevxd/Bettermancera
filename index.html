@@ -110,6 +110,14 @@ body{
 .btn-icon:active{transform:scale(.93)}
 .btn-icon .material-symbols-outlined{font-size:22px}
 
+.footer-link{
+  display:inline-flex;align-items:center;gap:.3rem;
+  background:transparent;border:none;padding:0;cursor:pointer;
+  color:#64748B;font-size:.8125rem;font-weight:500;font-family:inherit;
+  text-decoration:none;transition:color .2s ease;
+}
+.footer-link:hover{color:#00B2E3}
+
 /* ============================================ */
 /* NAVBAR */
 /* ============================================ */
@@ -218,21 +226,23 @@ body{
   border:1px solid rgba(0,0,0,.04);
   cursor:pointer;
   display:flex;flex-direction:column;
-  break-inside:avoid;
-  margin-bottom:1.5rem;
   transition:transform .3s cubic-bezier(0.16,1,0.3,1), box-shadow .3s cubic-bezier(0.16,1,0.3,1);
 }
 .producto-card:hover{transform:translateY(-4px);box-shadow:0 14px 36px rgba(2,24,54,.1)}
 .producto-card:active{transform:scale(.99)}
-/* Image container: alto dinamico segun la proporcion real de cada foto */
+/* Contenedor de imagen cuadrado: todas las tarjetas miden lo mismo.
+   object-fit:contain muestra el producto completo (horizontal o vertical)
+   sin recortarlo, con aire sobre el fondo gris. */
 .producto-card .img-wrap{
   position:relative;
   overflow:hidden;
-  min-height:120px;
+  aspect-ratio:1/1;
   background:#F1F5F9;
 }
 .producto-card .img-wrap img{
-  width:100%;height:auto;display:block;
+  width:100%;height:100%;display:block;
+  object-fit:contain;
+  padding:.625rem;
   transition:opacity .3s ease, transform .5s cubic-bezier(0.16,1,0.3,1);
 }
 .producto-card .img-wrap img[loading="lazy"]{
@@ -247,6 +257,11 @@ body{
 .producto-card .card-body{
   padding:1rem;
   display:flex;flex-direction:column;flex:1;
+}
+/* Reserva 2 líneas para el nombre: las filas quedan alineadas aunque
+   un producto tenga nombre corto y el de al lado, largo. */
+.producto-card .card-body h3{
+  min-height:2.75em;
 }
 .producto-card .precio-tachado{
   text-decoration:line-through;color:#94A3B8;font-size:.875rem;font-weight:400;
@@ -284,20 +299,22 @@ body{
 .producto-card .add-btn .material-symbols-outlined{font-size:20px}
 
 /* ============================================ */
-/* CATALOG MASONRY GRID (alturas dinamicas por foto) */
+/* CATALOG GRID (tarjetas de tamaño uniforme) */
 /* ============================================ */
 .catalogo-grid{
-  column-count:2;
-  column-gap:.75rem;
+  display:grid;
+  grid-template-columns:repeat(2, minmax(0, 1fr));
+  gap:.75rem;
+  align-items:stretch;
 }
 @media(min-width:640px){
-  .catalogo-grid{column-gap:1rem}
+  .catalogo-grid{gap:1rem}
 }
 @media(min-width:768px){
-  .catalogo-grid{column-count:3;column-gap:1.25rem}
+  .catalogo-grid{grid-template-columns:repeat(3, minmax(0, 1fr));gap:1.25rem}
 }
 @media(min-width:1024px){
-  .catalogo-grid{column-count:4;column-gap:1.5rem}
+  .catalogo-grid{grid-template-columns:repeat(4, minmax(0, 1fr));gap:1.5rem}
 }
 
 /* ============================================ */
@@ -1007,16 +1024,110 @@ body{
 
 </section>
 
+<!-- ============================================ -->
+<!-- VISTA: TÉRMINOS Y CONDICIONES -->
+<!-- ============================================ -->
+<section class="view-section" id="vista-terminos">
+
+  <div class="mb-8">
+    <h2 class="text-[1.75rem] md:text-[2.25rem] font-bold tracking-tight text-[#1E293B] mb-2">Términos y condiciones</h2>
+    <p class="text-[#64748B] text-[.9375rem]">Última actualización: julio de 2026.</p>
+  </div>
+
+  <div class="max-w-[65ch] space-y-8 text-[.9375rem] text-[#64748B] leading-relaxed mb-16">
+    <div>
+      <h3 class="text-[1.0625rem] font-bold text-[#1E293B] mb-2">1. Quiénes somos</h3>
+      <p>BetterMancera es una tienda en línea operada por distribuidores independientes de productos Betterware en México. Al comprar en este sitio aceptas estos términos y condiciones.</p>
+    </div>
+
+    <div>
+      <h3 class="text-[1.0625rem] font-bold text-[#1E293B] mb-2">2. Productos y precios</h3>
+      <p>Los productos, fotografías y precios corresponden al catálogo vigente y pueden cambiar cada temporada. Todos los precios están expresados en pesos mexicanos (MXN) e incluyen impuestos. Los productos están sujetos a disponibilidad; si un artículo ya no está disponible después de tu compra, te contactaremos para ofrecerte un cambio o la devolución de tu pago.</p>
+    </div>
+
+    <div>
+      <h3 class="text-[1.0625rem] font-bold text-[#1E293B] mb-2">3. Pagos</h3>
+      <p>Los pagos con tarjeta se procesan de forma segura a través de <span class="font-semibold text-[#1E293B]">Stripe</span>, un procesador de pagos certificado internacionalmente. Los datos de tu tarjeta viajan cifrados directamente a Stripe: <span class="font-semibold text-[#1E293B]">nunca se almacenan en nuestros servidores</span> y nuestro personal no tiene acceso a ellos. El monto mínimo de compra es de $10.00 MXN.</p>
+    </div>
+
+    <div>
+      <h3 class="text-[1.0625rem] font-bold text-[#1E293B] mb-2">4. Entrega</h3>
+      <p>Después de confirmar tu pedido, nuestro distribuidor se pondrá en contacto contigo por teléfono para acordar la dirección, fecha y forma de entrega. Si tenemos dudas sobre tu pedido usaremos los datos de contacto de tu cuenta.</p>
+    </div>
+
+    <div>
+      <h3 class="text-[1.0625rem] font-bold text-[#1E293B] mb-2">5. Cambios y devoluciones</h3>
+      <p>Si tu producto llega dañado o no corresponde a lo que pediste, contáctanos dentro de los 7 días naturales siguientes a la entrega para gestionar el cambio o la devolución conforme a las políticas de garantía de Betterware.</p>
+    </div>
+
+    <div>
+      <h3 class="text-[1.0625rem] font-bold text-[#1E293B] mb-2">6. Cuenta de usuario</h3>
+      <p>Para comprar necesitas crear una cuenta con tu correo electrónico. Eres responsable de mantener tu contraseña segura. Podemos suspender cuentas que hagan uso indebido del sitio.</p>
+    </div>
+
+    <div>
+      <h3 class="text-[1.0625rem] font-bold text-[#1E293B] mb-2">7. Contacto</h3>
+      <p>Para cualquier duda sobre estos términos, tu pedido o tu cuenta, llámanos al <span class="font-semibold text-[#1E293B]">477 223 3286</span>.</p>
+    </div>
+  </div>
+
+</section>
+
+<!-- ============================================ -->
+<!-- VISTA: AVISO DE PRIVACIDAD -->
+<!-- ============================================ -->
+<section class="view-section" id="vista-privacidad">
+
+  <div class="mb-8">
+    <h2 class="text-[1.75rem] md:text-[2.25rem] font-bold tracking-tight text-[#1E293B] mb-2">Aviso de privacidad</h2>
+    <p class="text-[#64748B] text-[.9375rem]">Última actualización: julio de 2026.</p>
+  </div>
+
+  <div class="max-w-[65ch] space-y-8 text-[.9375rem] text-[#64748B] leading-relaxed mb-16">
+    <div>
+      <h3 class="text-[1.0625rem] font-bold text-[#1E293B] mb-2">Qué datos recopilamos</h3>
+      <p>Al crear tu cuenta y comprar guardamos: tu nombre y apellidos, correo electrónico, teléfono, ciudad, el contenido de tu carrito y tu historial de pedidos. Esta información se almacena de forma segura en <span class="font-semibold text-[#1E293B]">Supabase</span>, nuestra plataforma de base de datos, protegida con controles de acceso por usuario.</p>
+    </div>
+
+    <div>
+      <h3 class="text-[1.0625rem] font-bold text-[#1E293B] mb-2">Datos de pago</h3>
+      <p>Los datos de tu tarjeta los recibe y procesa directamente <span class="font-semibold text-[#1E293B]">Stripe</span>; en nuestra base de datos solo se registra el monto, la fecha y el estado del pago. Nunca almacenamos números de tarjeta ni códigos de seguridad.</p>
+    </div>
+
+    <div>
+      <h3 class="text-[1.0625rem] font-bold text-[#1E293B] mb-2">Para qué usamos tus datos</h3>
+      <p>Usamos tus datos únicamente para procesar tus pedidos, coordinar la entrega contigo y darte acceso a tu historial de compras. No vendemos ni compartimos tu información con terceros ajenos a la operación de la tienda (Stripe para pagos y Supabase para almacenamiento).</p>
+    </div>
+
+    <div>
+      <h3 class="text-[1.0625rem] font-bold text-[#1E293B] mb-2">Tus derechos</h3>
+      <p>Puedes solicitar en cualquier momento el acceso, corrección o eliminación de tus datos personales (derechos ARCO), llamando al <span class="font-semibold text-[#1E293B]">477 223 3286</span>. Al eliminar tu cuenta se borran tus datos de perfil y tu carrito; los registros de pedidos ya realizados se conservan por obligaciones fiscales.</p>
+    </div>
+  </div>
+
+</section>
+
 </main>
 
 <!-- ============================================ -->
 <!-- FOOTER -->
 <!-- ============================================ -->
-<footer class="border-t border-[rgba(0,0,0,.06)] mt-16 py-8 px-4 text-center">
-  <p class="text-[#64748B] text-[.8125rem] font-medium">
-    <span class="font-bold text-[#1E293B]">Better<span class="text-[#00B2E3]">Mancera</span></span>
-    &copy; 2026 &mdash; Soluciones para el hogar mexicano.
-  </p>
+<footer class="border-t border-[rgba(0,0,0,.06)] mt-16 py-10 px-4">
+  <div class="max-w-4xl mx-auto flex flex-col items-center gap-4 text-center">
+    <p class="text-[#64748B] text-[.8125rem] font-medium">
+      <span class="font-bold text-[#1E293B]">Better<span class="text-[#00B2E3]">Mancera</span></span>
+      &copy; 2026 &mdash; Soluciones para el hogar mexicano.
+    </p>
+    <nav class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2" aria-label="Legal">
+      <button class="footer-link" data-view="vista-terminos">Términos y condiciones</button>
+      <button class="footer-link" data-view="vista-privacidad">Aviso de privacidad</button>
+      <a class="footer-link" href="tel:4772233286">
+        <span class="material-symbols-outlined" style="font-size:15px">call</span>
+        477 223 3286
+      </a>
+    </nav>
+    <p class="text-[#94A3B8] text-[.75rem]">Pagos seguros procesados por Stripe.</p>
+  </div>
 </footer>
 
 <!-- ============================================ -->
@@ -1183,6 +1294,6 @@ body{
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
 <script src="https://js.stripe.com/v3/"></script>
 <script src="config.js"></script>
-<script src="tienda.js?v=3"></script>
+<script src="tienda.js?v=5"></script>
 </body>
 </html>

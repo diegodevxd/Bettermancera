@@ -1,5 +1,10 @@
+import json
 import os
 import re
+import threading
+import time
+import urllib.error
+import urllib.request
 import tkinter as tk
 from tkinter import ttk, messagebox
 from PIL import Image, ImageTk
@@ -9,6 +14,7 @@ INPUT_FOLDER = os.path.join(BASE_DIR, "paginas_catalogo")
 OUTPUT_FOLDER = os.path.join(BASE_DIR, "fotos_catalogo")
 SQL_PATH = os.path.join(BASE_DIR, "productos.sql")
 MAPPING_PATH = os.path.join(BASE_DIR, "mapeo_final.json")
+RECORDS_PATH = os.path.join(BASE_DIR, "flipbook_bboxes.json")
 
 os.makedirs(OUTPUT_FOLDER, exist_ok=True)
 
@@ -30,21 +36,54 @@ FONT_TITLE = ("Segoe UI Semibold", 16)
 FONT_MONO = ("Cascadia Code", 10)
 
 
+from subir_paginas import (
+    load_dotenv_if_present,
+    subir_fotos_recortes,
+    subir_hotspots,
+    subir_todas_las_paginas,
+)
+
+DETECTADOS_PATH = os.path.join(BASE_DIR, "productos_detectados.json")
+
+
 def load_products():
+    """Lista de productos del catálogo vigente.
+
+    Fuente preferida: productos_detectados.json (generado desde el PDF con
+    leer_catalogo_pdf.py o el botón "Leer catálogo PDF"). Si no existe, se
+    usa el productos.sql heredado."""
+    if os.path.exists(DETECTADOS_PATH):
+        try:
+            with open(DETECTADOS_PATH, encoding="utf-8") as f:
+                data = json.load(f)
+            return {
+                cid: {"nombre": d["nombre"], "precio": d["precio"], "pagina": d.get("pagina")}
+                for cid, d in data.items()
+            }
+        except Exception:
+            pass
+
     products = {}
     if os.path.exists(SQL_PATH):
         with open(SQL_PATH, encoding="utf-8") as f:
             for line in f:
-                m = re.search(r"\('(\d{5})',\s*'([^']*)'", line)
+                m = re.search(r"\('(\d{5})',\s*'([^']*)',\s*([\d.]+)\)", line)
                 if m:
-                    products[m.group(1)] = m.group(2)
+                    products[m.group(1)] = {"nombre": m.group(2), "precio": float(m.group(3))}
     return products
 
 
-def load_page_map():
+def load_page_map(products=None):
     page_map = {}
+    # Páginas detectadas directamente del PDF (la fuente más confiable)
+    if products:
+        for cid, d in products.items():
+            if d.get("pagina"):
+                page_map[cid] = d["pagina"]
+    if page_map:
+        return page_map
+    # Fallback heredado: mapeo_final.json
     if os.path.exists(MAPPING_PATH):
-        import json
         try:
             with open(MAPPING_PATH, encoding="utf-8") as f:
                 data = json.load(f)
@@ -58,62 +97,87 @@ def load_page_map():
     return page_map
 
 
+def load_records():
+    if os.path.exists(RECORDS_PATH):
+        try:
+            with open(RECORDS_PATH, encoding="utf-8") as f:
+                return json.load(f)
+        except Exception:
+            pass
+    return {}
+
+
+def save_records(records):
+    with open(RECORDS_PATH, "w", encoding="utf-8") as f:
+        json.dump(records, f, ensure_ascii=False, indent=2, sort_keys=True)
+
+
 def natural_sort_key(name):
     nums = re.findall(r"\d+", name)
     return int(nums[0]) if nums else 0
 
 
 class CropDialog(tk.Toplevel):
-    def __init__(self, master, crop_img, app):
+    def __init__(self, master, crop_img, app, pagina, bbox_px):
         super().__init__(master)
         self.app = app
         self.crop_img = crop_img
+        self.pagina = pagina
+        self.bbox_px = bbox_px  # (ix0, iy0, ix1, iy1) en pixeles de la imagen original
         self.result = None
         self.configure(bg=PANEL)
-        self.title("Guardar recorte")
+        self.title("Guardar producto")
         self.transient(master)
         self.grab_set()
 
         w, h = crop_img.size
         self.resizable(False, False)
 
-        title = tk.Label(self, text="Confirma el recorte", bg=PANEL, fg=TEXT, font=FONT_H)
+        title = tk.Label(self, text="Confirma el producto", bg=PANEL, fg=TEXT, font=FONT_H)
         title.grid(row=0, column=0, columnspan=2, padx=20, pady=(16, 4), sticky="w")
 
-        dim_lbl = tk.Label(self, text=f"Tamaño: {w} x {h} px", bg=PANEL, fg=MUTED, font=FONT_SB)
+        dim_lbl = tk.Label(self, text=f"Selección: {w} x {h} px · página {pagina}", bg=PANEL, fg=MUTED, font=FONT_SB)
         dim_lbl.grid(row=1, column=0, columnspan=2, padx=20, pady=(0, 8), sticky="w")
 
-        prev_w = 360
+        prev_w = 300
         prev_h = int(h * prev_w / w) if w else 100
-        prev_h = min(prev_h, 460)
+        prev_h = min(prev_h, 380)
         preview = crop_img.copy()
         preview.thumbnail((prev_w, prev_h))
         self.tk_prev = ImageTk.PhotoImage(preview)
         prev = tk.Label(self, image=self.tk_prev, bg="#0d0d14", bd=0, highlightthickness=1,
                         highlightbackground=BORDER)
-        prev.grid(row=2, column=0, rowspan=4, padx=(20, 12), pady=4, sticky="n")
+        prev.grid(row=2, column=0, rowspan=7, padx=(20, 12), pady=4, sticky="n")
 
         form = tk.Frame(self, bg=PANEL)
         form.grid(row=2, column=1, padx=(0, 20), pady=4, sticky="n")
 
-        tk.Label(form, text="ID del producto", bg=PANEL, fg=MUTED, font=FONT_SB).pack(anchor="w")
-        self.id_var = tk.StringVar(value=app.pending_id or "")
-        id_entry = tk.Entry(form, textvariable=self.id_var, font=FONT_MONO, width=18,
-                            bg=PANEL2, fg=TEXT, insertbackground=TEXT, relief="flat",
-                            highlightthickness=1, highlightbackground=ACCENT, highlightcolor=ACCENT)
-        id_entry.pack(fill="x", pady=(2, 6))
+        def _field(label_text):
+            tk.Label(form, text=label_text, bg=PANEL, fg=MUTED, font=FONT_SB).pack(anchor="w")
+            var = tk.StringVar()
+            entry = tk.Entry(form, textvariable=var, font=FONT_MONO, width=26,
+                             bg=PANEL2, fg=TEXT, insertbackground=TEXT, relief="flat",
+                             highlightthickness=1, highlightbackground=ACCENT, highlightcolor=ACCENT)
+            entry.pack(fill="x", pady=(2, 8))
+            return var, entry
+
+        self.id_var, id_entry = _field("Código del producto")
+        self.id_var.set(app.pending_id or "")
         id_entry.focus_set()
         id_entry.icursor("end")
 
-        self.name_var = tk.StringVar()
-        self.name_lbl = tk.Label(form, textvariable=self.name_var, bg=PANEL, fg=SUCCESS,
-                                 font=FONT, wraplength=240, justify="left")
-        self.name_lbl.pack(anchor="w", pady=(0, 12))
+        self.name_status = tk.StringVar()
+        self.name_status_lbl = tk.Label(form, textvariable=self.name_status, bg=PANEL, fg=SUCCESS,
+                                        font=FONT_SB, wraplength=230, justify="left")
+        self.name_status_lbl.pack(anchor="w", pady=(0, 8))
 
-        self.id_var.trace_add("write", self._on_id_change)
+        self.nombre_var, _ = _field("Nombre")
+        self.precio_var, _ = _field("Precio regular")
+        self.precio_oferta_var, _ = _field("Precio oferta (opcional)")
+        self.categoria_var, _ = _field("Categoría (opcional)")
 
         btns = tk.Frame(self, bg=PANEL)
-        btns.grid(row=6, column=0, columnspan=2, padx=20, pady=(8, 16), sticky="ew")
+        btns.grid(row=9, column=0, columnspan=2, padx=20, pady=(8, 16), sticky="ew")
         save_btn = tk.Button(btns, text="Guardar", command=self._save, bg=ACCENT, fg="#0d0d14",
                              font=FONT_H, relief="flat", activebackground=ACCENT2, cursor="hand2",
                              width=12, bd=0)
@@ -123,34 +187,96 @@ class CropDialog(tk.Toplevel):
                   highlightthickness=1, highlightbackground=BORDER).pack(side="left")
         self.save_btn = save_btn
 
+        self.id_var.trace_add("write", self._on_id_change)
         self.bind("<Return>", lambda e: self._save())
         self.bind("<Escape>", lambda e: self.destroy())
         self._on_id_change()
 
     def _on_id_change(self, *_):
         cid = self.id_var.get().strip()
-        if cid in self.app.products:
-            self.name_var.set("✓  " + self.app.products[cid])
-            self.name_lbl.config(fg=SUCCESS)
-            self.save_btn.config(state="normal")
+        existing_record = self.app.records.get(cid)
+        base_product = self.app.products.get(cid)
+
+        if existing_record:
+            self.name_status.set("✓  " + existing_record.get("nombre", "") + "  (ya tiene datos, se sobrescriben)")
+            self.name_status_lbl.config(fg=SUCCESS)
+            precio_reg = existing_record.get("precio_regular", existing_record.get("precio"))
+            if not self.nombre_var.get():
+                self.nombre_var.set(existing_record.get("nombre", ""))
+            if not self.precio_var.get() and precio_reg is not None:
+                self.precio_var.set(str(precio_reg))
+            if not self.precio_oferta_var.get() and existing_record.get("precio_oferta") is not None:
+                self.precio_oferta_var.set(str(existing_record.get("precio_oferta")))
+            if not self.categoria_var.get():
+                self.categoria_var.set(existing_record.get("categoria") or "")
+        elif base_product:
+            self.name_status.set("✓  " + base_product["nombre"])
+            self.name_status_lbl.config(fg=SUCCESS)
+            if not self.nombre_var.get():
+                self.nombre_var.set(base_product["nombre"])
+            if not self.precio_var.get():
+                self.precio_var.set(str(base_product["precio"]))
         elif cid:
-            self.name_var.set("⚠  ID no encontrado en el catálogo")
-            self.name_lbl.config(fg=DANGER)
-            self.save_btn.config(state="normal")
+            self.name_status.set("⚠  Código nuevo, no está en productos.sql")
+            self.name_status_lbl.config(fg=DANGER)
         else:
-            self.name_var.set("")
-            self.save_btn.config(state="disabled")
+            self.name_status.set("")
+
+        self.save_btn.config(state="normal" if cid else "disabled")
 
     def _save(self):
         cid = self.id_var.get().strip()
+        nombre = self.nombre_var.get().strip()
+        precio_txt = self.precio_var.get().strip()
+        precio_oferta_txt = self.precio_oferta_var.get().strip()
+        categoria = self.categoria_var.get().strip()
+
         if not cid:
             return
-        out = os.path.join(OUTPUT_FOLDER, f"{cid}.png")
-        if os.path.exists(out):
-            if not messagebox.askyesno("Sobrescribir", f"Ya existe {cid}.png\n¿Sobrescribir?",
-                                       parent=self, icon="warning"):
+        if not nombre:
+            messagebox.showerror("Falta el nombre", "Escribe el nombre del producto.", parent=self)
+            return
+        try:
+            precio_regular = float(precio_txt)
+        except ValueError:
+            messagebox.showerror("Precio inválido", "El precio regular debe ser un número, ej. 199.90", parent=self)
+            return
+        if precio_oferta_txt:
+            try:
+                precio_oferta = float(precio_oferta_txt)
+            except ValueError:
+                messagebox.showerror("Precio inválido", "El precio de oferta debe ser un número, ej. 149.90", parent=self)
                 return
-        self.crop_img.save(out)
+        else:
+            precio_oferta = precio_regular
+
+        ix0, iy0, ix1, iy1 = self.bbox_px
+        img_w, img_h = self.app.img_w, self.app.img_h
+        bbox_norm = {
+            "x0": round(ix0 / img_w, 5),
+            "y0": round(iy0 / img_h, 5),
+            "x1": round(ix1 / img_w, 5),
+            "y1": round(iy1 / img_h, 5),
+        }
+
+        # Recorte local como miniatura de referencia para la propia herramienta
+        # (no se sube a Supabase; el flipbook usa la página completa).
+        out = os.path.join(OUTPUT_FOLDER, f"{cid}.png")
+        try:
+            self.crop_img.save(out)
+        except Exception:
+            pass
+
+        self.app.records[cid] = {
+            "nombre": nombre,
+            "categoria": categoria or None,
+            "precio_regular": precio_regular,
+            "precio_oferta": precio_oferta,
+            "pagina": self.pagina,
+            "bbox_norm": bbox_norm,
+        }
+        save_records(self.app.records)
+
         self.result = cid
         self.destroy()
 
@@ -159,7 +285,8 @@ class ExtractorApp:
     def __init__(self, root):
         self.root = root
         self.products = load_products()
-        self.page_map = load_page_map()
+        self.page_map = load_page_map(self.products)
+        self.records = load_records()
         self.images = sorted(
             [f for f in os.listdir(INPUT_FOLDER) if f.lower().endswith((".png", ".jpg", ".jpeg"))],
             key=natural_sort_key,
@@ -183,12 +310,10 @@ class ExtractorApp:
         self.dim_bg_item = None
 
         self.pending_id = None
-        self.saved_ids = set()
         self.filter_done_only = tk.BooleanVar(value=False)
         self.search_var = tk.StringVar()
 
         self._build_ui()
-        self._scan_saved()
         self._refresh_list()
         self.load_image()
         self.root.after(50, self._focus_canvas)
@@ -232,7 +357,7 @@ class ExtractorApp:
         header = tk.Frame(side, bg=PANEL)
         header.pack(fill="x", padx=18, pady=(18, 10))
         tk.Label(header, text="Extractor BW", bg=PANEL, fg=ACCENT, font=FONT_TITLE).pack(anchor="w")
-        tk.Label(header, text="Recorta fotos del catálogo", bg=PANEL, fg=MUTED, font=FONT_SB).pack(anchor="w")
+        tk.Label(header, text="Marca productos del catálogo", bg=PANEL, fg=MUTED, font=FONT_SB).pack(anchor="w")
 
         nav = tk.Frame(side, bg=PANEL)
         nav.pack(fill="x", padx=18, pady=(0, 6))
@@ -292,12 +417,18 @@ class ExtractorApp:
         self.plist.bind("<<ListboxSelect>>", self._on_list_select)
         self.plist.bind("<Double-Button-1>", self._jump_to_product_page)
 
-        tip = tk.Label(side, text="Selecciona un producto de la lista y luego\narrastra sobre la imagen para recortar.\nDoble-clic salta a la página del producto.",
+        tip = tk.Label(side, text="Selecciona un producto de la lista y luego\narrastra sobre la imagen para marcarlo.\nDoble-clic salta a la página del producto.",
                        bg=PANEL, fg=MUTED, font=FONT_SB, justify="left")
-        tip.pack(fill="x", padx=18, pady=(0, 16))
+        tip.pack(fill="x", padx=18, pady=(0, 12))
 
         self.preview_thumb = tk.Label(side, bg=PANEL, bd=0)
-        self.preview_thumb.pack(fill="x", padx=18, pady=(0, 18))
+        self.preview_thumb.pack(fill="x", padx=18, pady=(0, 12))
+
+        upload_frame = tk.Frame(side, bg=PANEL)
+        upload_frame.pack(fill="x", padx=18, pady=(0, 18))
+        self._btn(upload_frame, "Leer catálogo PDF", self._leer_catalogo_pdf).pack(fill="x", pady=(0, 6))
+        self._btn(upload_frame, "Subir a Supabase", self._upload_to_supabase, primary=True).pack(fill="x", pady=(0, 6))
+        self._btn(upload_frame, "Subir páginas", self._upload_paginas).pack(fill="x")
 
     def _build_canvas_area(self, parent):
         wrap = tk.Frame(parent, bg="#0d0d14")
@@ -334,21 +465,13 @@ class ExtractorApp:
     def _focus_canvas(self):
         self.canvas.focus_set()
 
-    def _scan_saved(self):
-        self.saved_ids = set()
-        if os.path.isdir(OUTPUT_FOLDER):
-            for f in os.listdir(OUTPUT_FOLDER):
-                m = re.match(r"(\d{5})\.png$", f)
-                if m:
-                    self.saved_ids.add(m.group(1))
-
     def _refresh_list(self):
         self.plist.delete(0, "end")
         q = self.search_var.get().strip().lower()
         pending = 0
         for cid in sorted(self.products):
-            name = self.products[cid]
-            done = cid in self.saved_ids
+            name = self.products[cid]["nombre"]
+            done = cid in self.records
             if done and self.filter_done_only.get():
                 continue
             label = f"{'✓' if done else '•'} {cid}  {name}"
@@ -360,7 +483,7 @@ class ExtractorApp:
                 self.plist.itemconfig("end", {"foreground": MUTED, "selectforeground": MUTED})
             if not done:
                 pending += 1
-        done = len(self.saved_ids)
+        done = sum(1 for cid in self.products if cid in self.records)
         total = len(self.products)
         self.count_lbl.config(text=f"{done}/{total} · {pending} pend.")
 
@@ -372,8 +495,8 @@ class ExtractorApp:
         m = re.match(r"[✓•]\s+(\d{5})", text)
         if m:
             self.pending_id = m.group(1)
-            name = self.products.get(self.pending_id, "")
-            self.sel_lbl.config(text=f"Recortar: {self.pending_id} — {name}")
+            name = self.products.get(self.pending_id, {}).get("nombre", "")
+            self.sel_lbl.config(text=f"Marcar: {self.pending_id} — {name}")
             self.canvas.focus_set()
 
     def _jump_to_product_page(self, _=None):
@@ -385,7 +508,7 @@ class ExtractorApp:
         if not m:
             return
         cid = m.group(1)
-        pg = self.page_map.get(cid)
+        pg = self.records.get(cid, {}).get("pagina") or self.page_map.get(cid)
         if not pg:
             self._set_status(f"No se sabe la página de {cid}")
             return
@@ -409,7 +532,7 @@ class ExtractorApp:
         n = self.current_idx + 1
         total = len(self.images)
         self.page_lbl.config(text=f" {n} / {total} ")
-        self._set_status(f"Página {n} de {total} · {self.images[self.current_idx]}  ·  arrastra para recortar")
+        self._set_status(f"Página {n} de {total} · {self.images[self.current_idx]}  ·  arrastra para marcar un producto")
 
     def _fit_zoom(self):
         self.canvas.update_idletasks()
@@ -543,16 +666,16 @@ class ExtractorApp:
         iy1 = min(self.img_h, int(y1))
         self._cancel_sel()
         if ix1 - ix0 < 20 or iy1 - iy0 < 20:
-            self._set_status("Recorte demasiado pequeño — ignorado")
+            self._set_status("Selección demasiado pequeña — ignorada")
             return
         crop = self.orig.crop((ix0, iy0, ix1, iy1))
-        dlg = CropDialog(self.root, crop, self)
+        pagina = self.current_idx + 1
+        dlg = CropDialog(self.root, crop, self, pagina, (ix0, iy0, ix1, iy1))
         self.root.wait_window(dlg)
         if dlg.result:
             cid = dlg.result
-            self.saved_ids.add(cid)
             self._refresh_list()
-            self._set_status(f"Guardado: {cid}.png  ({self.products.get(cid, '—')})")
+            self._set_status(f"Guardado: {cid}  ({self.records[cid]['nombre']})  · página {pagina}")
             self._show_thumb(cid)
             self.pending_id = None
             self.sel_lbl.config(text="")
@@ -577,6 +700,189 @@ class ExtractorApp:
             self.plist.selection_set(0)
             self.plist.see(0)
             self._on_list_select()
+
+    # ------------------------------------------------------------------
+    # Lectura del catálogo PDF y subida a Supabase
+    # ------------------------------------------------------------------
+
+    def _leer_catalogo_pdf(self):
+        pdf_path = os.path.join(BASE_DIR, "catalogo.pdf")
+        if not os.path.exists(pdf_path):
+            messagebox.showerror(
+                "No hay PDF",
+                "No se encontró catalogo.pdf en esta carpeta.\n"
+                "Guarda el catálogo del mes como catalogo.pdf y vuelve a intentar.",
+            )
+            return
+        if not messagebox.askyesno(
+            "Leer catálogo PDF",
+            "Se va a leer catalogo.pdf para llenar la lista de productos\n"
+            "(códigos, nombres, precios y páginas). ¿Continuar?",
+        ):
+            return
+        try:
+            from leer_catalogo_pdf import extraer_productos
+            detectados = extraer_productos(pdf_path)
+        except Exception as e:
+            messagebox.showerror("Error al leer el PDF", str(e))
+            return
+        if not detectados:
+            messagebox.showwarning("Sin resultados", "No se detectó ningún producto en el PDF.")
+            return
+
+        with open(DETECTADOS_PATH, "w", encoding="utf-8") as f:
+            json.dump(detectados, f, ensure_ascii=False, indent=2, sort_keys=True)
+
+        self.products = load_products()
+        self.page_map = load_page_map(self.products)
+        self._refresh_list()
+        paginas = sorted({d["pagina"] for d in detectados.values()})
+        messagebox.showinfo(
+            "Catálogo leído",
+            f"Se detectaron {len(detectados)} productos en {len(paginas)} páginas.\n\n"
+            "La lista de la derecha ya está actualizada. Revisa nombre y precio\n"
+            "al marcar cada producto: la detección no es perfecta al 100%.",
+        )
+
+    # ------------------------------------------------------------------
+    # Subida a Supabase (productos + páginas)
+    # ------------------------------------------------------------------
+
+    def _check_credentials(self):
+        load_dotenv_if_present()
+        supabase_url = os.environ.get("SUPABASE_URL", "")
+        service_key = os.environ.get("SUPABASE_SERVICE_ROLE_KEY", "")
+        if not supabase_url or not service_key:
+            messagebox.showerror(
+                "Falta configuración",
+                "Define SUPABASE_URL y SUPABASE_SERVICE_ROLE_KEY en un archivo .env "
+                "junto a este script (o en la carpeta betterorden/).\n\n"
+                "La service_role key está en el panel de Supabase:\n"
+                "Project Settings → API keys → service_role.",
+            )
+            return None, None
+        return supabase_url, service_key
+
+    def _upload_to_supabase(self):
+        supabase_url, service_key = self._check_credentials()
+        if not supabase_url:
+            return
+
+        if not self.records:
+            messagebox.showinfo("Nada que subir", "Todavía no marcaste ningún producto.")
+            return
+
+        rows = []
+        for cid, rec in self.records.items():
+            precio_regular = rec.get("precio_regular", rec.get("precio"))
+            rows.append({
+                "codigo": cid,
+                "nombre": rec["nombre"],
+                "categoria": rec.get("categoria"),
+                "precio_regular": precio_regular,
+                "precio_oferta": rec.get("precio_oferta", precio_regular),
+            })
+
+        if not messagebox.askyesno(
+            "Confirmar subida",
+            f"Se van a subir/actualizar {len(rows)} productos en Supabase "
+            "(nombre, precios y su foto recortada). ¿Continuar?",
+        ):
+            return
+
+        try:
+            body = json.dumps(rows).encode("utf-8")
+            url = f"{supabase_url}/rest/v1/productos?on_conflict=codigo"
+            req = urllib.request.Request(url, data=body, method="POST")
+            req.add_header("apikey", service_key)
+            req.add_header("Authorization", f"Bearer {service_key}")
+            req.add_header("Content-Type", "application/json")
+            req.add_header("Prefer", "resolution=merge-duplicates,return=minimal")
+            with urllib.request.urlopen(req, timeout=60) as resp:
+                ok = resp.status in (200, 201, 204)
+        except urllib.error.HTTPError as e:
+            messagebox.showerror("Error al subir", f"[{e.code}] {e.read().decode()[:400]}")
+            return
+        except Exception as e:
+            messagebox.showerror("Error al subir", str(e))
+            return
+
+        if not ok:
+            messagebox.showerror("Error", "Supabase no confirmó la subida de productos.")
+            return
+
+        self._write_backup_sql(rows)
+        subir_hotspots(supabase_url, service_key)  # posiciones (por si se usa el flipbook a futuro)
+
+        # Fotos de tarjeta: los recortes marcados se suben en segundo plano.
+        codigos = list(self.records.keys())
+        self._set_status(f"{len(rows)} productos actualizados. Subiendo fotos...")
+
+        def progress(i, total, name):
+            self.root.after(0, lambda: self._set_status(f"Subiendo fotos [{i}/{total}] {name}"))
+
+        def worker():
+            fotos_ok, fotos_fail = subir_fotos_recortes(codigos, progress_cb=progress)
+            self.root.after(0, lambda: self._on_upload_fotos_done(len(rows), fotos_ok, fotos_fail))
+
+        threading.Thread(target=worker, daemon=True).start()
+
+    def _on_upload_fotos_done(self, n_productos, fotos_ok, fotos_fail):
+        self._set_status(f"Productos: {n_productos} · fotos subidas: {fotos_ok} · fallidas: {fotos_fail}")
+        if fotos_fail:
+            messagebox.showwarning(
+                "Terminado con detalles",
+                f"{n_productos} productos actualizados.\nFotos subidas: {fotos_ok}\n"
+                f"Fotos con problema: {fotos_fail} (revisa la consola).",
+            )
+        else:
+            messagebox.showinfo(
+                "Listo",
+                f"{n_productos} productos actualizados y {fotos_ok} fotos subidas.\n"
+                "Ya están visibles en la tienda.",
+            )
+
+    def _write_backup_sql(self, rows):
+        path = os.path.join(BASE_DIR, f"productos_sync_{time.strftime('%Y%m%d_%H%M%S')}.sql")
+        lines = ["-- Respaldo generado por extractor_asistido.py (subida automática a Supabase).",
+                 "INSERT INTO productos (codigo, nombre, categoria, precio_regular, precio_oferta) VALUES"]
+        values = []
+        for r in rows:
+            categoria_sql = "NULL" if not r["categoria"] else "'" + r["categoria"].replace("'", "''") + "'"
+            nombre_sql = r["nombre"].replace("'", "''")
+            values.append(
+                f"('{r['codigo']}', '{nombre_sql}', {categoria_sql}, {r['precio_regular']}, {r['precio_oferta']})"
+            )
+        lines.append(",\n".join(values) + "\nON CONFLICT (codigo) DO UPDATE SET\n"
+                      "  nombre = EXCLUDED.nombre,\n  categoria = EXCLUDED.categoria,\n"
+                      "  precio_regular = EXCLUDED.precio_regular,\n  precio_oferta = EXCLUDED.precio_oferta;")
+        with open(path, "w", encoding="utf-8") as f:
+            f.write("\n".join(lines))
+
+    def _upload_paginas(self):
+        supabase_url, _service_key = self._check_credentials()
+        if not supabase_url:
+            return
+        if not messagebox.askyesno("Subir páginas", f"Se van a subir {len(self.images)} páginas del catálogo a Supabase. Puede tardar varios minutos. ¿Continuar?"):
+            return
+
+        self._set_status("Subiendo páginas a Supabase...")
+
+        def progress(i, total, name):
+            self.root.after(0, lambda: self._set_status(f"Subiendo páginas [{i}/{total}] {name}"))
+
+        def worker():
+            ok, fail = subir_todas_las_paginas(progress_cb=progress)
+            self.root.after(0, lambda: self._on_upload_paginas_done(ok, fail))
+
+        threading.Thread(target=worker, daemon=True).start()
+
+    def _on_upload_paginas_done(self, ok, fail):
+        self._set_status(f"Páginas subidas: {ok} · fallidas: {fail}")
+        if fail:
+            messagebox.showwarning("Terminado con errores", f"Subidas: {ok}\nFallidas: {fail}\nRevisa la consola para más detalle.")
+        else:
+            messagebox.showinfo("Listo", f"{ok} páginas subidas a Supabase.")
 
 
 def main():
